@@ -1,0 +1,123 @@
+.container {
+	background-color: rgb(241,241,241);
+	position: relative;
+	}
+body{
+	background-color:rgb(241,241,241);
+}
+
+fieldset{
+	border:none;
+}
+#create_account_heading {
+	position: relative;
+	text-align:center;
+	letter-spacing:2px;
+	font-style: sans-serif;
+
+}
+#registration_sidebar{
+	display: none;
+}
+
+input[type='text'] , input[type='password']{
+	width: 100%;
+	height:35px;
+	
+	border: 1px solid rgb(230,230,230);
+	padding: 5px;
+	
+	
+
+}
+input[type='submit'] {
+	width: 300px;
+	height:35px;
+	color: white;
+	background:rgb(28,184,65);
+	border-radius: 10px;
+	border: 1px solid rgb(240,240,240);
+}
+
+.fieldWrapper{
+	text-align: center;
+}
+form p{
+	text-align: center;
+}
+input[type='text'].form_error , 
+input[type='password'].form_error{
+	background-color: rgba(240,0,0,.20);
+}
+
+input[type='text'].form_success ,
+input[type='password'].form_success{
+	background-color:rgba(0,240,0,.20);
+}
+/*Form Medium Devices*/
+@media only screen and (min-width : 768px) {
+
+	body{
+		background-color:white;
+	}
+	
+	.container{
+		background-color:white;
+	}
+	#registration_sidebar {
+		display:block;
+		float: left;
+		
+		width: 40%;
+		position:relative;
+		background-color:white;
+		text-align: center;
+		height: 100%;
+		margin: 4%;
+	}
+	#registration_sidebar h3 ,
+	#registration_sidebar p{
+		text-align: center;
+		margin: 0;
+
+
+	}
+	#registration_sidebar p{
+		padding-top: 20px;
+	}
+	
+	form#register_form{
+		background-color:rgba(235,235,235,.75);
+	}
+	#form_container {
+		width: 40%;
+		height: 100%;
+		display: block;
+		position:relative;
+		float:right;
+		margin: 4%;
+			
+	}
+	fieldset{
+		padding: 10px;
+	}
+
+
+}
+
+/*Form Large Devices*/
+@media only screen and (min-width : 1200px) {
+	.container{
+		width: 100%;	}
+	#registration_sidebar {
+		margin: 0;
+		width: 45%;	
+	}
+	form#register_form {
+		background-color:rgba(235,235,235,.75);	
+	}
+	#form_container {
+		margin: 0;		
+	}
+}
+

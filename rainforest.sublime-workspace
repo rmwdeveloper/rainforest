@@ -4,16 +4,16 @@
 		"selected_items":
 		[
 			[
-				"obser",
-				"observer2"
+				"AJ",
+				"AJAX_Username_Availability_Check"
 			],
 			[
-				"obs",
-				"observer1"
+				"data",
+				"data"
 			],
 			[
-				"promo",
-				"promo_container"
+				"req",
+				"request_copy"
 			]
 		]
 	},
@@ -23,67 +23,107 @@
 			"file": "mysite/mysite/urls.py",
 			"settings":
 			{
-				"buffer_size": 944,
+				"buffer_size": 1126,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "mysite/registration_authentication/tests.py",
+			"file": "templates/storefront.html",
 			"settings":
 			{
-				"buffer_size": 5183,
+				"buffer_size": 1052,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mysite/registration_authentication/forms.py",
+			"settings":
+			{
+				"buffer_size": 2751,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mysite/storefront/views.py",
+			"settings":
+			{
+				"buffer_size": 689,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "mysite/mysite/settings.py",
+			"file": "mysite/storefront/forms.py",
 			"settings":
 			{
-				"buffer_size": 3120,
+				"buffer_size": 1133,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mysite/storefront/models.py",
+			"settings":
+			{
+				"buffer_size": 410,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mysite/storefront/tests.py",
+			"settings":
+			{
+				"buffer_size": 5900,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mysite/registration_authentication/models.py",
+			"settings":
+			{
+				"buffer_size": 5894,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/__base.html",
+			"settings":
+			{
+				"buffer_size": 2589,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 58.0,
 		"selected_items":
 		[
 			[
-				"snip",
-				"Snippet: HTML - HTML foundation"
-			],
-			[
-				"install	",
+				"install",
 				"Package Control: Install Package"
 			],
 			[
-				"SNIPPET",
-				"Snippet: HTML - HTML foundation"
+				"add",
+				"Package Control: Add Repository"
 			],
 			[
-				"snippet foun",
-				"Snippet: HTML - HTML foundation"
+				"repo",
+				"Package Control: Add Repository"
 			],
 			[
-				"snippet found	",
-				"Snippet: HTML - HTML foundation"
-			],
-			[
-				"Snippet: ",
-				"Snippet: HTML - HTML foundation"
-			],
-			[
-				"install",
+				"insta",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 512.0
+		"width": 560.0
 	},
 	"console":
 	{
-		"height": 125.0
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
 	},
 	"distraction_free":
 	{
@@ -96,118 +136,92 @@
 	},
 	"file_history":
 	[
-		"/C/Users/robert/rainforest/mysite/mysite/settings.py",
-		"/C/Users/robert/rainforest/mysite/mysite/wsgi.py",
-		"/C/Users/robert/rainforest/mysite/registration_authentication/views.py",
-		"/C/Users/robert/rainforest/mysite/mysite/urls.py",
 		"/C/Users/robert/rainforest/mysite/registration_authentication/models.py",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/views.py",
+		"/C/Users/robert/Desktop/rainforest/requirements.txt",
+		"/C/Users/robert/rainforest/templates/register.html",
+		"/C/Users/robert/rainforest/mysite/static/forms.js",
+		"/C/Users/robert/rainforest/mysite/mysite/settings.py",
+		"/C/Users/robert/rainforest/templates/landing.html",
 		"/C/Users/robert/rainforest/mysite/registration_authentication/tests.py",
-		"/C/Users/robert/Desktop/rainforest/mysite/registration_authentication/forms.py",
-		"/C/Users/robert/rainforest/mysite/registration_authentication/admin.py",
-		"/C/Users/robert/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/robert/rainforest/mysite/registration_authentication/static/qunit-1.14.0.js",
+		"/C/Users/robert/rainforest/mysite/storefront/views.py",
+		"/C/Users/robert/rainforest/__init__.py",
+		"/C/Users/robert/rainforest/mysite/settings.py",
+		"/C/Users/robert/rainforest/templates/storefront.html",
+		"/C/Users/robert/rainforest/mysite/storefront/tests.py",
+		"/C/Users/robert/rainforest/mysite/mysite/urls.py",
+		"/C/Users/robert/rainforest/manage.py",
+		"/C/Users/robert/rainforest/templates/__base.html",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/static/register.css",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/static/base.css",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/static/jquery.modal.css",
+		"/C/Users/robert/rainforest/templates/qunit.html",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/forms.py",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/static/jquery.modal.min.js",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/static/qunit-1.14.0.css",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/static/landing.css",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/static/pure_base.css",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/static/login_modal.js",
 		"/C/Users/robert/rainforest/mysite/registration_authentication/static/qunit.html",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/lib/fake-xhr.js",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/lib/tdd.js",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/lib/stub.js",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/lib/object.js",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/src/ajax.js",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/src/request.js",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/successful_get_test.js",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/test/request_test.js",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/lib/function.js",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/test/ajax_test.js",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/jsTestDriver.conf",
-		"/C/Users/robert/Desktop/12-abstracting-browser-differences-ajax-initial/text.html",
-		"/C/Users/robert/Desktop/test driven javascript/06-applied-functions-and-closures/src/bind.js",
-		"/C/Users/robert/Desktop/15-tdd-and-dom-manipulation-the-chat-client-initial/lib/stub.js",
-		"/C/Users/robert/Desktop/15-tdd-and-dom-manipulation-the-chat-client-initial/lib/tdd.js",
-		"/C/Users/robert/Desktop/15-tdd-and-dom-manipulation-the-chat-client-initial/jsTestDriver.conf",
-		"/C/Users/robert/Desktop/test driven javascript/12-abstracting-browser-differences-ajax/lib/function.js",
-		"/C/Users/robert/Desktop/test driven javascript/12-abstracting-browser-differences-ajax/lib/fake_xhr.js",
-		"/C/Users/robert/Desktop/test driven javascript/12-abstracting-browser-differences-ajax/lib/object.js",
-		"/C/Users/robert/Desktop/test driven javascript/07-objects-and-prototypal-inheritance/src/function.js",
-		"/C/Users/robert/Desktop/test driven javascript/07-objects-and-prototypal-inheritance/src/tdd.js",
-		"/C/Users/robert/Desktop/test driven javascript/07-objects-and-prototypal-inheritance/src/object_create.js",
-		"/C/Users/robert/Desktop/11-the-observer-pattern-initial/test/observable_test.js",
-		"/C/Users/robert/Desktop/11-the-observer-pattern-initial/src/observable.js",
-		"/C/Users/robert/Desktop/11-the-observer-pattern-initial/lib/tdd.js",
-		"/C/Users/robert/Desktop/11-the-observer-pattern-initial/jsTestDriver.conf",
-		"/C/Users/robert/Desktop/test driven javascript/11-the-observer-pattern/src/observable.js",
-		"/C/Users/robert/Desktop/test driven javascript/01-automated-testing/src/strftime.js",
-		"/C/Users/robert/Desktop/test driven javascript/03-tools-of-the-trade/jstestdriver/test/strftime_test.js",
-		"/C/Users/robert/Desktop/test driven javascript/03-tools-of-the-trade/jstestdriver/jsTestDriver.conf",
-		"/C/Users/robert/Desktop/test driven javascript/04-test-to-learn/benchmarks/loops.js",
-		"/C/Users/robert/Desktop/test driven javascript/01-automated-testing/test/strftime_test.html",
-		"/C/Users/robert/AppData/Local/Temp/Rar$DIa0.546/strftime.js",
-		"/C/Users/robert/Desktop/t0.html",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap12/Strict Mode/strict.html",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap12/Strict Mode/script.js",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/static/forms.js",
+		"/C/Users/robert/rainforest/mysite/urls.py",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/admin.py",
+		"/C/Users/robert/Desktop/register.html",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/static/menus.js",
+		"/C/Users/robert/rainforest/registration_authentication/views.py",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/static/landing.html",
+		"/C/Users/robert/rainforest/templates/login.html",
+		"/C/Users/robert/rainforest/mysite/registration_authentication/templatetags/forms_extras.py",
+		"/C/Users/robert/rainforest/static/base.css",
+		"/C/Users/robert/rainforest/mysite/mysite/templatetags/forms_extras.py",
+		"/C/Users/robert/rainforest/mysite/mysite/templatetags/__init__.py",
+		"/C/Users/robert/rainforest/templates/placeholder.html",
+		"/C/Users/robert/rainforest/static/pure_base.css",
+		"/C/Users/robert/rainforest/.gitignore",
+		"/C/Users/robert/rainforest/.git/config",
+		"/C/Users/robert/rainforest/stop",
+		"/C/Users/robert/tut_project/netmag/netmag/static/style.css",
+		"/C/Users/robert/tut_project/netmag/netmag/templates/base.html",
+		"/C/Users/robert/tut_project/netmag/netmag/templates/blog/post.html",
+		"/C/Users/robert/tut_project/netmag/netmag/settings.py",
+		"/C/Users/robert/tut_project/netmag/netmag/templates/blog/index.html",
+		"/C/Users/robert/tut_project/netmag/blog/admin.py",
+		"/C/Users/robert/tut_project/netmag/blog/views.py",
+		"/C/Users/robert/tut_project/netmag/blog/models.py",
+		"/C/Users/robert/tut_project/netmag/netmag/urls.py",
+		"/C/Users/robert/mytemplates/polls/detail.html",
+		"/C/Users/robert/mytemplates/polls/results.html",
+		"/C/Users/robert/tutorial_project/mysite/mysite/urls.py",
+		"/C/Users/robert/tutorial_project/mysite/polls/views.py",
+		"/C/Users/robert/tutorial_project/mysite/polls/urls.py",
+		"/C/Users/robert/tutorial_project/mysite/mysite/settings.py",
+		"/C/Users/robert/mytemplates/404.html",
+		"/C/Users/robert/tutorial_project/mysite/polls/models.py",
+		"/C/Users/robert/tutorial_project/mysite/polls/admin.py",
+		"/C/Users/robert/mytemplates/polls/index.html",
+		"/C/Users/robert/new_project/mysite/blog/templates/list.html",
+		"/C/Users/robert/new_project/mysite/mysite/urls.py",
+		"/C/Users/robert/new_project/mysite/blog/templates/bbase.html",
+		"/C/Users/robert/new_project/mysite/mysite/settings.py",
+		"/C/Users/robert/new_project/mysite/blog/views.py",
+		"/C/Users/robert/new_project/mysite/blog/models.py",
+		"/C/Users/robert/new_project/.gitignore",
+		"/C/Users/robert/.ssh/id_rsa.pub",
 		"/C/Users/robert/.gitconfig",
-		"/C/Users/robert/AppData/Local/Temp/Rar$DIa0.561/jquery.validate.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap11/jQueryIntro/tours.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap11/jQueryIntro/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap09/InlineStyles/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap09/InlineStyles/mission.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap09/ApplyingClasses/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap09/ApplyingClasses/index.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap08/ShowHideSections/contact.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap08/ShowHideSections/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap08/PreventSubmission/contact.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap08/PreventSubmission/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap07/UsingDebugger/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap07/UsingDebugger/index.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap07/CommonErrors/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap07/CommonErrors/mission.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap06/Timers/mission.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap06/Timers/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap06/FocusAndBlur/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap06/FocusAndBlur/contact.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap06/ClickAndLoad/mission.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap06/ClickAndLoad/script.js",
-		"/C/Users/robert/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap05/CreatingDOM/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap05/CreatingDOM/index.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap05/ChangingDOM/index.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap05/ChangingDOM/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap05/AccessingDOM/index.htm",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap05/AccessingDOM/script.js",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap02/scriptPosition.html",
-		"/C/Users/robert/Desktop/Web Dev/javascript/lynda/javascript essential training/Exercise Files/Chap01/simple.html",
-		"/C/Users/robert/Desktop/hivemind/stylesheets/styles-tabletland.css",
-		"/C/Users/robert/Desktop/hivemind/stylesheets/styles-desktop.css",
-		"/C/Users/robert/Desktop/hivemind/stylesheets/style.css",
-		"/C/Users/robert/Desktop/hivemind/stylesheets/styles-mobile.css",
-		"/C/Users/robert/Desktop/hivemind/stylesheets/styles-tabletport.css",
-		"/C/Users/robert/Desktop/hivemind/index.html",
-		"/C/Users/robert/Desktop/hivemind/stylesheets/styles-tabletmobile.css",
-		"/C/Users/robert/Desktop/hivemind/stylesheets/buttons.css",
-		"/C/Users/robert/Desktop/hivemind/stylesheets/styles-large.css",
-		"/C/Users/robert/Desktop/Web Dev/lynda responsive website/css/screen_layout_small.css",
-		"/C/Users/robert/Desktop/Web Dev/lynda responsive website/css/screen_layout_medium.css",
-		"/C/Users/robert/Desktop/Web Dev/lynda responsive website/css/screen_layout_large.css",
-		"/C/Users/robert/Desktop/Web Dev/lynda responsive website/css/screen_styles.css",
-		"/C/Users/robert/Desktop/Web Dev/lynda responsive website/index.html",
-		"/C/Users/robert/Desktop/Web Dev/lynda courses/creating responsive design sites/4 - Snippets/B-Google-HTML5-Shiv.html",
-		"/C/Users/robert/Desktop/Web Dev/lynda courses/creating responsive design sites/4 - Snippets/A-Placeholder-Text.html",
-		"/C/Users/robert/Desktop/Web Dev/practice websites/skeleton responsive/stylesheets/style.css",
-		"/C/Users/robert/Desktop/Web Dev/practice websites/skeleton responsive/index.html",
-		"/C/Users/robert/Desktop/Web Dev/MDN/CSS Challenges/challenges/stylesheets/style.css",
-		"/C/Users/robert/Desktop/Web Dev/MDN/CSS Challenges/challenges/index.html",
-		"/C/Users/robert/Desktop/Web Dev/MDN/CSS Challenges/fonts and colors/stylesheets/style.css",
-		"/C/Users/robert/Desktop/Web Dev/MDN/CSS Challenges/fonts and colors/index.html",
-		"/C/Users/robert/Desktop/index2.html",
-		"/C/Users/robert/Desktop/Web Dev/lynda courses/css- frameworks and grids/Exercise Files/Chapter_01/01_04/foundation/stylesheets/foundation.css",
-		"/C/Users/robert/AppData/Roaming/Sublime Text 2/Packages/Prefixr/Default (Windows).sublime-keymap",
-		"/C/Users/robert/Desktop/Web Dev/lynda courses/css- frameworks and grids/Exercise Files/Chapter_01/01_04/foundation/index.html",
-		"/C/Users/robert/Desktop/index.html",
-		"/C/Users/robert/Desktop/style.css",
-		"/C/Users/robert/AppData/Roaming/Sublime Text 2/Packages/User/divclass.sublime-snippet",
-		"/C/Users/robert/Desktop/Web Dev/lynda courses/css- frameworks and grids/Exercise Files/Chapter_01/01_04/foundation/banded.html",
-		"/C/Users/robert/Desktop/Web Dev/practice websites/website/index.html",
+		"/C/Users/robert/new_project/mysite/books/models.py",
+		"/C/Users/robert/new_project/mysite/templates/search_form.html",
+		"/C/Users/robert/new_project/mysite/templates/search_results.html",
+		"/C/Users/robert/new_project/mysite/books/views.py",
+		"/C/Users/robert/new_project/mysite/books/admin.py",
+		"/C/Users/robert/new_project/mysite/myapp/views.py",
+		"/C/Users/robert/new_project/mysite/templates/current_datetime.html",
+		"/C/Users/robert/new_project/mysite/templates/base.html",
+		"/C/Users/robert/new_project/mysite/myapp/templates/index.html",
+		"/C/Users/robert/new_project/mysite/templates/index.html",
+		"/C/Users/robert/new_project/mysite/myapp/admin.py",
 		"/C/Users/robert/Desktop/Web Dev/nettuts assignments/stylesheets/style.css",
-		"/C/Users/robert/Desktop/Web Dev/nettuts assignments/index.html",
-		"/C/Users/robert/Desktop/webpage/index.html"
+		"/C/Users/robert/AppData/Roaming/Sublime Text 3/Packages/User/open in chrome.sublime-build",
+		"/C/Users/robert/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG"
 	],
 	"find":
 	{
@@ -225,28 +239,31 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"\n.main_two{\n	padding-bottom:45px;\n	}\n.main_two a:hover{\n	opacity: .45;\n	}\n.main_three{",
-			"-color:#ffffff",
-			"to",
-			"Narrow",
-			"0px",
-			"7",
-			"11px",
-			"6px",
-			".button",
-			"  .button ",
-			"contentarea2_column1",
-			"contentarea2_column2",
-			"image",
-			"placeholder",
-			">\n",
-			"a",
-			"contentarea1",
-			">\n",
-			"=\"#\">",
-			"text",
-			"\"signupText\"",
-			"=\"#\""
+			"login",
+			"save",
+			"register",
+			"before_block",
+			"_ctx()",
+			".ctx()",
+			"current",
+			"fn",
+			"valid_registration_vals",
+			"myapp.",
+			"AUTH_USER",
+			"\"));\n",
+			"){\n",
+			";\n",
+			"border",
+			"signin",
+			"max_length",
+			"AUTH_USER_MO",
+			"AUTH",
+			"fadeDuration",
+			"fadeDuraton",
+			"sites",
+			"\n",
+			"SITE_ID",
+			"template_context"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -264,23 +281,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
 					"file": "mysite/mysite/urls.py",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 944,
+						"buffer_size": 1126,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								120,
-								86
+								1126,
+								1126
 							]
 						],
 						"settings":
@@ -290,25 +308,53 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "mysite/registration_authentication/tests.py",
+					"file": "templates/storefront.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5183,
+						"buffer_size": 1052,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								156,
-								156
+								872,
+								872
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "mysite/registration_authentication/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								256
 							]
 						],
 						"settings":
@@ -323,29 +369,172 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "mysite/mysite/settings.py",
+					"buffer": 3,
+					"file": "mysite/storefront/views.py",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3120,
+						"buffer_size": 689,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2237,
-								2237
+								689,
+								689
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "mysite/storefront/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								968,
+								968
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 105.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "mysite/storefront/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								410,
+								410
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "mysite/storefront/tests.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5892,
+								5892
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2042.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "mysite/registration_authentication/models.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 645.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "templates/__base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2589,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2375,
+								2375
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 98.0,
+						"translation.y": 344.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -355,11 +544,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -370,11 +559,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.161660777385,
 			1.0
 		],
 		"rows":
@@ -384,11 +580,12 @@
 		]
 	},
 	"menu_visible": true,
+	"project": "rainforest.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 42.0
 	},
-	"save_all_on_build": false,
+	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
@@ -396,19 +593,7 @@
 		[
 			[
 				"",
-				"/C/Users/robert/Desktop/index2.html"
-			],
-			[
-				"style",
-				"/C/Users/robert/Desktop/Web Dev/lynda courses/css- frameworks and grids/Exercise Files/Chapter_01/01_04/foundation/stylesheets/foundation.css"
-			],
-			[
-				"f",
-				"/C/Users/robert/Desktop/Web Dev/lynda courses/css- frameworks and grids/Exercise Files/Chapter_01/01_04/foundation/banded.html"
-			],
-			[
-				"html",
-				"/C/Users/robert/Desktop/Web Dev/lynda courses/css- frameworks and grids/Exercise Files/Chapter_01/01_04/foundation/banded.html"
+				"mysite\\registration_authentication\\models.py"
 			]
 		],
 		"width": 0.0
@@ -421,10 +606,24 @@
 		],
 		"width": 0.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
 	"show_minimap": true,
-	"show_open_files": true,
+	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 195.0,
-	"status_bar_visible": true
+	"side_bar_width": 234.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }

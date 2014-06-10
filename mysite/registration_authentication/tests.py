@@ -48,7 +48,7 @@ class HelperFunctions:
 		"zip_code":"07866",
 		'password1': '123456',
 		'password2': '123456'}
-	def create_invalid_user(self):
+	def create_invalid_user_vals(self):
 		"""
 		Randomly generates a dictionary of fields for a UserCreateForm that has one invalid value.
 		"""
@@ -63,26 +63,58 @@ class HelperFunctions:
 			else:
 				invalid_registration_form[key] = self.valid_registration_vals[key]
 		return invalid_registration_form
-	def create_valid_user(self,num = 0):
+	def create_valid_user_vals(self,num = 0):
 		"""
 		Return valid registration vals
 		"""
 		if num == 0:
 			return self.valid_registration_vals
 		return self.valid_registration_vals_2
-
-
+	def create_user(self, version = 0):
+		"""
+		Creates a UserProfile. Version is an integer that determines which userprofile to generate (one of two)
+		"""
+		registration_values = self.create_valid_user_vals(version)
+		user_form = UserCreateForm(registration_values)
+		if user_form.is_valid():
+			user_form.save()
 	
-class RegisterViewTestCase(TestCase):
-	def test_page(self):
-		resp = self.client.get('/register/')
-		self.assertEqual(resp.status_code, 200)
+
+
+class TestViewConnections(TestCase):
+	"""
+	Tests all view connections in registration_authentication
+	"""
+	def run_connection_test(self, url_string):
+		"""
+		Tests the response to a particular url
+		"""
+		response = self.client.get(url_string)
+		self.assertEqual(response.status_code, 200 , url_string + ' is not connecting properly')
+
+	def test_views_connections(self):
+		"""
+		Test all connections that do not require a login 
+		"""
+		url_string_list = ["/", "/tests/", "/register/","/placeholder/", "/error/", "/login/",]
+		for url in url_string_list:
+			self.run_connection_test(url)
+	def test_login_required_view_connections(self):
+		"""
+		Test all connections that require a login
+		"""
+		test_user_vals = HelperFunctions().create_valid_user_vals()
+		test_user = HelperFunctions().create_user()
+		url_string_list = []
+		self.client.login(username = test_user_vals['username'], password = test_user_vals['password1'])
+		for url in url_string_list:
+			self.run_connection_test(url)
 
 #Models Tests
 class TestUserCreateForm(TestCase):
 	def setUp(self):
-		self.invalid_user = HelperFunctions().create_invalid_user()
-		self.valid_user = HelperFunctions().create_valid_user()
+		self.invalid_user = HelperFunctions().create_invalid_user_vals()
+		self.valid_user = HelperFunctions().create_valid_user_vals()
 	def test_form_should_validate_correctly(self):
 		self.assertFalse(UserCreateForm(self.invalid_user).is_valid())
 		self.assertTrue(UserCreateForm(self.valid_user).is_valid())
@@ -90,11 +122,10 @@ class TestUserCreateForm(TestCase):
 #Views Tests
 class TestRegister(TestCase):
 	def setUp(self):
-		self.valid_user_form = HelperFunctions().create_valid_user()
-		self.invalid_user_form = HelperFunctions().create_invalid_user()
-		self.test_user_form = UserCreateForm(self.valid_user_form)
-		if self.test_user_form.is_valid():
-			self.test_user = self.test_user_form.save()
+		self.valid_user_form = HelperFunctions().create_valid_user_vals()
+		self.invalid_user_form = HelperFunctions().create_invalid_user_vals()
+		self.test_user = HelperFunctions().create_user()
+
 	def test_logged_in_user_should_redirect(self):
 		self.client.login(username=self.valid_user_form['username'], password = self.valid_user_form['password1'])
 		response = self.client.get('/register/')
@@ -105,7 +136,7 @@ class TestRegister(TestCase):
 		self.assertTrue(response.context['errors'])
 		self.assertTrue(response.context['form'])
 	def test_valid_form_should_save_user(self):
-		valid_user = HelperFunctions().create_valid_user(1)
+		valid_user = HelperFunctions().create_valid_user_vals(1)
 		response = self.client.post('/register/', data = valid_user, secure=True)
 		test_user = self.client.login(username =  valid_user['username'], password = valid_user['password1'])
 		self.assertTrue(test_user)
@@ -124,11 +155,9 @@ class TestRegister(TestCase):
 class TestUserLogout(TestCase):
 	#refactor setUp method, does this need invalid_user_form? Also has alot in common with TestRegister.setup
 	def setUp(self):
-		self.valid_user_form = HelperFunctions().create_valid_user()
-		self.invalid_user_form = HelperFunctions().create_invalid_user()
-		self.test_user_form = UserCreateForm(self.valid_user_form)
-		if self.test_user_form.is_valid():
-			self.test_user = self.test_user_form.save()
+		self.valid_user_form = HelperFunctions().create_valid_user_vals()
+		self.invalid_user_form = HelperFunctions().create_invalid_user_vals()
+		test_user = HelperFunctions().create_user()
 	def test_login_required(self):
 		self.client.login(username = self.valid_user_form['username'], password = self.valid_user_form['password1'])
 		response = self.client.get('/logout/')

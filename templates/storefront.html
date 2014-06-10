@@ -10,8 +10,35 @@
 
 {% load forms_extras %}
 
-{% block title %}Storefront{% endblock %}
+{% block title %}'Storefront'{% endblock %}
 
 {% block content %}
-  
+  <div id = 'form_container'>
+    <form action="/register/" id = 'register_form' method="post">
+   	  {% csrf_token %}
+        {{ form.non_field_errors }}
+        <fieldset>
+        	<div class="fieldWrapper">
+        		{{ form.product_name }}
+       	 	</div>
+       	 	<div class="fieldWrapper">
+        		{{ form.product_price }}
+       	 	</div>
+       	 	<div class="fieldWrapper">
+        		{{ form.product_description }}
+       	 	</div>
+       	</fieldset>
+       	<fieldset>
+       		<div class="fieldWrapper">
+       			{{ form.product_weight_value}}
+       		</div>
+       		<div class="fieldWrapper">
+       			{{ form.product_weight_type}}
+       		</div>
+       	</fieldset>
+       <div class="fieldWrapper">
+         <input type="submit" value="Create the account">
+       </div>
+    </form>
+  </div>
 {% endblock %}

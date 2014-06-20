@@ -2,10 +2,9 @@ html, .container, #main{
 		height: 100%;
 		min-height: 100%;
 	}
-
 body {
 	font-family: sans-serif;
-	/*min-width: 300px;*/
+	min-width: 500px;
 	min-height: 100%;
 }
 .container {
@@ -65,39 +64,20 @@ ul li:hover ul a{
 
 #header_username, #header_logout, #header_signin{
 	float: right;
-	top: 12px;
-}
-#header_signin {
-	position:relative;
-
-}
-#header_signin, #header_logo, #header_logout, 
-#header_username {
-	color: #777777;
-	font-size: 15px;
-
+	padding: 10px;
+	padding-top: 20px;
 }
 #header_logo{
 	color: #777777;
-	font-size: 15px;
-	margin-left: 20px;
-	position: relative;
-	top: -3px;
+	font-size: 30px;
 }
-input[type='search'].toggle_search{
-	display: inline-block;
-	position: relative;
-	height: 40px;
-	width: 100%;
-}
-
-input[type='search']{
-	width: 125px;
+#header_search input[type='search']{
+	width: 150px;
 	display: none;
 	height:35px;
 	border: 1px solid rgb(230,230,230);
-	position: relative;
-	top: -4px;
+	padding: 3px;
+	margin: 2px;
 }
 #header_search_button a{
 	display: inline-block;
@@ -105,7 +85,6 @@ input[type='search']{
 	width: 18px;
 	background-image: url('ResponsiveNavSprites.png');
 	background-position: -40px 122px;
-	text-align: center;
 
 }
 form#login_form input[type='submit'] {
@@ -133,6 +112,7 @@ form#login_form > input[type='text'] , input[type='password']{
 input[type="search"]:focus{
 	border-color: #6EA2DE;
     box-shadow: 0px 0px 2px #6EA2DE;
+
 }
 
 @media only screen and (min-width : 768px){

@@ -1,6 +1,6 @@
 .modal {
   display: none;
-  width: 400px;
+  width: 70%;
   background: #fff;
   padding: 15px 30px;
   -webkit-border-radius: 8px;
@@ -41,4 +41,10 @@
   -o-border-radius: 8px;
   -ms-border-radius: 8px;
   border-radius: 8px;
+}
+@media only screen and (min-width : 768px){
+  .modal{
+    width:500px;
+  }
+  
 }

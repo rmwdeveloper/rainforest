@@ -6,6 +6,7 @@ from registration_authentication import models , forms
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
 import unittest
 
 class HelperFunctions: 
@@ -123,59 +124,98 @@ class TestMainPage(TestCase):
 	def test_unauthenticated_user_should_redirect(self):
 		response = self.client.get('/storefront/')
 		self.assertRedirects(response, '/login/')
-
-class EnteringProductTest(LiveServerTestCase):
+class HeaderMobileTests(LiveServerTestCase):
 	def setUp(self):
 		self.browser = webdriver.Firefox()
-		self.browser.implicitly_wait(3)
+		self.browser.set_window_size(768,400)
+		self.browser.implicitly_wait(1)
 		self.browser.get('http://localhost:8000/')
-		login_modal = self.browser.find_element_by_class_name('login-window')
-		login_modal.click()
-		username_input = self.browser.find_element_by_name('login_username')
-		password_input = self.browser.find_element_by_name('login_password')
-		username_input.send_keys('test01')
-		password_input.send_keys('123456')
-		password_input.send_keys(Keys.ENTER)
-
-		header_username  = self.browser.find_element_by_id('header_username')
-		self.assertEqual(
-			 	'test01', header_username.text
-			)
-		self.browser.get('http://localhost:8000/storefront/')
-		self.assertIn('Storefront', self.browser.title)
-
 	def tearDown(self):
 		self.browser.quit()
-	def input_test(self, form_element_id, placeholder_text, input_value):
-		"""
-		Finds the element corresponding form_element_id, tests if it's input_value
-		value is correct, then checks to see if input is inputted correctly.
-		"""
-		form_input = self.browser.find_element_by_id(form_element_id)
-		self.assertEqual(
-			form_input.get_attribute('placeholder'),
-			placeholder_text
-		)
-		form_input.send_keys(input_value)
-		self.assertEqual(
-			form_input.get_attribute('value'),
-			input_value
-		)
 
-	def test_user_should_be_able_to_enter_product_information(self):
-		self.input_test('product_name', 'Enter product name', 'Toaster')
-		self.input_test('product_price', 'Enter product price', '49.99')
-		self.input_test('product_description','Enter product description', 'A stainless steel toaster')
-		self.input_test('product_weight_value', 'Enter product weight', '5')
+	def test_search_magnifying_glass_button_should_exist(self):
+		"""
+		A magnifying glass icon should exist.
+		"""
+		magnifying_glass = self.browser.find_element_by_id("header_search_button")
+		self.assertTrue(magnifying_glass.is_displayed)
 
-		weight_type_selection = self.browser.find_element_by_id('product_weight_type')
-		for option in self.browser.find_elements_by_tag_name('option'):
-			if option.text == 'Kilogram(s)':
-				option.click()
-		self.assertEqual(
-			weight_type_selection.get_attribute('value'),
-			'KG'
-		)
+	def test_clicking_magnifying_glass_button_should_show_search_bar(self):
+		magnifying_glass = self.browser.find_element_by_id("header_search_button")
+		search = self.browser.find_element_by_id("header_search")
+		self.assertFalse(search.is_displayed())
+		magnifying_glass.click()
+		self.assertTrue(search.is_displayed())
+
+
+
+	# def test_hamburger_dropdown_menu_should_exist(self):
+	# 	"""
+	# 	In mobile, a "hamburger" menu (three horizontal black lines) should exist. This
+	# 	will be a dropdown menu.
+	# 	"""
+	# 	hamburger_menu = self.browser.find_element_by_id("hamburger_menu")
+	# 	self.assertTrue(hamburger_menu.is_displayed())
+
+
+
+
+
+# class StorefrontTests(LiveServerTestCase):
+# 	def setUp(self):
+# 		self.browser = webdriver.Firefox()
+# 		self.browser.implicitly_wait(1)
+# 		self.browser.get('http://localhost:8000/')
+# 		login_modal = self.browser.find_element_by_class_name('login-window')
+# 		login_modal.click()
+# 		username_input = self.browser.find_element_by_name('login_username')
+# 		password_input = self.browser.find_element_by_name('login_password')
+# 		username_input.send_keys('test01')
+# 		password_input.send_keys('123456')
+# 		password_input.send_keys(Keys.ENTER)
+
+# 		header_username  = self.browser.find_element_by_id('header_username')
+# 		self.assertEqual(
+# 			 	'test01', header_username.text
+# 			)
+# 		self.browser.get('http://localhost:8000/storefront/')
+# 		self.assertIn('Storefront', self.browser.title)
+
+# 	def tearDown(self):
+# 		self.browser.quit()
+
+# 	def input_test(self, form_element_id, placeholder_text, input_value):
+# 		"""
+# 		Finds the element corresponding form_element_id, tests if it's input_value
+# 		value is correct, then checks to see if input is inputted correctly.
+# 		"""
+# 		form_input = self.browser.find_element_by_id(form_element_id)
+# 		self.assertEqual(
+# 			form_input.get_attribute('placeholder'),
+# 			placeholder_text
+# 		)
+# 		form_input.send_keys(input_value)
+# 		self.assertEqual(
+# 			form_input.get_attribute('value'),
+# 			input_value
+# 		)
+# 	def test_header_links_should_exist(self):
+# 		pass
+
+# 	def test_user_should_be_able_to_enter_product_information(self):
+# 		self.input_test('product_name', 'Enter product name', 'Toaster')
+# 		self.input_test('product_price', 'Enter product price', '49.99')
+# 		self.input_test('product_description','Enter product description', 'A stainless steel toaster')
+# 		self.input_test('product_weight_value', 'Enter product weight', '5')
+
+# 		weight_type_selection = self.browser.find_element_by_id('product_weight_type')
+# 		for option in self.browser.find_elements_by_tag_name('option'):
+# 			if option.text == 'Kilogram(s)':
+# 				option.click()
+# 		self.assertEqual(
+# 			weight_type_selection.get_attribute('value'),
+# 			'KG'
+# 		)
 
 
 

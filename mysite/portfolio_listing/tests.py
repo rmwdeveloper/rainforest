@@ -9,7 +9,7 @@ class TestViewConnections(TestCase):
 	"""
 	Tests all view connections in portfolio_listing
 	"""
-	def run_connection_test(self, url_string ,aut):
+	def run_connection_test(self, url_string):
 		"""
 		Tests the response to a particular url
 		"""

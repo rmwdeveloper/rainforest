@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from registration_authentication import views as registration_authentication_views
+from portfolio_listing import views as portfolio_listing_views
 from storefront import views as storefront_views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
@@ -19,6 +20,6 @@ urlpatterns = patterns('',
     url(r'^register/$', registration_authentication_views.register),
     url(r'^login/$', registration_authentication_views.user_login, name='login'),
     url(r'^logout/$', registration_authentication_views.user_logout, name='logout'),
-    url(r'^storefront/$', storefront_views.storefront_main, name= 'storefront_main')
+    url(r'^portfolio/$', portfolio_listing_views.portfolio , name= 'portfolio_main'),
 )
 urlpatterns += staticfiles_urlpatterns()

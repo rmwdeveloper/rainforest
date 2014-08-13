@@ -20,7 +20,7 @@ class TestViewConnections(TestCase):
 		"""
 		Test all connections that do not require a login 
 		"""
-		url_string_list = ["portfolio",]
+		url_string_list = ["/portfolio/",]
 		for url in url_string_list:
 			self.run_connection_test(url)
 

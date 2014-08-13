@@ -3,6 +3,7 @@ from models import Project, ProjectTypeValidation, ProjectType
 import datetime
 import random
 from mysite import settings
+from registration_authentication.tests import HelperFunctions
 
 # Create your tests here.
 class TestViewConnections(TestCase):
@@ -28,9 +29,8 @@ class TestViewConnections(TestCase):
 		Test all connections that require a login
 		"""
 		url_string_list = ["/portfolio-edit/", ]
-		my_admin = User.objects.create_superuser('myuser', 'myemail@test.com', 'password')
+		my_admin = HelperFunctions().create_superuser()
 		self.client.login(username='myuser', password='password')
-		User.objects.create_user
 		for url in url_string_list:
 			self.run_connection_test(url)
 

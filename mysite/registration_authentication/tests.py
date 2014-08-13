@@ -77,13 +77,15 @@ class HelperFunctions:
 		registration_values = self.create_valid_user_vals(version)
 		user_form = UserCreateForm(registration_values)
 		if user_form.is_valid():
-			user_form.save()
+			return user_form.save()
+
 	def create_superuser(self, version = 1):
 		"""
 		Creates a Superuser profile. 
 		"""
 		super_user = self.create_user(version = 1)
 		super_user.is_admin = True
+		return super_user
 	
 
 

@@ -8,10 +8,10 @@ class Project(models.Model):
 	project_id = models.AutoField(primary_key=True)
 	name = models.CharField()
 	description = models.CharField()
-	date_finished = models.Datefield()
+	date_finished = models.DateField()
 	date_posted = models.DateTimeField()
 
-class ProjectTypeValidation(models.model):
+class ProjectTypeValidation(models.Model):
 	"""Validation Table """
 	project_type_id = models.AutoField(primary_key=True)
 	name = models.CharField()

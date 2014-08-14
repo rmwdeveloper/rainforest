@@ -1,0 +1,82 @@
+[
+  {
+    "model": "portfolio_listing.Language",
+    "pk": 1,
+    "fields": {
+      "name": "HTML",
+      "description": "Standard markup language used to create web pages."
+    }
+  },
+  {
+    "model": "portfolio_listing.Language",
+    "pk": 2,
+    "fields": {
+      "name": "CSS",
+      "description": "Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language."
+    }
+  },
+  {
+    "model": "portfolio_listing.Language",
+    "pk": 3,
+    "fields": {
+      "name": "Javascript",
+      "description": "JavaScript is most commonly used as part of web browsers, whose implementations allow client-side scripts to interact with the user, control the browser, communicate asynchronously, and alter the document content that is displayed."
+    }
+  },
+  {
+    "model": "portfolio_listing.Language",
+    "pk": 4,
+    "fields": {
+      "name": "Python",
+      "description": "Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C. The language provides constructs intended to enable clear programs on both a small and large scale."
+    }
+  },
+  {
+    "model": "portfolio_listing.Language",
+    "pk": 5,
+    "fields": {
+      "name": "PHP",
+      "description": "PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language."
+    }
+  },
+  {
+    "model": "portfolio_listing.Framework",
+    "pk": 1,
+    "fields": {
+      "name": "jQuery",
+      "description": "jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML."
+    }
+  },
+  {
+    "model": "portfolio_listing.Framework",
+    "pk": 2,
+    "fields": {
+      "name": "Django",
+      "description": "Django is a free and open source web application framework, written in Python, which follows the model–view–controller architectural pattern."
+    }
+  },
+  {
+    "model": "portfolio_listing.ContentManagementSystem",
+    "pk": 1,
+    "fields": {
+      "name": "Wordpress",
+      "description": "WordPress is a free and open source blogging tool and a content management system based on PHP and MySQL."
+    }
+  },
+  {
+    "model": "portfolio_listing.ContentManagementSystem",
+    "pk": 2,
+    "fields": {
+      "name": "Joomla",
+      "description": "Joomla is a free and open-source content management system  for publishing web content. It is built on a model–view–controller web application framework that can be used independently of the CMS."
+    }
+  },
+  {
+    "model": "portfolio_listing.Database",
+    "pk": 1,
+    "fields": {
+      "name": "mySQL",
+      "description": "MySQL  is  the world's second most widely used open-source relational database management system ."
+    }
+  }
+]

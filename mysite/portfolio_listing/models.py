@@ -41,12 +41,12 @@ class Project(models.Model):
 	description = models.TextField()
 	date_finished = models.DateField()
 	date_posted = models.DateTimeField()
-	languages = models.ManyToManyField(Language)
-	frameworks = models.ManyToManyField(Framework)
-	cms = models.ManyToManyField(ContentManagementSystem)
-	databases = models.ManyToManyField(Database)
-	concepts = models.ManyToManyField(Concept)
-	image = models.ImageField()
+	languages = models.ManyToManyField(Language , blank=True)
+	frameworks = models.ManyToManyField(Framework, blank=True)
+	cms = models.ManyToManyField(ContentManagementSystem, blank=True)
+	databases = models.ManyToManyField(Database, blank=True)
+	concepts = models.ManyToManyField(Concept, blank=True)
+	image = models.ImageField(upload_to="images")
 	url = models.URLField()
 
 

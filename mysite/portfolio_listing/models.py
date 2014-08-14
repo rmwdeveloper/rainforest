@@ -35,7 +35,7 @@ class Concept(models.Model):
             return self.name
 
 def content_file_name(instance, filename):
-    return '/'.join([instance.name, filename])
+    return '/'.join(['project_images/',instance.project.name, filename])
 
 class Project(models.Model):
 	"""
@@ -51,9 +51,14 @@ class Project(models.Model):
 	cms = models.ManyToManyField(ContentManagementSystem, blank=True)
 	databases = models.ManyToManyField(Database, blank=True)
 	concepts = models.ManyToManyField(Concept, blank=True)
-	image = models.ImageField(upload_to=content_file_name)
+	
 	url = models.URLField()
+	def __unicode__(self):
+            return self.name
 
+class ProjectImage(models.Model):
+	project = models.ForeignKey(Project, related_name='images')
+	image = models.ImageField(upload_to=content_file_name)
 
 
 # class ProjectTypeValidation(models.Model):

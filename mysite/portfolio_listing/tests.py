@@ -1,5 +1,5 @@
 from django.test import TestCase
-from models import Project, ProjectTypeValidation, ProjectType
+from models import Project
 import datetime
 import random
 from mysite import settings

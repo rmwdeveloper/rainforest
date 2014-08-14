@@ -4,19 +4,33 @@ from django.db import models
 class Language(models.Model):
 	name = models.CharField(max_length = 100)
 	description = models.TextField()
+
+	def __unicode__(self):
+            return self.name
 	
 class Framework(models.Model):
 	name = models.CharField(max_length = 100)
 	description = models.TextField()
+
+	def __unicode__(self):
+            return self.name
 class ContentManagementSystem(models.Model):
 	name = models.CharField(max_length = 100)
 	description = models.TextField()
+
+	def __unicode__(self):
+            return self.name
 class Database(models.Model):
 	name = models.CharField(max_length = 100)
 	description = models.TextField()
+
+	def __unicode__(self):
+            return self.name
 class Concept(models.Model):
 	name = models.CharField(max_length = 100)
 	description = models.TextField()
+	def __unicode__(self):
+            return self.name
 
 class Project(models.Model):
 	"""
@@ -32,6 +46,8 @@ class Project(models.Model):
 	cms = models.ManyToManyField(ContentManagementSystem)
 	databases = models.ManyToManyField(Database)
 	concepts = models.ManyToManyField(Concept)
+	image = models.ImageField()
+	url = models.URLField()
 
 
 

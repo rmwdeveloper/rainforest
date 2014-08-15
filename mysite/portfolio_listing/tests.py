@@ -1,7 +1,8 @@
-from django.test import TestCase
+from django.test import TestCase , LiveServerTestCase
 from models import Project
 import datetime
 import random
+from selenium import webdriver
 from mysite import settings
 from registration_authentication.tests import HelperFunctions
 
@@ -35,13 +36,9 @@ class TestViewConnections(TestCase):
 		url_string_list = ["/portfolio/", ]
 		for url in url_string_list:
 			self.run_connection_test(url)
-	# def test_views_connections_auth(self):
-	# 	"""
-	# 	Test all connections that require a login
-	# 	"""
-	# 	url_string_list = ["/portfolio-edit/", ]
-	# 	my_admin = HelperFunctions().create_superuser()
-	# 	self.client.login(username='myuser', password='password')
-	# 	for url in url_string_list:
-	# 		self.run_connection_test(url , True)
 
+class TestPortfolioListingPage(LiveServerTestCase):
+
+	def test
+	driver = webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.FIREFOX.copy())
+	driver.get('http://www.google.com')

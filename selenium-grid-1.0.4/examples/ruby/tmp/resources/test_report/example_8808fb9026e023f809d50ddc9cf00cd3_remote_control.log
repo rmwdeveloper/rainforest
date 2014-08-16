@@ -1,0 +1,60 @@
+23:08:11.236 INFO [11] org.openqa.selenium.server.BrowserSessionFactory - creating new remote session
+
+23:08:11.530 INFO [11] org.openqa.selenium.server.BrowserSessionFactory - Allocated session 9733d00359724fd5bc7e313be94c4dff for http://images.google.com:80, launching...
+
+23:08:11.846 INFO [11] org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher - Preparing Firefox profile...
+
+23:08:19.530 INFO [11] org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher - Launching Firefox...
+
+23:08:26.029 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,9733d00359724fd5bc7e313be94c4dff on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:26.068 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: setTimeout[200000, ] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:26.091 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:26.103 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: setContext[Starting example 'Has bridges', ] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:26.159 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:26.186 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: open[/, ] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:26.708 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:26.756 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: getLocation[, ] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:26.794 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK,http://images.google.com/ on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:26.819 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: type[q, Pont Neuf] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:26.884 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:26.896 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: click[btnG, ] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:27.036 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:27.062 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: waitForPageToLoad[200000, ] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:27.952 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:27.968 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: click[link=Advanced Image Search, ] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:28.045 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:28.055 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: waitForPageToLoad[200000, ] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:28.468 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:28.495 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: click[rimgtype4, ] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:28.569 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:28.592 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: click[sf, ] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:28.613 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: OK on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:28.634 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: select[imgc, color] on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:28.671 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Got result: ERROR: Option with label 'color' not found on session 9733d00359724fd5bc7e313be94c4dff
+
+23:08:28.703 INFO [11] org.openqa.selenium.server.SeleniumDriverResourceHandler - Command request: retrieveLastRemoteControlLogs[, ] on session 9733d00359724fd5bc7e313be94c4dff
+

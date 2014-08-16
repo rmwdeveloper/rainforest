@@ -39,6 +39,20 @@ class TestViewConnections(TestCase):
 
 class TestPortfolioListingPage(LiveServerTestCase):
 
-	def test
-	driver = webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.FIREFOX.copy())
-	driver.get('http://www.google.com')
+	def setUp(self):
+		self.driver_one= webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.FIREFOX)
+		self.driver_two= webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.FIREFOX)
+		self.driver_three= webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.FIREFOX)
+
+		
+	def test_one(self):
+		self.driver_one.get('http://www.google.com')
+		self.driver_one.close()
+	def test_two(self):
+		self.driver_two.get('http://www.mozilla.com')
+		self.driver_two.close()
+	def test_three(self):
+		self.driver_three.get('http://www.stackoverflow.com')
+		self.driver_three.close()
+
+

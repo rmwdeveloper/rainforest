@@ -5,7 +5,7 @@ import datetime
 import random
 from mysite import settings
 
-# Create your tests here.
+# # Create your tests here.
 class HelperFunctions: 
 	def __init__(self):
 		self.invalid_registration_vals = {
@@ -93,7 +93,7 @@ class TestViewConnections(TestCase):
 	"""
 	Tests all view connections in registration_authentication
 	"""
-	def run_connection_test(self, url_string):
+	def run_connection(self, url_string):
 		"""
 		Tests the response to a particular url
 		"""
@@ -106,7 +106,7 @@ class TestViewConnections(TestCase):
 		"""
 		url_string_list = ["/", "/tests/", "/register/","/placeholder/", "/error/", "/login/",]
 		for url in url_string_list:
-			self.run_connection_test(url)
+			self.run_connection(url)
 	def test_login_required_view_connections(self):
 		"""
 		Test all connections that require a login
@@ -116,7 +116,7 @@ class TestViewConnections(TestCase):
 		url_string_list = []
 		self.client.login(username = test_user_vals['username'], password = test_user_vals['password1'])
 		for url in url_string_list:
-			self.run_connection_test(url)
+			self.run_connection(url)
 
 #Models Tests
 class TestUserCreateForm(TestCase):

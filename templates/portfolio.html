@@ -17,6 +17,50 @@
 	<div class="row-fluid">
 		<div id="sidebar" class="span2"> 
 			<!-- Form  -->
+			<form action='' id='filter_projects'>
+				{% if languages|length > 0 %}
+				<select multiple id = 'select_languages'>
+					{% for language in languages %}
+						<option value = {{language.name}}> {{language.name}}</option>
+					{% endfor %}
+				</select>
+				{% endif %}
+
+				{% if frameworks|length > 0 %}
+				<select multiple id = 'select_frameworks'>
+					{% for framework in frameworks %}
+						<option value = {{framework.name}}> {{framework.name}}</option>
+					{% endfor %}
+				</select>
+				{% endif %}
+
+
+				{% if cms|length > 0 %}
+				<select multiple id = 'select_cms'>
+					{% for content_management_system in cms %}
+						<option value = {{content_management_system.name}}> {{content_management_system.name}}</option>
+					{% endfor %}
+				</select>
+				{% endif %}
+
+
+				{% if databases|length > 0 %}
+				<select multiple id = 'select_database'>
+					{% for database in databases %}
+						<option value = {{database.name}}> {{database.name}}</option>
+					{% endfor %}
+				</select>
+				{% endif %}
+
+
+				{% if concepts|length > 0 %}
+				<select multiple id = 'select_concept'>
+					{% for concept in concepts %}
+						<option value = {{concept.name}}> {{concept.name}}</option>
+					{% endfor %}
+				</select>
+				{% endif %}
+
 		</div>
 		<div class="span10">
 

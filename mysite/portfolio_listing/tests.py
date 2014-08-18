@@ -11,7 +11,7 @@ class TestViewConnections(TestCase):
 	"""
 	Tests all view connections in portfolio_listing
 	"""
-	def run_connection_test(self, url_string , auth = False):
+	def run_connection(self, url_string , auth = False):
 		"""
 		Tests the response to a particular url. 
 
@@ -33,26 +33,16 @@ class TestViewConnections(TestCase):
 		"""
 		Test all connections that do not require a login 
 		"""
-		url_string_list = ["/portfolio/", ]
+		url_string_list = ["/portfolio/"]
 		for url in url_string_list:
-			self.run_connection_test(url)
+			self.run_connection(url_string = url, auth = False)
 
-class TestPortfolioListingPage(LiveServerTestCase):
-
-	def setUp(self):
-		self.driver_one= webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.FIREFOX)
-		self.driver_two= webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.FIREFOX)
-		self.driver_three= webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.FIREFOX)
-
-		
-	def test_one(self):
-		self.driver_one.get('http://www.google.com')
-		self.driver_one.close()
-	def test_two(self):
-		self.driver_two.get('http://www.mozilla.com')
-		self.driver_two.close()
-	def test_three(self):
-		self.driver_three.get('http://www.stackoverflow.com')
-		self.driver_three.close()
-
+	def testViewHasFilterForm(self):
+		"""
+		Checks to see if portfolio page has at least opening tag for filter form. Form that has multiselects for 
+		each attribute of project. 
+		"""
+		response = self.client.get('/portfolio/') 
+		form_opening_tag = "<form id=\' \' >"
+		self.assertInHTML(form_opening_tag, response.content)
 

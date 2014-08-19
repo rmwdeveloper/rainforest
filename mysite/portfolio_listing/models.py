@@ -1,5 +1,5 @@
 from django.db import models
-
+from ordered_model.models import OrderedModel
 # Create your models here.
 
 
@@ -37,11 +37,11 @@ class Concept(models.Model):
 def content_file_name(instance, filename):
     return '/'.join(['project_images/',instance.project.name, filename])
 
-class Project(models.Model):
+class Project(OrderedModel):
 	"""
 	Main table for a portfolio project.
 	"""
-	project_id = models.AutoField(primary_key=True)
+	
 	name = models.CharField(max_length = 100)
 	description = models.TextField()
 	date_finished = models.DateField()
@@ -51,10 +51,14 @@ class Project(models.Model):
 	cms = models.ManyToManyField(ContentManagementSystem, blank=True)
 	databases = models.ManyToManyField(Database, blank=True)
 	concepts = models.ManyToManyField(Concept, blank=True)
+
 	
 	url = models.URLField()
 	def __unicode__(self):
-            return self.name
+		return self.name
+
+	class Meta(OrderedModel.Meta):
+		pass
 
 class ProjectImage(models.Model):
 	project = models.ForeignKey(Project, related_name='images')

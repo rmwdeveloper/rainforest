@@ -1,11 +1,15 @@
 {% extends "__base.html" %}
-
+{% load modulo%}
 {% block stylesheets %}
 {% load staticfiles %}
+<link href="{{ STATIC_URL }}jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="{{ STATIC_URL }}jquery-ui.structure.css" rel="stylesheet" type="text/css" />
+<link href="{{ STATIC_URL }}jquery-ui.theme.css" rel="stylesheet" type="text/css" />
 
 {% endblock %}
 
 {% block javascript %}
+<script type="text/javascript" src="{{ STATIC_URL }}jquery-ui.js" charset='utf-8'></script>
 
 {% endblock %}
 
@@ -14,56 +18,87 @@
 {% block title %}My Portfolio{% endblock %}
 
 {% block content %}
+
 	<div class="row-fluid">
-		<div id="sidebar" class="span2"> 
+		<div id="sidebar" class="col-md-3"> 
 			<!-- Form  -->
-			<form action='' id='filter_projects'>
+			<form action='' id='filter_projects' role='form'>
+
 				{% if languages|length > 0 %}
-				<select multiple id = 'select_languages'>
-					{% for language in languages %}
-						<option value = {{language.name}}> {{language.name}}</option>
-					{% endfor %}
-				</select>
+					<div class='form-group'>
+						<label for='select_languages'>Languages</label>
+						<select multiple id = 'select_languages' class='form-control'>
+							{% for language in languages %}
+								<option value = {{language.name}}> {{language.name}}</option>
+							{% endfor %}
+						</select>
+					</div>
 				{% endif %}
 
 				{% if frameworks|length > 0 %}
-				<select multiple id = 'select_frameworks'>
-					{% for framework in frameworks %}
-						<option value = {{framework.name}}> {{framework.name}}</option>
-					{% endfor %}
-				</select>
+					<div class='form-group'>
+						<label for='select_frameworks'>Frameworks</label>
+						<select multiple id = 'select_frameworks' class='form-control'>
+							{% for framework in frameworks %}
+								<option value = {{framework.name}}> {{framework.name}}</option>
+							{% endfor %}
+						</select>
+					</div>
 				{% endif %}
 
 
 				{% if cms|length > 0 %}
-				<select multiple id = 'select_cms'>
-					{% for content_management_system in cms %}
-						<option value = {{content_management_system.name}}> {{content_management_system.name}}</option>
-					{% endfor %}
-				</select>
+					<div class='form-group'>
+						<label for='select_cms'>Content Management Systems</label>
+							<select multiple id = 'select_cms' class='form-control'>
+								{% for content_management_system in cms %}
+									<option value = {{content_management_system.name}}> {{content_management_system.name}}</option>
+								{% endfor %}
+							</select>
+					</div>
 				{% endif %}
 
 
 				{% if databases|length > 0 %}
-				<select multiple id = 'select_database'>
-					{% for database in databases %}
-						<option value = {{database.name}}> {{database.name}}</option>
-					{% endfor %}
-				</select>
+					<div class='form-group'>
+						<label for='select_database'>Databases</label>
+						<select multiple id = 'select_database' class='form-control'>
+							{% for database in databases %}
+								<option value = {{database.name}}> {{database.name}}</option>
+							{% endfor %}
+						</select>
+					</div>
 				{% endif %}
 
 
 				{% if concepts|length > 0 %}
-				<select multiple id = 'select_concept'>
-					{% for concept in concepts %}
-						<option value = {{concept.name}}> {{concept.name}}</option>
-					{% endfor %}
-				</select>
+					<div class='form-group'>
+						<label for='select_concept'>Concepts</label>
+						<select multiple id = 'select_concept' class='form-control'>
+							{% for concept in concepts %}
+								<option value = {{concept.name}}> {{concept.name}}</option>
+							{% endfor %}
+						</select>
+					</div>
 				{% endif %}
 
-		</div>
-		<div class="span10">
 
+				<button type='submit' class='btn btn-default'>Submit</button>
+			</form>
+		</div>
+		<div class="col-md-9">
+			{% for project in projects %}
+
+				{% if project.order|modulo:3 == 0 %}
+					<div class='row'>
+				{% endif %}
+				<div class="col-md-3">
+					{{project.name}}
+				</div>
+				{% if project.order|modulo:3 == 2 %}
+					</div>
+				{% endif %}
+				{% endfor %}
 		</div>
 	</div>
 {% endblock %}

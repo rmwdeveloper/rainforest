@@ -38,6 +38,7 @@ def construct_project_attribute_dictionary():
 	return attribute_dictionary
 
 
+
 def portfolio(request):
 	
 	projects = Project.objects.all()

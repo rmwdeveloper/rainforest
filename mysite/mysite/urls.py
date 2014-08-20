@@ -4,6 +4,8 @@ from registration_authentication import views as registration_authentication_vie
 from portfolio_listing import views as portfolio_listing_views
 from storefront import views as storefront_views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 admin.autodiscover()
@@ -21,5 +23,6 @@ urlpatterns = patterns('',
     url(r'^login/$', registration_authentication_views.user_login, name='login'),
     url(r'^logout/$', registration_authentication_views.user_logout, name='logout'),
     url(r'^portfolio/$', portfolio_listing_views.portfolio , name= 'portfolio_main'),
-)
-urlpatterns += staticfiles_urlpatterns()
+) + static(settings.MEDIA_URL,
+document_root = settings.MEDIA_ROOT)
+urlpatterns += staticfiles_urlpatterns() 

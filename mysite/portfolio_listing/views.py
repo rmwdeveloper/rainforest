@@ -1,6 +1,6 @@
 from django.shortcuts import render , render_to_response, redirect
 from django.template import RequestContext
-from models import Project
+from models import Project , ProjectImage
 
 def construct_project_attribute_dictionary():
 	"""
@@ -37,13 +37,32 @@ def construct_project_attribute_dictionary():
 				attribute_dictionary['concepts'].append(concept)
 	return attribute_dictionary
 
+def construct_project_image_dict():
+	"""
+	Constructs a dictionary where the keys are project id's and the values are
+	arrays of ProjectImage image's.
+	"""
+	project_images = ProjectImage.objects.all()
+	project_image_dict = {}
+
+	for project_image in project_images:
+		if project_image.project_id in project_image_dict:
+			project_image_dict[project_image.project_id].append(project_image.image)
+		else:
+			project_image_dict[project_image.project_id] = []
+			project_image_dict[project_image.project_id].append(project_image.image)
+
+	return project_image_dict
 
 
 def portfolio(request):
 	
 	projects = Project.objects.all()
+	project_images = construct_project_image_dict()
+
 	attributes = construct_project_attribute_dictionary()
-	return render_to_response('portfolio.html',{'projects':projects, 
+	return render_to_response('portfolio.html',{'projects':projects,
+												'project_images':project_images, 
 												'languages':attributes['languages'],
 												'frameworks':attributes['frameworks'],
 												'cms': attributes['cms'],

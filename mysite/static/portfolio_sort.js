@@ -1,5 +1,9 @@
 $(document).ready(function(){ 
-			$( "#sortable" ).sortable();
+			$( "#sortable" ).sortable({
+									grid: [20,10]
+									});
+
+
 			$( "#sortable" ).disableSelection();
 })
 			

@@ -1,5 +1,6 @@
 from django.db import models
 from ordered_model.models import OrderedModel
+from stdimage import StdImageField
 # Create your models here.
 
 
@@ -35,7 +36,7 @@ class Concept(models.Model):
             return self.name
 
 def content_file_name(instance, filename):
-    return '/'.join(['project_images/',instance.project.name, filename])
+    return '/'.join(['project_images',instance.project.name, filename])
 
 class Project(OrderedModel):
 	"""
@@ -62,7 +63,7 @@ class Project(OrderedModel):
 
 class ProjectImage(models.Model):
 	project = models.ForeignKey(Project, related_name='images')
-	image = models.ImageField(upload_to=content_file_name)
+	image = StdImageField(upload_to=content_file_name, blank = True)
 
 
 # class ProjectTypeValidation(models.Model):

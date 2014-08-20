@@ -88,9 +88,18 @@
 		</div>
 		
 		<div class='col-md-9'>
+			
 			<ul id='sortable'>
 				{% for project in projects %}
-					 <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>{{project.name}}</li>	
+					<li class="ui-state-default">
+						{% if project.id in project_images.keys %}
+							{% for key , value in project_images.items %}
+								{% for image in value %}
+									<img src='..{{MEDIA_URL}}{{image}}'>
+								{%endfor%}
+							{% endfor %}
+						{% endif %}
+					</li>	
 				{% endfor %}
 			</ul>
 		</div>

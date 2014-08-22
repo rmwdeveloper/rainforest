@@ -6,11 +6,14 @@
 <link href="{{ STATIC_URL }}jquery-ui.structure.css" rel="stylesheet" type="text/css" />
 <link href="{{ STATIC_URL }}jquery-ui.theme.css" rel="stylesheet" type="text/css" />
 <link href="{{ STATIC_URL }}portfolio_sort.css" rel="stylesheet" type="text/css" />
+
 {% endblock %}
 
 {% block javascript %}
 <script type="text/javascript" src="{{ STATIC_URL }}jquery-ui.js" charset='utf-8'></script>
 <script type="text/javascript" src="{{ STATIC_URL }}portfolio_sort.js" charset='utf-8'></script>
+<script type="text/javascript" src="{{ STATIC_URL }}galleria-1.4.2.min.js" charset='utf-8'></script>
+<script type="text/javascript" src="{{ STATIC_URL }}portfolio-dropdown.js" charset='utf-8'></script>
 {% endblock %}
 
 {% load forms_extras %}
@@ -91,17 +94,41 @@
 			
 			<ul id='sortable'>
 				{% for project in projects %}
-					<li class="ui-state-default">
+					<li class='ui-state-default'>
 						{% if project.id in project_images.keys %}
-							{% for key , value in project_images.items %}
-								{% for image in value %}
-									<img src='..{{MEDIA_URL}}{{image}}'>
-								{%endfor%}
-							{% endfor %}
+							<div class='galleria'>
+								{% for key , value in project_images.items %}
+									{% if key == project.id %}
+										{% for image in value %}
+											
+												
+											<img class='img-responsive portfolio-img' src='..{{MEDIA_URL}}{{image}}' >
+
+											
+									
+										{%endfor%}
+									{% endif %}
+								{% endfor %}
+							</div>
 						{% endif %}
+
+						<div class='project-details' id='project-details-{{project.id}}' style='display:none;'>
+
+							{{project.name}}</br>
+							{{project.description}}</br>
+							{{project.url}}</br>
+						</div>
+
+						<button type='button' class = 'btn btn-default btn-lg project-dropdown' id='project-dropdown-{{project.id}}'>
+							<span class = 'glyphicon glyphicon-chevron-down' </span>
+						</button>
 					</li>	
 				{% endfor %}
 			</ul>
+			<script>
+				Galleria.loadTheme('{{STATIC_URL}}themes/classic/galleria.classic.min.js');
+				Galleria.run('.galleria');
+			</script>
 		</div>
 	</div>
 {% endblock %}

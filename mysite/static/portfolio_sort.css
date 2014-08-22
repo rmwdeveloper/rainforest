@@ -1,13 +1,34 @@
+/* line 2, portfolio_sort.scss */
 #sortable {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 100%; }
-  #sortable li {
-    margin: 3px 20px 20px 0;
-    padding: 1px;
-    float: left;
-    width: 47%;
-    height: 205px; }
+  width: 100%;
+}
+/* line 8, portfolio_sort.scss */
+#sortable li {
+  margin: 3px 20px 20px 0;
+  padding: 1px;
+  float: left;
+  width: 48%;
+  height: 300px;
+}
 
-/*# sourceMappingURL=portfolio_sort.css.map */
+/* line 61, portfolio_sort.scss */
+button.project-dropdown {
+  width: 100%;
+}
+
+/* line 64, portfolio_sort.scss */
+div.project-details {
+  border-radius: 6px;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+}
+
+/* line 69, portfolio_sort.scss */
+.galleria {
+  width: 515px;
+  height: 300px;
+  background: #000;
+}

@@ -3,7 +3,7 @@ $(document).ready(function(){
 									grid: [20,10]
 									});
 
-
 			$( "#sortable" ).disableSelection();
+
 })
 			

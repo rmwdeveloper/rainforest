@@ -10,7 +10,14 @@ class Language(models.Model):
 
 	def __unicode__(self):
             return self.name
-	
+
+class CSSPreprocessor(models.Model):
+	name = models.CharField(max_length = 100)
+	description = models.TextField()
+
+	def __unicode__(self):
+            return self.name
+
 class Framework(models.Model):
 	name = models.CharField(max_length = 100)
 	description = models.TextField()
@@ -52,6 +59,7 @@ class Project(OrderedModel):
 	cms = models.ManyToManyField(ContentManagementSystem, blank=True)
 	databases = models.ManyToManyField(Database, blank=True)
 	concepts = models.ManyToManyField(Concept, blank=True)
+	css_preprocessors = models.ManyToManyField(CSSPreprocessor, blank=True)
 
 	
 	url = models.URLField()

@@ -1,4 +1,15 @@
-{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			{% block title %}{% endblock %}
+		</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/base-min.css"/>
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/menus-min.css"/> -->
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/forms-min.css">
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/buttons-min.css">
+         {% load staticfiles %}
 <link href="{{ STATIC_URL }}base.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="{{ STATIC_URL }}jquery-2.1.0.js" charset='utf-8'>
 </script>
@@ -11,18 +22,6 @@
 <script type="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" charset='utf-8'>
 </script>
 <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
-<!DOCTYPE html>
-
-<html>
-	<head>
-		<title>
-			{% block title %}{% endblock %}
-		</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/base-min.css"/>
-            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/menus-min.css"/> -->
-            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/forms-min.css">
-            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/buttons-min.css">
 		{% block stylesheets %}
 			
         {% endblock %}

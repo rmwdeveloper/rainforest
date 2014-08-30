@@ -11,6 +11,9 @@
 
 /*global window, jQuery, Galleria */
 
+var trace = printStackTrace();
+console.log(trace.join('\n\n'));
+
 Galleria.addTheme({
     name: 'classic',
     author: 'Galleria',

@@ -5,6 +5,7 @@ import random
 from selenium import webdriver
 from mysite import settings
 from registration_authentication.tests import HelperFunctions
+from mock import MagicMock
 
 # Create your tests here.
 class TestViewConnections(TestCase):
@@ -37,12 +38,18 @@ class TestViewConnections(TestCase):
 		for url in url_string_list:
 			self.run_connection(url_string = url, auth = False)
 
-	def testViewHasFilterForm(self):
-		"""
-		Checks to see if portfolio page has at least opening tag for filter form. Form that has multiselects for 
-		each attribute of project. 
-		"""
-		response = self.client.get('/portfolio/') 
-		form_opening_tag = "<form id=\' \' >"
-		self.assertInHTML(form_opening_tag, response.content)
+	# def testViewHasFilterForm(self):
+	# 	"""
+	# 	Checks to see if portfolio page has at least opening tag for filter form. Form that has multiselects for 
+	# 	each attribute of project. 
+	# 	"""
+	# 	response = self.client.get('/portfolio/') 
+	# 	form_opening_tag = "<form id=\' \' >"
+	# 	self.assertInHTML(form_opening_tag, response.content)
 
+class TestConstructProjectAttributeDictionary(TestCase):
+	"""
+	Testing construct_project_attribute_dictionary in views.py
+	"""
+	def setUp(self):
+		pass

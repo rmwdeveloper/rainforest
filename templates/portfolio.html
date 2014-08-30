@@ -10,9 +10,11 @@
 {% endblock %}
 
 {% block javascript %}
+<script type="text/javascript" src="{{ STATIC_URL}}stacktrace.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}jquery-ui.js" charset='utf-8'></script>
 <script type="text/javascript" src="{{ STATIC_URL }}portfolio_sort.js" charset='utf-8'></script>
-<script type="text/javascript" src="{{ STATIC_URL }}galleria-1.4.2.min.js" charset='utf-8'></script>
+<script type="text/javascript" src="{{ STATIC_URL }}portfolio_filter.js" charset='utf-8'></script>
+<script type="text/javascript" src="{{ STATIC_URL }}galleria-1.4.2.js" charset='utf-8'></script>
 <script type="text/javascript" src="{{ STATIC_URL }}portfolio-dropdown.js" charset='utf-8'></script>
 {% endblock %}
 
@@ -25,12 +27,12 @@
 	<div class="row-fluid">
 		<div id="sidebar" class="col-md-3"> 
 			<!-- Form  -->
-			<form action='' id='filter_projects' role='form'>
+			<form action ='' method = 'GET' id='filter_projects' role='form'>
 
 				{% if languages|length > 0 %}
 					<div class='form-group'>
 						<label for='select_languages'>Languages</label>
-						<select multiple id = 'select_languages' class='form-control'>
+						<select multiple id = 'select_languages' class='form-control' type='checkbox' name='language'>
 							{% for language in languages %}
 								<option value = {{language.name}}> {{language.name}}</option>
 							{% endfor %}
@@ -41,7 +43,7 @@
 				{% if frameworks|length > 0 %}
 					<div class='form-group'>
 						<label for='select_frameworks'>Frameworks</label>
-						<select multiple id = 'select_frameworks' class='form-control'>
+						<select multiple id = 'select_frameworks' class='form-control' name='frameworks'>
 							{% for framework in frameworks %}
 								<option value = {{framework.name}}> {{framework.name}}</option>
 							{% endfor %}
@@ -53,7 +55,7 @@
 				{% if cms|length > 0 %}
 					<div class='form-group'>
 						<label for='select_cms'>Content Management Systems</label>
-							<select multiple id = 'select_cms' class='form-control'>
+							<select multiple id = 'select_cms' class='form-control' name='cms'>
 								{% for content_management_system in cms %}
 									<option value = {{content_management_system.name}}> {{content_management_system.name}}</option>
 								{% endfor %}
@@ -65,7 +67,7 @@
 				{% if databases|length > 0 %}
 					<div class='form-group'>
 						<label for='select_database'>Databases</label>
-						<select multiple id = 'select_database' class='form-control'>
+						<select multiple id = 'select_database' class='form-control' name='databases'>
 							{% for database in databases %}
 								<option value = {{database.name}}> {{database.name}}</option>
 							{% endfor %}
@@ -77,7 +79,7 @@
 				{% if concepts|length > 0 %}
 					<div class='form-group'>
 						<label for='select_concept'>Concepts</label>
-						<select multiple id = 'select_concept' class='form-control'>
+						<select multiple id = 'select_concept' class='form-control' name='concepts'>
 							{% for concept in concepts %}
 								<option value = {{concept.name}}> {{concept.name}}</option>
 							{% endfor %}
@@ -94,7 +96,7 @@
 			
 			<ul id='sortable'>
 				{% for project in projects %}
-					<li class='ui-state-default'>
+					<li class='ui-state-default' id = 'project_{{project.id}}'>
 						{% if project.id in project_images.keys %}
 							<div class='galleria'>
 								{% for key , value in project_images.items %}
@@ -126,7 +128,7 @@
 				{% endfor %}
 			</ul>
 			<script>
-				Galleria.loadTheme('{{STATIC_URL}}themes/classic/galleria.classic.min.js');
+				Galleria.loadTheme('{{STATIC_URL}}themes/classic/galleria.classic.js');
 				Galleria.run('.galleria');
 			</script>
 		</div>

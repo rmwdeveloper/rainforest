@@ -1,11 +1,14 @@
 from django.shortcuts import render , render_to_response, redirect
 from django.template import RequestContext
+from django.http import HttpResponse
 from models import Project , ProjectImage
+import json
 
 def construct_project_attribute_dictionary():
 	"""
 	Constructs a dictionary where the keys are project attribute type (frameworks..languages etc.)
-	and value is an array of the attributes. 
+	and value is an array of the attributes. This is so only those attributes that are part of actual 
+	portfolio projects will  be <select> options in the template. 
 	"""
 	attribute_dictionary = { 'languages': [], 
 							'frameworks': [],
@@ -54,6 +57,36 @@ def construct_project_image_dict():
 
 	return project_image_dict
 
+def construct_projects_to_be_hidden_array(form_data):
+	"""
+	Constructs an array of projects to be hidden after a get request.
+
+	Form data 
+	"""
+
+	projects = Project.objects.all()
+	project_attribute_dict = {}
+	for project in projects:
+		project_attribute_dict[project.id] = []
+
+		for language in project.languages.all():
+				project_attribute_dict[project.id].append(language)
+
+		for framework in project.frameworks.all():
+				project_attribute_dict[project.id].append(framework)
+
+		for content_management_system in project.cms.all():
+				project_attribute_dict[project.id].append(content_management_system)
+
+		for database in project.databases.all():
+				project_attribute_dict[project.id].append(database)
+
+		for concept in project.concepts.all():
+				project_attribute_dict[project.id].append(concept)
+	return project_attribute_dict
+
+
+
 
 def portfolio(request):
 	
@@ -61,6 +94,18 @@ def portfolio(request):
 	project_images = construct_project_image_dict()
 
 	attributes = construct_project_attribute_dictionary()
+
+	if 'form_inputs' in request.GET:
+
+		jsonDecoder = json.JSONDecoder()
+		jsonEncoder = json.JSONEncoder()
+		form_input_array = jsonDecoder.decode(request.GET['form_inputs'])
+
+		# projects_to_be_hidden = jsonEncoder.encode(construct_projects_to_be_hidden_array(form_input_array))
+		# projects_to_be_hidden = construct_projects_to_be_hidden_array(form_input_array)
+		return HttpResponse(form_input_array)
+		# return render_to_response('portfolio.html', context_instance = RequestContext(request))
+
 	return render_to_response('portfolio.html',{'projects':projects,
 												'project_images':project_images, 
 												'languages':attributes['languages'],

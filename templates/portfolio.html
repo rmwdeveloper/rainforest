@@ -99,9 +99,9 @@
 		
 		<div class='col-md-9'>
 			
-			<ul id='sortable'>
+			<ul id='sortable' class='project_list'>
 				{% for project in projects %}
-					<li class='ui-state-default' id = 'project_{{project.id}}'>
+					<li class='ui-state-default' id = '{{project.id}}'>
 						<div class='fancybox-container'>
 							{% if project.id in project_images.keys %}
 								

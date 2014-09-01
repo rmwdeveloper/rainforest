@@ -14,20 +14,22 @@ $(document).ready(function() {
 		$.ajax({
 			url : '',
 			type: 'get',
-			// data: form_inputs_object,
 			data: {
 					
 					form_inputs: JSON.stringify(form_inputs),
 				},
 			dataType: 'JSON',
 			success: function(data) {
-				console.log(data[0]);
+				$('#sortable li').show();
+				if (data.length > 0){
+					$('#sortable li').hide();
+
+					for(var i=0; i<data.length ; i++){
+						$('#'+data[i]).show();
+					}
+				}
 
 			}
 		});
-
-		// request.done(function (response, textStatus, jqXHR) {
-		// 	console.log(jqXHR);
-		// })
 	});
 });

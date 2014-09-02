@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$('#select_languages').chosen();
+	$('.chosen-select').chosen();
 	$('#filter_projects button').click(function(event){
 		event.preventDefault();
 		var form_inputs = new Array();

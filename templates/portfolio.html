@@ -40,7 +40,7 @@
 				{% if languages|length > 0 %}
 					<div class='form-group'>
 						<label for='select_languages'>Languages</label>
-						<select multiple id = 'select_languages' class='form-control' type='checkbox' name='language'>
+						<select multiple= id = 'select_languages' class='form-control chosen-select' type='checkbox' name='language' data-placeholder='Select some languages'>
 							{% for language in languages %}
 								<option value = {{language.name}}> {{language.name}}</option>
 							{% endfor %}
@@ -51,7 +51,7 @@
 				{% if frameworks|length > 0 %}
 					<div class='form-group'>
 						<label for='select_frameworks'>Frameworks</label>
-						<select multiple id = 'select_frameworks' class='form-control' name='frameworks'>
+						<select multiple id = 'select_frameworks' class='form-control chosen-select' name='frameworks' data-placeholder='Select some frameworks'>
 							{% for framework in frameworks %}
 								<option value = {{framework.name}}> {{framework.name}}</option>
 							{% endfor %}
@@ -63,7 +63,7 @@
 				{% if cms|length > 0 %}
 					<div class='form-group'>
 						<label for='select_cms'>Content Management Systems</label>
-							<select multiple id = 'select_cms' class='form-control' name='cms'>
+							<select multiple id = 'select_cms' class='form-control chosen-select' name='cms' data-placeholder='Select a content management system'>
 								{% for content_management_system in cms %}
 									<option value = {{content_management_system.name}}> {{content_management_system.name}}</option>
 								{% endfor %}
@@ -75,7 +75,7 @@
 				{% if databases|length > 0 %}
 					<div class='form-group'>
 						<label for='select_database'>Databases</label>
-						<select multiple id = 'select_database' class='form-control' name='databases'>
+						<select multiple id = 'select_database' class='form-control chosen-select' name='databases' data-placeholder='Select a database'>
 							{% for database in databases %}
 								<option value = {{database.name}}> {{database.name}}</option>
 							{% endfor %}
@@ -87,7 +87,7 @@
 				{% if concepts|length > 0 %}
 					<div class='form-group'>
 						<label for='select_concept'>Concepts</label>
-						<select multiple id = 'select_concept' class='form-control' name='concepts'>
+						<select multiple id = 'select_concept' class='form-control chosen-select' name='concepts' data-placeholder='Select some concepts'>
 							{% for concept in concepts %}
 								<option value = {{concept.name}}> {{concept.name}}</option>
 							{% endfor %}

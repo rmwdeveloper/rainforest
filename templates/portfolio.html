@@ -101,43 +101,50 @@
 		</div>
 		
 		<div class='col-md-9'>
-			
-			<ul id='sortable' class='project_list'>
-				{% for project in projects %}
-					<li class='ui-state-default' id = '{{project.id}}'>
-						<div class='fancybox-container'>
-							{% if project.id in project_images.keys %}
-								
-									{% for key , value in project_images.items %}
-										{% if key == project.id %}
-											{% for image in value %}
-												
-												<a class='fancybox' rel='group{{project.id}}' href='..{{MEDIA_URL}}{{image}}'>
-												<img  src='..{{MEDIA_URL}}{{image}}' alt=''/>
-												</a>
-
-												
+			<div class='container-fluid'>
+				<ul id='sortable' class='project_list'>
+					{% for project in projects %}
+						{% if forloop.counter|modulo:2 == 1 %}
+							<div class='row-fluid'>
+						{% endif %}
+						<div class='col-md-6'>
+							<li class='ui-state-default' id = '{{project.id}}'>
+								<div class='fancybox-container'>
+									{% if project.id in project_images.keys %}
 										
-											{%endfor%}
-										{% endif %}
-									{% endfor %}
-								<!-- </div> -->
-							{% endif %}
-						</div>
-						<div class='project-details' id='project-details-{{project.id}}' style='display:none;'>
+											{% for key , value in project_images.items %}
+												{% if key == project.id %}
+													{% for image in value %}
+							
+														<a class='fancybox' rel='group{{project.id}}' href='..{{MEDIA_URL}}{{image}}'>
+														<img  src='..{{MEDIA_URL}}{{image}}' alt=''/>
+														</a>
 
-							{{project.name}}<br>
-							{{project.description}}<br>
-							{{project.url}}<br>
-						</div>
 
-						<button type='button' class = 'btn btn-default btn-lg project-dropdown' id='project-dropdown-{{project.id}}'>
-							<span class = 'glyphicon glyphicon-chevron-down'> </span>
-						</button>
-					</li>	
-				{% endfor %}
-			</ul>
-			
+													{%endfor%}
+												{% endif %}
+											{% endfor %}
+										<!-- </div> -->
+									{% endif %}
+								</div>
+								<div class='project-details' id='project-details-{{project.id}}' style='display:none;'>
+
+									{{project.name}}<br>
+									{{project.description}}<br>
+									{{project.url}}<br>
+								</div>
+
+								<button type='button' class = 'btn btn-default btn-lg project-dropdown' id='project-dropdown-{{project.id}}'>
+									<span class = 'glyphicon glyphicon-chevron-down'> </span>
+								</button>
+							</li>
+						</div>
+						{% if forloop.counter|modulo:2 == 0 %}
+							</div>
+						{% endif %}	
+					{% endfor %}
+				</ul>
+			</div>
 		</div>
 	</div>
 {% endblock %}

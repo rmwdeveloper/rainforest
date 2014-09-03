@@ -6,44 +6,77 @@
 /* line 11, portfolio_sort.scss */
 .project-container {
   height: 300px;
-  margin-bottom: 20px;
 }
-/* line 15, portfolio_sort.scss */
+@media only screen and (min-width: 992px) {
+  /* line 11, portfolio_sort.scss */
+  .project-container {
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 11, portfolio_sort.scss */
+  .project-container {
+    height: auto;
+  }
+}
+/* line 21, portfolio_sort.scss */
 .project-container .project-details {
-  height: 300px;
   font-family: 'Montserrat' , sans-serif;
   font-weight: normal;
   text-align: center;
+  border-bottom: 1px solid #f2f2f2;
 }
-/* line 20, portfolio_sort.scss */
+@media only screen and (min-width: 768px) {
+  /* line 21, portfolio_sort.scss */
+  .project-container .project-details {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 21, portfolio_sort.scss */
+  .project-container .project-details {
+    height: 300px;
+  }
+}
+/* line 38, portfolio_sort.scss */
 .project-container .project-details .project-name {
   font-size: 200%;
   line-height: 1.20;
   text-transform: uppercase;
 }
-/* line 27, portfolio_sort.scss */
+/* line 45, portfolio_sort.scss */
 .project-container .project-details .project-description {
   font-size: 100%;
   line-height: 1.20;
   color: #AAD9FF;
 }
-/* line 32, portfolio_sort.scss */
+/* line 51, portfolio_sort.scss */
 .project-container .project-details .font-awesome {
   letter-spacing: 5px;
   color: #8cb4b4;
 }
+/* line 59, portfolio_sort.scss */
+.project-container .fancybox-container {
+  border-bottom: 1px solid #f2f2f2;
+}
 
-/* line 42, portfolio_sort.scss */
+/* line 74, portfolio_sort.scss */
+.fancybox-close {
+  top: 0 !important;
+  right: 0 !important;
+}
+
+/* line 78, portfolio_sort.scss */
 button.project-dropdown {
   width: 100%;
 }
 
-/* line 45, portfolio_sort.scss */
+/* line 81, portfolio_sort.scss */
 div.project-details {
   border-radius: 6px;
 }
 
-/* line 50, portfolio_sort.scss */
+/* line 86, portfolio_sort.scss */
 .galleria {
   width: 515px;
   height: 300px;

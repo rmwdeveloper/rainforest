@@ -11,12 +11,30 @@ $screen-small: 'only screen and (max-width:767px)';
 .project-container{
 
 	height: 300px;
-	margin-bottom: 20px;
+
+	@media #{$screen-medium}{
+			margin-bottom: 60px;
+		}
+	@media #{$screen-tablet}{
+		height:auto;
+	}
 	.project-details{
-		height: 300px;
+
+		
+		
+
+		@media #{$screen-tablet}{
+			height:auto;
+		}
+		@media #{$screen-medium}{
+			height: 300px;
+		}
+
 		font-family: 'Montserrat' , sans-serif;
 		font-weight: normal; 
 		text-align: center;
+		border-bottom: 1px solid rgb(242,242,242);
+
 		.project-name{
 			
 			font-size: 200%;
@@ -28,6 +46,7 @@ $screen-small: 'only screen and (max-width:767px)';
 			font-size: 100%;
 			line-height: 1.20;
 			color: #AAD9FF;
+
 		}
 		.font-awesome{
 			letter-spacing: 5px;
@@ -36,9 +55,26 @@ $screen-small: 'only screen and (max-width:767px)';
 		
 
 	}
+
+	.fancybox-container{
+		border-bottom: 1px solid rgb(242,242,242);
+
+		// img {
+		// 	@media #{$screen-tablet} {
+		// 		width: auto;
+		// 	}
+		// 	@media #{$screen-medium}{
+		// 		width: 90%;
+		// 	}
+		// }
+	}
 }
 
 
+.fancybox-close{
+	top: 0 !important;
+	right: 0 !important;
+}
 button.project-dropdown {
 	width: 100%;
 }

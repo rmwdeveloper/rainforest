@@ -1,36 +1,49 @@
-/* line 6, portfolio_sort.scss */
-#sortable {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+/* line 7, portfolio_sort.scss */
+#main .container-fluid {
+  padding-top: 10px;
 }
 
-/* line 37, portfolio_sort.scss */
+/* line 11, portfolio_sort.scss */
+.project-container {
+  height: 300px;
+  margin-bottom: 20px;
+}
+/* line 15, portfolio_sort.scss */
 .project-container .project-details {
   height: 300px;
-}
-/* line 39, portfolio_sort.scss */
-.project-container .project-details .project-name {
   font-family: 'Montserrat' , sans-serif;
-  font-size: 200%;
   font-weight: normal;
+  text-align: center;
+}
+/* line 20, portfolio_sort.scss */
+.project-container .project-details .project-name {
+  font-size: 200%;
   line-height: 1.20;
   text-transform: uppercase;
 }
+/* line 27, portfolio_sort.scss */
+.project-container .project-details .project-description {
+  font-size: 100%;
+  line-height: 1.20;
+  color: #AAD9FF;
+}
+/* line 32, portfolio_sort.scss */
+.project-container .project-details .font-awesome {
+  letter-spacing: 5px;
+  color: #8cb4b4;
+}
 
-/* line 93, portfolio_sort.scss */
+/* line 42, portfolio_sort.scss */
 button.project-dropdown {
   width: 100%;
 }
 
-/* line 96, portfolio_sort.scss */
+/* line 45, portfolio_sort.scss */
 div.project-details {
   border-radius: 6px;
-  padding: 10px 16px;
 }
 
-/* line 101, portfolio_sort.scss */
+/* line 50, portfolio_sort.scss */
 .galleria {
   width: 515px;
   height: 300px;

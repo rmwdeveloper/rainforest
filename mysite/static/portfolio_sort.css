@@ -16,10 +16,18 @@
 @media only screen and (min-width: 768px) {
   /* line 11, portfolio_sort.scss */
   .project-container {
+    margin-bottom: 60px;
     height: auto;
   }
 }
-/* line 21, portfolio_sort.scss */
+@media only screen and (max-width: 767px) {
+  /* line 11, portfolio_sort.scss */
+  .project-container {
+    margin-bottom: 60px;
+    height: auto;
+  }
+}
+/* line 26, portfolio_sort.scss */
 .project-container .project-details {
   font-family: 'Montserrat' , sans-serif;
   font-weight: normal;
@@ -27,56 +35,56 @@
   border-bottom: 1px solid #f2f2f2;
 }
 @media only screen and (min-width: 768px) {
-  /* line 21, portfolio_sort.scss */
+  /* line 26, portfolio_sort.scss */
   .project-container .project-details {
     height: auto;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 21, portfolio_sort.scss */
+  /* line 26, portfolio_sort.scss */
   .project-container .project-details {
     height: 300px;
   }
 }
-/* line 38, portfolio_sort.scss */
+/* line 43, portfolio_sort.scss */
 .project-container .project-details .project-name {
   font-size: 200%;
   line-height: 1.20;
   text-transform: uppercase;
 }
-/* line 45, portfolio_sort.scss */
+/* line 50, portfolio_sort.scss */
 .project-container .project-details .project-description {
   font-size: 100%;
   line-height: 1.20;
   color: #AAD9FF;
 }
-/* line 51, portfolio_sort.scss */
+/* line 56, portfolio_sort.scss */
 .project-container .project-details .font-awesome {
   letter-spacing: 5px;
   color: #8cb4b4;
 }
-/* line 59, portfolio_sort.scss */
+/* line 64, portfolio_sort.scss */
 .project-container .fancybox-container {
   border-bottom: 1px solid #f2f2f2;
 }
 
-/* line 74, portfolio_sort.scss */
+/* line 79, portfolio_sort.scss */
 .fancybox-close {
   top: 0 !important;
   right: 0 !important;
 }
 
-/* line 78, portfolio_sort.scss */
+/* line 83, portfolio_sort.scss */
 button.project-dropdown {
   width: 100%;
 }
 
-/* line 81, portfolio_sort.scss */
+/* line 86, portfolio_sort.scss */
 div.project-details {
   border-radius: 6px;
 }
 
-/* line 86, portfolio_sort.scss */
+/* line 91, portfolio_sort.scss */
 .galleria {
   width: 515px;
   height: 300px;

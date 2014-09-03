@@ -16,7 +16,12 @@ $screen-small: 'only screen and (max-width:767px)';
 			margin-bottom: 60px;
 		}
 	@media #{$screen-tablet}{
+		margin-bottom: 60px;
 		height:auto;
+	}
+	@media #{$screen-small}{
+		margin-bottom: 60px;
+		height: auto;
 	}
 	.project-details{
 

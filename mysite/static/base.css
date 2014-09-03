@@ -13,13 +13,19 @@ body {
 		margin: 0 auto;
 		/*background-color:rgb(102,255,102);*/
 	}
+header{
+	width: 100%;
+	z-index: 2;
+	background: none repeat scroll 0 0 white;
+	position: fixed;
+}
 #navbar{
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 		font-weight: bold;
 		display: block;
-		border-bottom: 1px solid rgb(240,240,240);
+		/*border-bottom: 1px solid rgb(240,240,240);*/
 }
 
 ul > li > ul {
@@ -127,11 +133,9 @@ form#login_form > input[type='text'] , input[type='password']{
 	padding: 5px;
 }
 
-/*#main{
-	background-color: rgba(102,255,102,.80);
-	height: 100px;
-	width:100%;
-}*/
+#main{
+	padding-top: 60px;
+}
 input[type="search"]:focus{
 	border-color: #6EA2DE;
     box-shadow: 0px 0px 2px #6EA2DE;

@@ -1,32 +1,36 @@
-/* line 2, portfolio_sort.scss */
+/* line 6, portfolio_sort.scss */
 #sortable {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 8, portfolio_sort.scss */
-#sortable li {
-  margin: 3px 20px 20px 0;
-  padding: 1px;
-  float: left;
-  width: 100%;
+
+/* line 37, portfolio_sort.scss */
+.project-container .project-details {
   height: 300px;
 }
+/* line 39, portfolio_sort.scss */
+.project-container .project-details .project-name {
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 200%;
+  font-weight: normal;
+  line-height: 1.20;
+  text-transform: uppercase;
+}
 
-/* line 20, portfolio_sort.scss */
+/* line 93, portfolio_sort.scss */
 button.project-dropdown {
   width: 100%;
 }
 
-/* line 23, portfolio_sort.scss */
+/* line 96, portfolio_sort.scss */
 div.project-details {
   border-radius: 6px;
   padding: 10px 16px;
-  border: 1px solid #ccc;
 }
 
-/* line 28, portfolio_sort.scss */
+/* line 101, portfolio_sort.scss */
 .galleria {
   width: 515px;
   height: 300px;

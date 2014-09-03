@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-	$('.chosen-select').chosen();
+	$('.chosen-select').chosen({
+		width: '100%',
+	});
 	$('#filter_projects button').click(function(event){
 		event.preventDefault();
 		var form_inputs = new Array();

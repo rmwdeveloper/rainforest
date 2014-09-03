@@ -2,6 +2,7 @@
 {% load modulo%}
 {% block stylesheets %}
 {% load staticfiles %}
+<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 <link href="{{ STATIC_URL }}jquery-ui.css" rel="stylesheet" type="text/css" />
 <link href="{{ STATIC_URL }}jquery-ui.structure.css" rel="stylesheet" type="text/css" />
 <link href="{{ STATIC_URL }}jquery-ui.theme.css" rel="stylesheet" type="text/css" />
@@ -9,12 +10,13 @@
 <link href="{{ STATIC_URL }}fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css" />
 <link href="{{ STATIC_URL }}chosen/chosen.css" rel="stylesheet" type="text/css" />
 
+
 {% endblock %}
 
 {% block javascript %}
 <script type="text/javascript" src="{{ STATIC_URL}}stacktrace.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}jquery-ui.js" charset='utf-8'></script>
-<script type="text/javascript" src="{{ STATIC_URL }}portfolio_sort.js" charset='utf-8'></script>
+
 <script type="text/javascript" src="{{ STATIC_URL }}portfolio_filter.js" charset='utf-8'></script>
 <!-- <script type="text/javascript" src="{{ STATIC_URL }}galleria-1.4.2.js" charset='utf-8'></script> -->
 <script type="text/javascript" src="{{ STATIC_URL }}portfolio-dropdown.js" charset='utf-8'></script>
@@ -39,8 +41,8 @@
 
 				{% if languages|length > 0 %}
 					<div class='form-group'>
-						<label for='select_languages'>Languages</label>
-						<select multiple= id = 'select_languages' class='form-control chosen-select' type='checkbox' name='language' data-placeholder='Select some languages'>
+						<!-- <label for='select_languages'>Languages</label> -->
+						<select multiple id = 'select_languages' class='form-control chosen-select' type='checkbox' name='language' data-placeholder='Select some languages'>
 							{% for language in languages %}
 								<option value = {{language.name}}> {{language.name}}</option>
 							{% endfor %}
@@ -50,7 +52,7 @@
 
 				{% if frameworks|length > 0 %}
 					<div class='form-group'>
-						<label for='select_frameworks'>Frameworks</label>
+						<!-- <label for='select_frameworks'>Frameworks</label> -->
 						<select multiple id = 'select_frameworks' class='form-control chosen-select' name='frameworks' data-placeholder='Select some frameworks'>
 							{% for framework in frameworks %}
 								<option value = {{framework.name}}> {{framework.name}}</option>
@@ -62,7 +64,7 @@
 
 				{% if cms|length > 0 %}
 					<div class='form-group'>
-						<label for='select_cms'>Content Management Systems</label>
+						<!-- <label for='select_cms'>Content Management Systems</label> -->
 							<select multiple id = 'select_cms' class='form-control chosen-select' name='cms' data-placeholder='Select a content management system'>
 								{% for content_management_system in cms %}
 									<option value = {{content_management_system.name}}> {{content_management_system.name}}</option>
@@ -74,7 +76,7 @@
 
 				{% if databases|length > 0 %}
 					<div class='form-group'>
-						<label for='select_database'>Databases</label>
+						<!-- <label for='select_database'>Databases</label> -->
 						<select multiple id = 'select_database' class='form-control chosen-select' name='databases' data-placeholder='Select a database'>
 							{% for database in databases %}
 								<option value = {{database.name}}> {{database.name}}</option>
@@ -86,7 +88,7 @@
 
 				{% if concepts|length > 0 %}
 					<div class='form-group'>
-						<label for='select_concept'>Concepts</label>
+						<!-- <label for='select_concept'>Concepts</label> -->
 						<select multiple id = 'select_concept' class='form-control chosen-select' name='concepts' data-placeholder='Select some concepts'>
 							{% for concept in concepts %}
 								<option value = {{concept.name}}> {{concept.name}}</option>
@@ -101,50 +103,29 @@
 		</div>
 		
 		<div class='col-md-9'>
-			<div class='container-fluid'>
-				<ul id='sortable' class='project_list'>
-					{% for project in projects %}
-						{% if forloop.counter|modulo:2 == 1 %}
-							<div class='row-fluid'>
-						{% endif %}
-						<div class='col-md-6'>
-							<li class='ui-state-default' id = '{{project.id}}'>
-								<div class='fancybox-container'>
-									{% if project.id in project_images.keys %}
-										
-											{% for key , value in project_images.items %}
-												{% if key == project.id %}
-													{% for image in value %}
-							
-														<a class='fancybox' rel='group{{project.id}}' href='..{{MEDIA_URL}}{{image}}'>
-														<img  src='..{{MEDIA_URL}}{{image}}' alt=''/>
-														</a>
-
-
-													{%endfor%}
-												{% endif %}
-											{% endfor %}
-										<!-- </div> -->
-									{% endif %}
-								</div>
-								<div class='project-details' id='project-details-{{project.id}}' style='display:none;'>
-
-									{{project.name}}<br>
-									{{project.description}}<br>
-									{{project.url}}<br>
-								</div>
-
-								<button type='button' class = 'btn btn-default btn-lg project-dropdown' id='project-dropdown-{{project.id}}'>
-									<span class = 'glyphicon glyphicon-chevron-down'> </span>
-								</button>
-							</li>
+				{% for project in projects %}
+					<div class='project-container row-fluid'>
+						<div class='fancybox-container col-md-6'>
+							{% if project.id in project_images.keys %}
+									{% for key , value in project_images.items %}
+										{% if key == project.id %}
+											{% for image in value %}
+												<a class='fancybox' rel='group{{project.id}}' href='..{{MEDIA_URL}}{{image}}'>
+												<img  src='..{{MEDIA_URL}}{{image}}' alt=''/>
+												</a>
+											{%endfor%}
+										{% endif %}
+									{% endfor %}
+								<!-- </div> -->
+							{% endif %}
 						</div>
-						{% if forloop.counter|modulo:2 == 0 %}
-							</div>
-						{% endif %}	
-					{% endfor %}
-				</ul>
-			</div>
+						<div class='project-details col-md-6' id='project-details-{{project.id}}'>
+							<span class='project-name'>{{project.name}}</span><br>
+							<span class='project-description'>{{project.description}}</span><br>
+							<span class='project-urll'>{{project.url}}</span><br>
+						</div>
+					</div>
+				{% endfor %}
 		</div>
 	</div>
 {% endblock %}

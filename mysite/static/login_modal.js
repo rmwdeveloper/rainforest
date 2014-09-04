@@ -4,9 +4,9 @@ $(document).ready(function() {
 		if($('.ui-dialog').css('display') === 'block'){
 			$('#login_form').dialog('close');
 		}
-		
+
 		else{
-			$('#login_form').dialog();
+			$('#login_form').dialog({modal: true});
 		}
 
 	});

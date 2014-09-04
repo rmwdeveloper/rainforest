@@ -46,7 +46,7 @@
                             <span class='icon-bar'></span>
                             <span class='icon-bar'></span>
                         </button>
-                        <a class='navbar-brand' href='#'>Robert Westenberger</a>
+                        <a class='navbar-brand' href='{% url "index" %}'>Robert Westenberger</a>
                     </div>
                     <div class='collapse navbar-collapse' id='navbar-main'>
                         <ul class='nav navbar-nav'>
@@ -57,9 +57,11 @@
                                 <li id = "header_logout"><a href="/logout/">Logout</a></li>
                                 <li id = "header_username"><a href="#">{{ user.username }}</a></li>
                             {% else %}
-                                <li id = "header_signin" class='navbar-right'>
-                                <li id = "header_signin"><a  class="login-window btn btn-default">Sign in</a></li>
+                                <li id = "header_signin">
+                                <a  class="login-window" href=''>Sign in</a>
                                 </li>
+                                <li><a class = 'btn btn-default' href='#'>Register</a> </li>
+
                             {% endif %} 
                         </ul>
                     </div> 

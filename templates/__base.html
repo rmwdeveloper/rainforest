@@ -5,8 +5,9 @@
 			{% block title %}{% endblock %}
 		</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/base-min.css"/>
-            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/menus-min.css"/> -->
+            <link href="{{ STATIC_URL }}jquery-ui.css" rel="stylesheet" type="text/css" />
+            <link href="{{ STATIC_URL }}jquery-ui.structure.css" rel="stylesheet" type="text/css" />
+            <link href="{{ STATIC_URL }}jquery-ui.theme.css" rel="stylesheet" type="text/css" />
             <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/forms-min.css">
             <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/buttons-min.css">
          {% load staticfiles %}
@@ -15,14 +16,14 @@
 <link href="{{ STATIC_URL }}normalize.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="{{ STATIC_URL }}jquery-2.1.0.js" charset='utf-8'>
 </script>
-<script type="text/javascript" src="{{ STATIC_URL }}jquery.modal.min.js" charset='utf-8'>
-</script>
-<script type="text/javascript" src="{{ STATIC_URL }}search_button.js" charset='utf-8'>
+<script type="text/javascript" src="{{ STATIC_URL }}jquery-ui.js" charset='utf-8'></script>
+
+<script type="text/javascript" src="{{ STATIC_URL }}login_modal.js" charset='utf-8'>
 </script>
 
 <link href="{{ STATIC_URL }}bootstrap.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="{{ STATIC_URL }}jquery.modal.css" type="text/css" media="screen" />
-<script type="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" charset='utf-8'>
+
+<script text="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" charset='utf-8'>
 </script>
 <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
 		{% block stylesheets %}
@@ -35,10 +36,39 @@
     </head>
     <body>
         {% block header %}
-            <header>
+
+            <nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
+                <div class='container-fluid'>
+                    <div class='navbar-header'>
+                        <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar-main'>
+                            <span class='sr-only'>Toggle navigation</span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                        </button>
+                        <a class='navbar-brand' href='#'>Robert Westenberger</a>
+                    </div>
+                    <div class='collapse navbar-collapse' id='navbar-main'>
+                        <ul class='nav navbar-nav'>
+                            <li><a href='#'>Portfolio</a></li>
+                        </ul>
+                        <ul class='nav navbar-nav navbar-right'>
+                            {% if user.is_authenticated %}
+                                <li id = "header_logout"><a href="/logout/">Logout</a></li>
+                                <li id = "header_username"><a href="#">{{ user.username }}</a></li>
+                            {% else %}
+                                <li id = "header_signin" class='navbar-right'>
+                                <li id = "header_signin"><a  class="login-window btn btn-default">Sign in</a></li>
+                                </li>
+                            {% endif %} 
+                        </ul>
+                    </div> 
+                </div>
+            </nav>
+           <!--  <header>
             <ul id = 'navbar'>
                 <li id = "header_logo"><a href='{% url "index" %}'>Robert Westenberger</a></li>
-           <!--      <li id = "header_search"><input type = "search" placeholder = "Search.."/></li> -->
+     
                 <li id = "header_search_button"><a href ="#"> </a></li>
                 {% if user.is_authenticated %}
                     <li id = "header_logout"><a href="/logout/">Logout</a></li>
@@ -54,7 +84,7 @@
                 <li id = "header_signin"><a href="#login_form" rel="modal:open" class="login-window">Sign in</a></li>
                 {% endif %}
             </ul>
-        </header>
+        </header> -->
         {% endblock %}
         <!-- Modal Login Form -->
         <form id="login_form" class="modal" method="post" action="/login/">

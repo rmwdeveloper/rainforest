@@ -14,7 +14,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'mysite.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-    (r'^$', registration_authentication_views.landing),
+    url(r'^$', registration_authentication_views.landing , name='index'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^tests/$', registration_authentication_views.qunit_tests),
     url(r'^placeholder/$', registration_authentication_views.placeholder),

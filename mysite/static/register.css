@@ -54,6 +54,7 @@ input[type='text'].form_success ,
 input[type='password'].form_success{
 	background-color:rgba(0,240,0,.20);
 }
+
 /*Form Medium Devices*/
 @media only screen and (min-width : 768px) {
 
@@ -65,15 +66,15 @@ input[type='password'].form_success{
 		background-color:white;
 	}
 	#registration_sidebar {
-		display:block;
+		
 		float: left;
 		
-		width: 40%;
+		
 		position:relative;
 		background-color:white;
 		text-align: center;
 		height: 100%;
-		margin: 4%;
+	
 	}
 	#registration_sidebar h3 ,
 	#registration_sidebar p{
@@ -90,13 +91,11 @@ input[type='password'].form_success{
 		background-color:rgba(235,235,235,.75);
 	}
 	#form_container {
-		width: 40%;
+		
 		height: 100%;
 		display: block;
 		position:relative;
-		float:right;
-		margin: 4%;
-			
+					
 	}
 	fieldset{
 		padding: 10px;
@@ -104,14 +103,19 @@ input[type='password'].form_success{
 
 
 }
+@media only screen and (min-width : 992px) {
+	#registration_sidebar{
+		display: block;
+	}
+}
+
 
 /*Form Large Devices*/
 @media only screen and (min-width : 1200px) {
 	.container{
-		width: 100%;	}
+			}
 	#registration_sidebar {
-		margin: 0;
-		width: 45%;	
+		
 	}
 	form#register_form {
 		background-color:rgba(235,235,235,.75);	

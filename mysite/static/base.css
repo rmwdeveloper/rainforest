@@ -15,9 +15,9 @@ body {
 	}
 header{
 	width: 100%;
-	z-index: 2;
+	/*z-index: 2;*/
 	background: none repeat scroll 0 0 white;
-	position: fixed;
+	/*position: fixed;*/
 }
 #navbar{
 		list-style-type: none;
@@ -61,7 +61,7 @@ header{
 
 #navbar a{
 	text-decoration: none;
-	color: #777777;
+	
 }
 
 #navbar li {
@@ -91,6 +91,9 @@ header{
 	margin-left: 20px;
 	position: relative;
 	top: -3px;
+	font-family: 'montserrat';
+	text-transform: uppercase;
+	font-size: 18px;
 }
 input[type='search'].toggle_search{
 	display: inline-block;

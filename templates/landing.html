@@ -2,7 +2,7 @@
 
 {% block stylesheets %}
 {% load staticfiles %}
-
+<link href="{{ STATIC_URL }}landing.css" rel="stylesheet" type="text/css" />
 {% endblock %}
 
 {% block javascript %}
@@ -12,3 +12,8 @@
 {% load forms_extras %}
 
 {% block title %}Welcome to Rainforest{% endblock %}
+
+{% block content %}
+
+		
+{% endblock %}

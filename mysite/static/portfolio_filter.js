@@ -42,9 +42,9 @@ $(document).ready(function() {
 				},
 			dataType: 'JSON',
 			success: function(data) {
-				$('#sortable li').show();
+				$('.project-container').show();
 				if (data.length > 0){
-					$('#sortable li').hide();
+					$('.project-container').hide();
 
 					for(var i=0; i<data.length ; i++){
 						$('#'+data[i]).show();

@@ -116,7 +116,7 @@
 		
 		<div class='col-md-10'>
 				{% for project in projects %}
-					<div class='project-container row'>
+					<div class='project-container row' id='{{project.id}}'>
 					
 							<div class='project-details col-md-6' id='project-details-{{project.id}}'>
 								<span class='project-name'>{{project.name}}</span><br>

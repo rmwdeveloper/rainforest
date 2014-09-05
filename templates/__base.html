@@ -11,6 +11,7 @@
             <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/forms-min.css">
             <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/buttons-min.css">
          {% load staticfiles %}
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 <link href="{{ STATIC_URL }}base.css" rel="stylesheet" type="text/css" />
 <link href="{{ STATIC_URL }}normalize.css" rel="stylesheet" type="text/css" />
@@ -50,7 +51,8 @@
                     </div>
                     <div class='collapse navbar-collapse' id='navbar-main'>
                         <ul class='nav navbar-nav'>
-                            <li><a href='#'>Portfolio</a></li>
+                            <li><a href='{% url "portfolio" %}'>Portfolio</a></li>
+                            <li><a href='{% url "contact_form" %}'>Contact</a></li>
                         </ul>
                         <ul class='nav navbar-nav navbar-right'>
                             {% if user.is_authenticated %}
@@ -60,7 +62,7 @@
                                 <li id = "header_signin">
                                 <a  class="login-window" href=''>Sign in</a>
                                 </li>
-                                <li><a class = 'btn btn-default' href='#'>Register</a> </li>
+                                <li><a class = '' href='{% url "register" %}'>Register</a> </li>
 
                             {% endif %} 
                         </ul>

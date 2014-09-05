@@ -3,17 +3,44 @@
 {% block stylesheets %}
 {% load staticfiles %}
 <link href="{{ STATIC_URL }}landing.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Oswald|Abel|Varela+Round|Hammersmith+One|Istok+Web' rel='stylesheet' type='text/css'>
 {% endblock %}
 
 {% block javascript %}
-
+<script type="text/javascript" src="{{ STATIC_URL }}landing_animation.js" charset='utf-8'>
+</script>
 {% endblock %}
 
 {% load forms_extras %}
 
-{% block title %}Welcome to Rainforest{% endblock %}
+{% block title %}Robert Westenberger{% endblock %}
 
 {% block content %}
+	<div class='row-fluid'>
+		<div class='col-md-4'>
+		</div>
 
+		<div id='landing-content' class='col-md-4'>
+			<h1> Hi, I'm a Web Developer</h1>
+			<p> currently residing in Rockaway, New Jersey. I spend my days doing freelancing , dabbling in all kinds of different web technologies. I'm familiar with both front end(HTML5, CSS3, Javascript, jQuery) and back end(Python Django, PHP) programming. I strive to create useable and visually appealing websites.  </p>
+
+			<p> I enjoy all aspects of web development. I'm currently looking for full time employment and more freelancing gigs. Aside from web development, I enjoy fitness, the outdoors, reading, and TV. 
+			</p>
+
+			<div id='landing-links'>
+				<a href='#'><i class='fa fa-github'></i> </a>
+				<a href='#'><i class='fa fa-stack-exchange'></i> </a>
+				<a href='#'><i class='fa fa-reddit'></i> </a>
+
+				<a href='#'><i class='fa fa-circle-o'></i></a>
+				<a href='#'><img src='{{MEDIA_URL}}odesk.png'></a>
+				
+
+			</div>
+		</div>
+		
+		<div class='col-md-4'>
+		</div>
+	</div>
 		
 {% endblock %}

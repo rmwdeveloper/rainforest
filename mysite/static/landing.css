@@ -1,0 +1,24 @@
+@media only screen and (max-width: 767px) {
+  /* line 7, landing.scss */
+  #main {
+    margin-top: 20px;
+  }
+}
+
+/* line 17, landing.scss */
+.col-md-4 > h1 {
+  font-family: 'Oswald';
+  text-align: center;
+}
+
+/* line 21, landing.scss */
+.col-md-4 > p {
+  font-family: 'Istok Web';
+  font-size: 20px;
+}
+
+/* line 26, landing.scss */
+#landing-content #landing-links {
+  font-size: 40px;
+  text-align: center;
+}

@@ -19,10 +19,11 @@ urlpatterns = patterns('',
     url(r'^tests/$', registration_authentication_views.qunit_tests),
     url(r'^placeholder/$', registration_authentication_views.placeholder),
     url(r'^error/$', registration_authentication_views.error_page),
-    url(r'^register/$', registration_authentication_views.register),
+    url(r'^register/$', registration_authentication_views.register, name='register'),
     url(r'^login/$', registration_authentication_views.user_login, name='login'),
     url(r'^logout/$', registration_authentication_views.user_logout, name='logout'),
-    url(r'^portfolio/$', portfolio_listing_views.portfolio , name= 'portfolio_main'),
+    url(r'^portfolio/$', portfolio_listing_views.portfolio , name= 'portfolio'),
+    (r'^contact/', include('contact_form.urls')),
 ) + static(settings.MEDIA_URL,
 document_root = settings.MEDIA_ROOT)
 urlpatterns += staticfiles_urlpatterns() 

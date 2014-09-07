@@ -1,0 +1,33 @@
+{% for project in projects %}
+	<div class='project-container row' id='{{project.id}}'>
+			<div class='project-details col-md-6' id='project-details-{{project.id}}'>
+				<span class='project-name'>{{project.name}}</span><br>
+				<div class = 'font-awesome'>
+					<i class= 'fa fa-mobile'></i>
+					<i class= 'fa fa-tablet'></i>
+					<i class= 'fa fa-desktop'></i>
+				</div>
+				<span class='project-description'>{{project.description}}</span><br>
+				<span class='project-url'>{{project.url}}</span><br>
+			</div>
+			<div class='col-md-6'>
+				<div class='fancybox-container'>
+					{% if project.id in project_images.keys %}
+							{% for key , value in project_images.items %}
+								{% if key == project.id %}
+									{% for image in value %}
+										<a class='fancybox' rel='group{{project.id}}' href='..{{MEDIA_URL}}{{image}}'>
+										<img  src='..{{MEDIA_URL}}{{image}}' alt=''/>
+										</a>
+									{%endfor%}
+								{% endif %}
+							{% endfor %}
+						<!-- </div> -->
+					{% endif %}
+				</div>
+			</div>
+
+		
+
+	</div>
+{% endfor %}

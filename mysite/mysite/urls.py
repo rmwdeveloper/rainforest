@@ -2,7 +2,6 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from registration_authentication import views as registration_authentication_views
 from portfolio_listing import views as portfolio_listing_views
-from storefront import views as storefront_views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
 from django.conf import settings

@@ -1,0 +1,45 @@
+{% extends "__base.html" %}
+{% load staticfiles %}
+{% load modulo%}
+{% block stylesheets %}
+	{{block.super}}
+	<link href="{{ STATIC_URL }}portfolio_sort.css" rel="stylesheet" type="text/css" />
+	<link href="{{ STATIC_URL }}fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+	<link href="{{ STATIC_URL }}fancybox/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css" />
+	<link href="{{ STATIC_URL }}chosen/chosen.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block javascript %}
+	{{block.super}}
+<script type="text/javascript" src="{{ STATIC_URL }}portfolio_filter.js" charset='utf-8'></script>
+<script type="text/javascript" src="{{ STATIC_URL }}portfolio-dropdown.js" charset='utf-8'></script>
+<script type="text/javascript" src="{{ STATIC_URL }}fancybox/source/jquery.fancybox.pack.js" charset='utf-8'></script>
+<script type="text/javascript" src="{{ STATIC_URL }}fancybox/source/helpers/jquery.fancybox-buttons.js" charset='utf-8'></script>
+<script type="text/javascript" src="{{ STATIC_URL }}fancybox.js" charset='utf-8'></script>
+<script type="text/javascript" src="{{ STATIC_URL }}chosen/chosen.jquery.js" charset='utf-8'></script>
+<script type="text/javascript" src="{{ STATIC_URL }}chosen/chosen.proto.js" charset='utf-8'></script>
+
+{% endblock %}
+
+{% load forms_extras %}
+
+{% block title %}My Portfolio{% endblock %}
+
+{% block content %}	
+	<div class="row-fluid">
+		<div id="sidebar" class="col-md-2"> 
+			<!-- Form  -->
+			<div class='filter_projects_form_container'>
+				{% include 'filter_projects_form.html' %}
+			</div>
+		</div>
+
+		<div id='sidebar-toggle'>
+
+		</div>
+		
+		<div class='col-md-10'>
+				{% include 'output_projects.html' %}
+		</div>
+	</div>
+{% endblock %}

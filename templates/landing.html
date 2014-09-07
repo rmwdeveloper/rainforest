@@ -1,19 +1,24 @@
 {% extends "__base.html" %}
-
-{% block stylesheets %}
 {% load staticfiles %}
-<link href="{{ STATIC_URL }}landing.css" rel="stylesheet" type="text/css" />
-<link href='http://fonts.googleapis.com/css?family=Oswald|Abel|Varela+Round|Hammersmith+One|Istok+Web' rel='stylesheet' type='text/css'>
-{% endblock %}
-
-{% block javascript %}
-<script type="text/javascript" src="{{ STATIC_URL }}landing_animation.js" charset='utf-8'>
-</script>
-{% endblock %}
 
 {% load forms_extras %}
 
-{% block title %}Robert Westenberger{% endblock %}
+
+{% block stylesheets %}
+	{{block.super}}
+	<link href="{{ STATIC_URL }}landing.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Oswald|Abel|Varela+Round|Hammersmith+One|Istok+Web' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block javascript %}
+	{{block.super}}
+	<script type="text/javascript" src="{{ STATIC_URL }}landing_animation.js" charset='utf-8'> </script>
+{% endblock %}
+
+
+{% block title %}
+	Robert Westenberger
+{% endblock %}
 
 {% block content %}
 	<div class='row-fluid'>

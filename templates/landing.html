@@ -1,4 +1,4 @@
-{% extends "__base.html" %}
+{% extends '__base.html' %}
 {% load staticfiles %}
 
 {% load forms_extras %}
@@ -6,13 +6,13 @@
 
 {% block stylesheets %}
 	{{block.super}}
-	<link href="{{ STATIC_URL }}landing.css" rel="stylesheet" type="text/css" />
+	<link href='{{ STATIC_URL }}landing.css' rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=Oswald|Abel|Varela+Round|Hammersmith+One|Istok+Web' rel='stylesheet' type='text/css'>
 {% endblock %}
 
 {% block javascript %}
 	{{block.super}}
-	<script type="text/javascript" src="{{ STATIC_URL }}landing_animation.js" charset='utf-8'> </script>
+	<script type='text/javascript' src='{{ STATIC_URL }}landing_animation.js' charset='utf-8'> </script>
 {% endblock %}
 
 

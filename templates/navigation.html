@@ -17,11 +17,11 @@
 			</ul>
 			<ul class='nav navbar-nav navbar-right'>
 				{% if user.is_authenticated %}
-					<li id = "header_logout"><a href="/logout/">Logout</a></li>
-					<li id = "header_username"><a href="#">{{ user.username }}</a></li>
+					<li id = 'header_logout'><a href='/logout/'>Logout</a></li>
+					<li id = 'header_username'><a href='#'>{{ user.username }}</a></li>
 				{% else %}
-					<li id = "header_signin">
-					<a  class="login-window" >Sign in</a>
+					<li id = 'header_signin'>
+					<a  class='login-window' >Sign in</a>
 					</li>
 					<li><a class = '' href='{% url "register" %}'>Register</a> </li>
 

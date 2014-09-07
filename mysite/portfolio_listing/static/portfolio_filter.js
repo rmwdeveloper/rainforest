@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	$('#filter_projects_form_toggle > .fa-angle-double-down').hide();
+	
 	$('#filter_projects_form_toggle').click(function(event){
+		
 		var filter_projects_form = $('form#filter_projects');
 		var up_arrow = $('#filter_projects_form_toggle > .fa-angle-double-up')
 		var down_arrow = $('#filter_projects_form_toggle > .fa-angle-double-down')
@@ -11,7 +13,7 @@ $(document).ready(function() {
 			down_arrow.hide();
 		}
 		if(filter_projects_form.css('display') === 'block'){
-			console.log('test2');
+			
 			down_arrow.show();
 			up_arrow.hide();
 		}

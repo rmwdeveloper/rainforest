@@ -104,7 +104,7 @@ class TestViewConnections(TestCase):
 		"""
 		Test all connections that do not require a login 
 		"""
-		url_string_list = ["/", "/tests/", "/register/","/placeholder/", "/error/", "/login/",]
+		url_string_list = ["/", "/register/",  "/login/"]
 		for url in url_string_list:
 			self.run_connection(url)
 	def test_login_required_view_connections(self):

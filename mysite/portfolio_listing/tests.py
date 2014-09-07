@@ -5,7 +5,7 @@ import random
 from selenium import webdriver
 from mysite import settings
 from registration_authentication.tests import HelperFunctions
-from mock import MagicMock
+
 
 # Create your tests here.
 class TestViewConnections(TestCase):

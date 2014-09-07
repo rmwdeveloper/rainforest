@@ -11,14 +11,12 @@
 
 {% block javascript %}
 	{{block.super}}
-<script type="text/javascript" src="{{ STATIC_URL }}portfolio_filter.js" charset='utf-8'></script>
-<script type="text/javascript" src="{{ STATIC_URL }}portfolio-dropdown.js" charset='utf-8'></script>
-<script type="text/javascript" src="{{ STATIC_URL }}fancybox/source/jquery.fancybox.pack.js" charset='utf-8'></script>
-<script type="text/javascript" src="{{ STATIC_URL }}fancybox/source/helpers/jquery.fancybox-buttons.js" charset='utf-8'></script>
-<script type="text/javascript" src="{{ STATIC_URL }}fancybox.js" charset='utf-8'></script>
-<script type="text/javascript" src="{{ STATIC_URL }}chosen/chosen.jquery.js" charset='utf-8'></script>
-<script type="text/javascript" src="{{ STATIC_URL }}chosen/chosen.proto.js" charset='utf-8'></script>
-
+	<script type="text/javascript" src="{{ STATIC_URL }}portfolio_filter.js" charset='utf-8'></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}fancybox/source/jquery.fancybox.pack.js" charset='utf-8'></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}fancybox/source/helpers/jquery.fancybox-buttons.js" charset='utf-8'></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}fancybox.js" charset='utf-8'></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}chosen/chosen.jquery.js" charset='utf-8'></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}chosen/chosen.proto.js" charset='utf-8'></script>
 {% endblock %}
 
 {% load forms_extras %}

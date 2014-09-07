@@ -1,9 +1,9 @@
-<form action="/register/" id = 'register_form' method="post">
+<form action='/register/' id = 'register_form' method='post'>
 	{% csrf_token %}
 		{{ form.non_field_errors }}
 		
 		<fieldset>
-			<div class="fieldWrapper">
+			<div class='fieldWrapper'>
 				{{form.username}}
 						{% if not  errors.username  %}
 								<div class = 'error_container'>
@@ -12,7 +12,7 @@
 						{{ errors.username }}
 				</div>
 
-				<div class="fieldWrapper">
+				<div class='fieldWrapper'>
 				{{form.email}}
 						{% if not  errors.email  %}
 									<div class = 'error_container'>
@@ -21,7 +21,7 @@
 						{{ errors.email }}
 				</div>
 
-				<div class="fieldWrapper">
+				<div class='fieldWrapper'>
 				{{ form.password1}}
 						{% if not  errors.password1  %}
 								<div class = 'error_container'>
@@ -30,7 +30,7 @@
 						{{ errors.password1 }}
 				</div>
 
-				<div class="fieldWrapper">
+				<div class='fieldWrapper'>
 				{{ form.password2}}
 						{% if not  errors.password2  %}
 								<div class = 'error_container'>
@@ -41,7 +41,7 @@
 	</fieldset>
 
 	<fieldset>
-			<div class="fieldWrapper">
+			<div class='fieldWrapper'>
 						{{form.first_name}}
 						{% if not  errors.first_name %}
 								<div class = 'error_container'>
@@ -50,7 +50,7 @@
 						{{ errors.first_name}}
 				</div>
 
-				<div class="fieldWrapper">
+				<div class='fieldWrapper'>
 						{{ form.middle_initial}}
 						{% if not  errors.middle_initial %}
 								<div class = 'error_container'>
@@ -59,7 +59,7 @@
 						{{ errors.middle_initial }}
 				</div>
 
-				<div class="fieldWrapper">
+				<div class='fieldWrapper'>
 						{{ form.last_name}}
 						{% if not  errors.last_name  %}
 								<div class = 'error_container'>
@@ -68,7 +68,7 @@
 						{{ errors.last_name }}
 				</div>
 		
-				<div class="fieldWrapper">
+				<div class='fieldWrapper'>
 						{{ form.birth_date}}
 						{% if not  errors.birth_date %}
 								<div class = 'error_container'>
@@ -79,7 +79,7 @@
 	</fieldset>
 	
 	<fieldset>
-			<div class="fieldWrapper">
+			<div class='fieldWrapper'>
 						{{  form.street_address }}
 						{% if not  errors.street_address  %}
 								<div class = 'error_container'>
@@ -88,7 +88,7 @@
 						{{ errors.street_address }}
 				</div>
 
-				<div class="fieldWrapper">
+				<div class='fieldWrapper'>
 						{{form.city}}
 						{% if not  errors.city %}
 								<div class = 'error_container'>
@@ -97,7 +97,7 @@
 						{{ errors.city }}
 				</div>
 		
-				<div class="fieldWrapper">
+				<div class='fieldWrapper'>
 						{{form.state}}
 						{% if not  errors.state  %}
 								<div class = 'error_container'>
@@ -110,7 +110,7 @@
 	<p> OR </p>
 	
 	<fieldset>
-			<div class="fieldWrapper">
+			<div class='fieldWrapper'>
 						{{form.zip_code}}
 						{% if not  errors.zip_code  %}
 								<div class = 'error_container'>
@@ -119,7 +119,7 @@
 						{{ errors.zip_code }}
 				</div>
 	</fieldset>
-	<div class="fieldWrapper">
-			<input type="submit" value="Create the account">
+	<div class='fieldWrapper'>
+			<input type='submit' value='Create the account'>
 	</div>
 </form>

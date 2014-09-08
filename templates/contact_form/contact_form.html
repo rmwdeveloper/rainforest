@@ -1,12 +1,12 @@
 {% extends "__base.html" %}
-
-{% block stylesheets %}
 {% load staticfiles %}
+{% block stylesheets %}
+{{block.super}}
 <link href="{{ STATIC_URL }}contact.css" rel="stylesheet" type="text/css" />
 {% endblock %}
 
 {% block javascript %}
-
+{{block.super}}
 {% endblock %}
 
 {% load forms_extras %}

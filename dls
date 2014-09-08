@@ -1,0 +1,911 @@
+[1mdiff --git a/media/images/suzy-mcgrane-hop-isa-capp.jpg b/media/images/suzy-mcgrane-hop-isa-capp.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex a24fc3f..0000000[m
+Binary files a/media/images/suzy-mcgrane-hop-isa-capp.jpg and /dev/null differ
+[1mdiff --git a/media/images/suzy-mcgrane-hop-isa-capp_1.jpg b/media/images/suzy-mcgrane-hop-isa-capp_1.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex a24fc3f..0000000[m
+Binary files a/media/images/suzy-mcgrane-hop-isa-capp_1.jpg and /dev/null differ
+[1mdiff --git a/media/project_images/SCORE Website/main_below.jpg b/media/project_images/SCORE Website/main_below.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 623119f..0000000[m
+Binary files a/media/project_images/SCORE Website/main_below.jpg and /dev/null differ
+[1mdiff --git a/media/project_images/SCORE Website/main_below_1.jpg b/media/project_images/SCORE Website/main_below_1.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 623119f..0000000[m
+Binary files a/media/project_images/SCORE Website/main_below_1.jpg and /dev/null differ
+[1mdiff --git a/media/project_images/SCORE Website/main_below_2.jpg b/media/project_images/SCORE Website/main_below_2.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 623119f..0000000[m
+Binary files a/media/project_images/SCORE Website/main_below_2.jpg and /dev/null differ
+[1mdiff --git a/media/project_images/SCORE Website/main_page.jpg b/media/project_images/SCORE Website/main_page.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 8860b93..0000000[m
+Binary files a/media/project_images/SCORE Website/main_page.jpg and /dev/null differ
+[1mdiff --git a/media/project_images/SCORE Website/main_page_1.jpg b/media/project_images/SCORE Website/main_page_1.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 8860b93..0000000[m
+Binary files a/media/project_images/SCORE Website/main_page_1.jpg and /dev/null differ
+[1mdiff --git a/media/project_images/SCORE Website/main_page_2.jpg b/media/project_images/SCORE Website/main_page_2.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 8860b93..0000000[m
+Binary files a/media/project_images/SCORE Website/main_page_2.jpg and /dev/null differ
+[1mdiff --git a/media/project_images/SCORE Website/mentors_page.jpg b/media/project_images/SCORE Website/mentors_page.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 330a42f..0000000[m
+Binary files a/media/project_images/SCORE Website/mentors_page.jpg and /dev/null differ
+[1mdiff --git a/media/project_images/SCORE Website/mentors_page_1.jpg b/media/project_images/SCORE Website/mentors_page_1.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 330a42f..0000000[m
+Binary files a/media/project_images/SCORE Website/mentors_page_1.jpg and /dev/null differ
+[1mdiff --git a/media/project_images/SCORE Website/mentors_page_2.jpg b/media/project_images/SCORE Website/mentors_page_2.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 330a42f..0000000[m
+Binary files a/media/project_images/SCORE Website/mentors_page_2.jpg and /dev/null differ
+[1mdiff --git a/mysite/img/glyphicons-halflings-white.png b/mysite/img/glyphicons-halflings-white.png[m
+[1mdeleted file mode 100644[m
+[1mindex 3bf6484..0000000[m
+Binary files a/mysite/img/glyphicons-halflings-white.png and /dev/null differ
+[1mdiff --git a/mysite/img/glyphicons-halflings.png b/mysite/img/glyphicons-halflings.png[m
+[1mdeleted file mode 100644[m
+[1mindex a996999..0000000[m
+Binary files a/mysite/img/glyphicons-halflings.png and /dev/null differ
+[1mdiff --git a/mysite/portfolio_listing/static/portfolio-dropdown.js b/mysite/portfolio_listing/static/portfolio-dropdown.js[m
+[1mdeleted file mode 100644[m
+[1mindex c82dfa5..0000000[m
+[1m--- a/mysite/portfolio_listing/static/portfolio-dropdown.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,7 +0,0 @@[m
+[31m-(function($) {[m
+[31m-	$(document).ready(function() {[m
+[31m-		$('.project-dropdown').click(function(){[m
+[31m-			$('.project-details').slideToggle('medium')[m
+[31m-		})[m
+[31m-	});[m
+[31m-})(jQuery);[m
+\ No newline at end of file[m
+[1mdiff --git a/mysite/static/ResponsiveNavSprites.png b/mysite/static/ResponsiveNavSprites.png[m
+[1mdeleted file mode 100644[m
+[1mindex 8918d02..0000000[m
+Binary files a/mysite/static/ResponsiveNavSprites.png and /dev/null differ
+[1mdiff --git a/mysite/static/bootstrap-theme.css b/mysite/static/bootstrap-theme.css[m
+[1mdeleted file mode 100644[m
+[1mindex f860bbc..0000000[m
+[1m--- a/mysite/static/bootstrap-theme.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,442 +0,0 @@[m
+[31m-/*![m
+[31m- * Bootstrap v3.2.0 (http://getbootstrap.com)[m
+[31m- * Copyright 2011-2014 Twitter, Inc.[m
+[31m- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)[m
+[31m- */[m
+[31m-[m
+[31m-.btn-default,[m
+[31m-.btn-primary,[m
+[31m-.btn-success,[m
+[31m-.btn-info,[m
+[31m-.btn-warning,[m
+[31m-.btn-danger {[m
+[31m-  text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);[m
+[31m-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);[m
+[31m-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);[m
+[31m-}[m
+[31m-.btn-default:active,[m
+[31m-.btn-primary:active,[m
+[31m-.btn-success:active,[m
+[31m-.btn-info:active,[m
+[31m-.btn-warning:active,[m
+[31m-.btn-danger:active,[m
+[31m-.btn-default.active,[m
+[31m-.btn-primary.active,[m
+[31m-.btn-success.active,[m
+[31m-.btn-info.active,[m
+[31m-.btn-warning.active,[m
+[31m-.btn-danger.active {[m
+[31m-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);[m
+[31m-          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);[m
+[31m-}[m
+[31m-.btn:active,[m
+[31m-.btn.active {[m
+[31m-  background-image: none;[m
+[31m-}[m
+[31m-.btn-default {[m
+[31m-  text-shadow: 0 1px 0 #fff;[m
+[31m-  background-image: -webkit-linear-gradient(top, #fff 0%, #e0e0e0 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #fff 0%, #e0e0e0 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));[m
+[31m-  background-image:         linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #dbdbdb;[m
+[31m-  border-color: #ccc;[m
+[31m-}[m
+[31m-.btn-default:hover,[m
+[31m-.btn-default:focus {[m
+[31m-  background-color: #e0e0e0;[m
+[31m-  background-position: 0 -15px;[m
+[31m-}[m
+[31m-.btn-default:active,[m
+[31m-.btn-default.active {[m
+[31m-  background-color: #e0e0e0;[m
+[31m-  border-color: #dbdbdb;[m
+[31m-}[m
+[31m-.btn-default:disabled,[m
+[31m-.btn-default[disabled] {[m
+[31m-  background-color: #e0e0e0;[m
+[31m-  background-image: none;[m
+[31m-}[m
+[31m-.btn-primary {[m
+[31m-  background-image: -webkit-linear-gradient(top, #428bca 0%, #2d6ca2 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #428bca 0%, #2d6ca2 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#2d6ca2));[m
+[31m-  background-image:         linear-gradient(to bottom, #428bca 0%, #2d6ca2 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff2d6ca2', GradientType=0);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #2b669a;[m
+[31m-}[m
+[31m-.btn-primary:hover,[m
+[31m-.btn-primary:focus {[m
+[31m-  background-color: #2d6ca2;[m
+[31m-  background-position: 0 -15px;[m
+[31m-}[m
+[31m-.btn-primary:active,[m
+[31m-.btn-primary.active {[m
+[31m-  background-color: #2d6ca2;[m
+[31m-  border-color: #2b669a;[m
+[31m-}[m
+[31m-.btn-primary:disabled,[m
+[31m-.btn-primary[disabled] {[m
+[31m-  background-color: #2d6ca2;[m
+[31m-  background-image: none;[m
+[31m-}[m
+[31m-.btn-success {[m
+[31m-  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #5cb85c 0%, #419641 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));[m
+[31m-  background-image:         linear-gradient(to bottom, #5cb85c 0%, #419641 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #3e8f3e;[m
+[31m-}[m
+[31m-.btn-success:hover,[m
+[31m-.btn-success:focus {[m
+[31m-  background-color: #419641;[m
+[31m-  background-position: 0 -15px;[m
+[31m-}[m
+[31m-.btn-success:active,[m
+[31m-.btn-success.active {[m
+[31m-  background-color: #419641;[m
+[31m-  border-color: #3e8f3e;[m
+[31m-}[m
+[31m-.btn-success:disabled,[m
+[31m-.btn-success[disabled] {[m
+[31m-  background-color: #419641;[m
+[31m-  background-image: none;[m
+[31m-}[m
+[31m-.btn-info {[m
+[31m-  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #2aabd2 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #5bc0de 0%, #2aabd2 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#2aabd2));[m
+[31m-  background-image:         linear-gradient(to bottom, #5bc0de 0%, #2aabd2 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2aabd2', GradientType=0);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #28a4c9;[m
+[31m-}[m
+[31m-.btn-info:hover,[m
+[31m-.btn-info:focus {[m
+[31m-  background-color: #2aabd2;[m
+[31m-  background-position: 0 -15px;[m
+[31m-}[m
+[31m-.btn-info:active,[m
+[31m-.btn-info.active {[m
+[31m-  background-color: #2aabd2;[m
+[31m-  border-color: #28a4c9;[m
+[31m-}[m
+[31m-.btn-info:disabled,[m
+[31m-.btn-info[disabled] {[m
+[31m-  background-color: #2aabd2;[m
+[31m-  background-image: none;[m
+[31m-}[m
+[31m-.btn-warning {[m
+[31m-  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#eb9316));[m
+[31m-  background-image:         linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffeb9316', GradientType=0);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #e38d13;[m
+[31m-}[m
+[31m-.btn-warning:hover,[m
+[31m-.btn-warning:focus {[m
+[31m-  background-color: #eb9316;[m
+[31m-  background-position: 0 -15px;[m
+[31m-}[m
+[31m-.btn-warning:active,[m
+[31m-.btn-warning.active {[m
+[31m-  background-color: #eb9316;[m
+[31m-  border-color: #e38d13;[m
+[31m-}[m
+[31m-.btn-warning:disabled,[m
+[31m-.btn-warning[disabled] {[m
+[31m-  background-color: #eb9316;[m
+[31m-  background-image: none;[m
+[31m-}[m
+[31m-.btn-danger {[m
+[31m-  background-image: -webkit-linear-gradient(top, #d9534f 0%, #c12e2a 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #d9534f 0%, #c12e2a 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(#c12e2a));[m
+[31m-  background-image:         linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc12e2a', GradientType=0);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #b92c28;[m
+[31m-}[m
+[31m-.btn-danger:hover,[m
+[31m-.btn-danger:focus {[m
+[31m-  background-color: #c12e2a;[m
+[31m-  background-position: 0 -15px;[m
+[31m-}[m
+[31m-.btn-danger:active,[m
+[31m-.btn-danger.active {[m
+[31m-  background-color: #c12e2a;[m
+[31m-  border-color: #b92c28;[m
+[31m-}[m
+[31m-.btn-danger:disabled,[m
+[31m-.btn-danger[disabled] {[m
+[31m-  background-color: #c12e2a;[m
+[31m-  background-image: none;[m
+[31m-}[m
+[31m-.thumbnail,[m
+[31m-.img-thumbnail {[m
+[31m-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);[m
+[31m-          box-shadow: 0 1px 2px rgba(0, 0, 0, .075);[m
+[31m-}[m
+[31m-.dropdown-menu > li > a:hover,[m
+[31m-.dropdown-menu > li > a:focus {[m
+[31m-  background-color: #e8e8e8;[m
+[31m-  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));[m
+[31m-  background-image:         linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.dropdown-menu > .active > a,[m
+[31m-.dropdown-menu > .active > a:hover,[m
+[31m-.dropdown-menu > .active > a:focus {[m
+[31m-  background-color: #357ebd;[m
+[31m-  background-image: -webkit-linear-gradient(top, #428bca 0%, #357ebd 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #428bca 0%, #357ebd 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#357ebd));[m
+[31m-  background-image:         linear-gradient(to bottom, #428bca 0%, #357ebd 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.navbar-default {[m
+[31m-  background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #fff 0%, #f8f8f8 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f8f8f8));[m
+[31m-  background-image:         linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-radius: 4px;[m
+[31m-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);[m
+[31m-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);[m
+[31m-}[m
+[31m-.navbar-default .navbar-nav > .active > a {[m
+[31m-  background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f3f3f3 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #ebebeb 0%, #f3f3f3 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#f3f3f3));[m
+[31m-  background-image:         linear-gradient(to bottom, #ebebeb 0%, #f3f3f3 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff3f3f3', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .075);[m
+[31m-          box-shadow: inset 0 3px 9px rgba(0, 0, 0, .075);[m
+[31m-}[m
+[31m-.navbar-brand,[m
+[31m-.navbar-nav > li > a {[m
+[31m-  text-shadow: 0 1px 0 rgba(255, 255, 255, .25);[m
+[31m-}[m
+[31m-.navbar-inverse {[m
+[31m-  background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #3c3c3c 0%, #222 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#222));[m
+[31m-  background-image:         linear-gradient(to bottom, #3c3c3c 0%, #222 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.navbar-inverse .navbar-nav > .active > a {[m
+[31m-  background-image: -webkit-linear-gradient(top, #222 0%, #282828 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #222 0%, #282828 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#222), to(#282828));[m
+[31m-  background-image:         linear-gradient(to bottom, #222 0%, #282828 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff282828', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);[m
+[31m-          box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);[m
+[31m-}[m
+[31m-.navbar-inverse .navbar-brand,[m
+[31m-.navbar-inverse .navbar-nav > li > a {[m
+[31m-  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);[m
+[31m-}[m
+[31m-.navbar-static-top,[m
+[31m-.navbar-fixed-top,[m
+[31m-.navbar-fixed-bottom {[m
+[31m-  border-radius: 0;[m
+[31m-}[m
+[31m-.alert {[m
+[31m-  text-shadow: 0 1px 0 rgba(255, 255, 255, .2);[m
+[31m-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 1px 2px rgba(0, 0, 0, .05);[m
+[31m-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 1px 2px rgba(0, 0, 0, .05);[m
+[31m-}[m
+[31m-.alert-success {[m
+[31m-  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#c8e5bc));[m
+[31m-  background-image:         linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #b2dba1;[m
+[31m-}[m
+[31m-.alert-info {[m
+[31m-  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #b9def0 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #d9edf7 0%, #b9def0 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#b9def0));[m
+[31m-  background-image:         linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #9acfea;[m
+[31m-}[m
+[31m-.alert-warning {[m
+[31m-  background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#f8efc0));[m
+[31m-  background-image:         linear-gradient(to bottom, #fcf8e3 0%, #f8efc0 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fff8efc0', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #f5e79e;[m
+[31m-}[m
+[31m-.alert-danger {[m
+[31m-  background-image: -webkit-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#e7c3c3));[m
+[31m-  background-image:         linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #dca7a7;[m
+[31m-}[m
+[31m-.progress {[m
+[31m-  background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f5f5f5 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #ebebeb 0%, #f5f5f5 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#f5f5f5));[m
+[31m-  background-image:         linear-gradient(to bottom, #ebebeb 0%, #f5f5f5 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff5f5f5', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.progress-bar {[m
+[31m-  background-image: -webkit-linear-gradient(top, #428bca 0%, #3071a9 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #428bca 0%, #3071a9 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#3071a9));[m
+[31m-  background-image:         linear-gradient(to bottom, #428bca 0%, #3071a9 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3071a9', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.progress-bar-success {[m
+[31m-  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #449d44 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #5cb85c 0%, #449d44 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#449d44));[m
+[31m-  background-image:         linear-gradient(to bottom, #5cb85c 0%, #449d44 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff449d44', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.progress-bar-info {[m
+[31m-  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#31b0d5));[m
+[31m-  background-image:         linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff31b0d5', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.progress-bar-warning {[m
+[31m-  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#ec971f));[m
+[31m-  background-image:         linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffec971f', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.progress-bar-danger {[m
+[31m-  background-image: -webkit-linear-gradient(top, #d9534f 0%, #c9302c 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #d9534f 0%, #c9302c 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(#c9302c));[m
+[31m-  background-image:         linear-gradient(to bottom, #d9534f 0%, #c9302c 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc9302c', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.progress-bar-striped {[m
+[31m-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);[m
+[31m-  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);[m
+[31m-  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);[m
+[31m-}[m
+[31m-.list-group {[m
+[31m-  border-radius: 4px;[m
+[31m-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);[m
+[31m-          box-shadow: 0 1px 2px rgba(0, 0, 0, .075);[m
+[31m-}[m
+[31m-.list-group-item.active,[m
+[31m-.list-group-item.active:hover,[m
+[31m-.list-group-item.active:focus {[m
+[31m-  text-shadow: 0 -1px 0 #3071a9;[m
+[31m-  background-image: -webkit-linear-gradient(top, #428bca 0%, #3278b3 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #428bca 0%, #3278b3 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#3278b3));[m
+[31m-  background-image:         linear-gradient(to bottom, #428bca 0%, #3278b3 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3278b3', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #3278b3;[m
+[31m-}[m
+[31m-.panel {[m
+[31m-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);[m
+[31m-          box-shadow: 0 1px 2px rgba(0, 0, 0, .05);[m
+[31m-}[m
+[31m-.panel-default > .panel-heading {[m
+[31m-  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));[m
+[31m-  background-image:         linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.panel-primary > .panel-heading {[m
+[31m-  background-image: -webkit-linear-gradient(top, #428bca 0%, #357ebd 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #428bca 0%, #357ebd 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#357ebd));[m
+[31m-  background-image:         linear-gradient(to bottom, #428bca 0%, #357ebd 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.panel-success > .panel-heading {[m
+[31m-  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#d0e9c6));[m
+[31m-  background-image:         linear-gradient(to bottom, #dff0d8 0%, #d0e9c6 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffd0e9c6', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.panel-info > .panel-heading {[m
+[31m-  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#c4e3f3));[m
+[31m-  background-image:         linear-gradient(to bottom, #d9edf7 0%, #c4e3f3 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.panel-warning > .panel-heading {[m
+[31m-  background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#faf2cc));[m
+[31m-  background-image:         linear-gradient(to bottom, #fcf8e3 0%, #faf2cc 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fffaf2cc', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.panel-danger > .panel-heading {[m
+[31m-  background-image: -webkit-linear-gradient(top, #f2dede 0%, #ebcccc 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #f2dede 0%, #ebcccc 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#ebcccc));[m
+[31m-  background-image:         linear-gradient(to bottom, #f2dede 0%, #ebcccc 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffebcccc', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-}[m
+[31m-.well {[m
+[31m-  background-image: -webkit-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);[m
+[31m-  background-image:      -o-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);[m
+[31m-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#f5f5f5));[m
+[31m-  background-image:         linear-gradient(to bottom, #e8e8e8 0%, #f5f5f5 100%);[m
+[31m-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0);[m
+[31m-  background-repeat: repeat-x;[m
+[31m-  border-color: #dcdcdc;[m
+[31m-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);[m
+[31m-          box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);[m
+[31m-}[m
+[31m-/*# sourceMappingURL=bootstrap-theme.css.map */[m
+[1mdiff --git a/mysite/static/bootstrap-theme.css.map b/mysite/static/bootstrap-theme.css.map[m
+[1mdeleted file mode 100644[m
+[1mindex 4cc41ab..0000000[m
+[1m--- a/mysite/static/bootstrap-theme.css.map[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-{"version":3,"file":"bootstrap-theme.css","sources":["less/theme.less","less/mixins/vendor-prefixes.less","bootstrap-theme.css","less/mixins/gradients.less","less/mixins/reset-filter.less"],"names":[],"mappings":"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","sourcesContent":["\n//\n// Load core variables and mixins\n// --------------------------------------------------\n\n@import \"variables.less\";\n@import \"mixins.less\";\n\n\n\n//\n// Buttons\n// --------------------------------------------------\n\n// Common styles\n.btn-default,\n.btn-primary,\n.btn-success,\n.btn-info,\n.btn-warning,\n.btn-danger {\n  text-shadow: 0 -1px 0 rgba(0,0,0,.2);\n  @shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);\n  .box-shadow(@shadow);\n\n  // Reset the shadow\n  &:active,\n  &.active {\n    .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));\n  }\n}\n\n// Mixin for generating new styles\n.btn-styles(@btn-color: #555) {\n  #gradient > .vertical(@start-color: @btn-color; @end-color: darken(@btn-color, 12%));\n  .reset-filter(); // Disable gradients for IE9 because filter bleeds through rounded corners\n  background-repeat: repeat-x;\n  border-color: darken(@btn-color, 14%);\n\n  &:hover,\n  &:focus  {\n    background-color: darken(@btn-color, 12%);\n    background-position: 0 -15px;\n  }\n\n  &:active,\n  &.active {\n    background-color: darken(@btn-color, 12%);\n    border-color: darken(@btn-color, 14%);\n  }\n\n  &:disabled,\n  &[disabled] {\n    background-color: darken(@btn-color, 12%);\n    background-image: none;\n  }\n}\n\n// Common styles\n.btn {\n  // Remove the gradient for the pressed/active state\n  &:active,\n  &.active {\n    background-image: none;\n  }\n}\n\n// Apply the mixin to the buttons\n.btn-default { .btn-styles(@btn-default-bg); text-shadow: 0 1px 0 #fff; border-color: #ccc; }\n.btn-primary { .btn-styles(@btn-primary-bg); }\n.btn-success { .btn-styles(@btn-success-bg); }\n.btn-info    { .btn-styles(@btn-info-bg); }\n.btn-warning { .btn-styles(@btn-warning-bg); }\n.btn-danger  { .btn-styles(@btn-danger-bg); }\n\n\n\n//\n// Images\n// --------------------------------------------------\n\n.thumbnail,\n.img-thumbnail {\n  .box-shadow(0 1px 2px rgba(0,0,0,.075));\n}\n\n\n\n//\n// Dropdowns\n// --------------------------------------------------\n\n.dropdown-menu > li > a:hover,\n.dropdown-menu > li > a:focus {\n  #gradient > .vertical(@start-color: @dropdown-link-hover-bg; @end-color: darken(@dropdown-link-hover-bg, 5%));\n  background-color: darken(@dropdown-link-hover-bg, 5%);\n}\n.dropdown-menu > .active > a,\n.dropdown-menu > .active > a:hover,\n.dropdown-menu > .active > a:focus {\n  #gradient > .vertical(@start-color: @dropdown-link-active-bg; @end-color: darken(@dropdown-link-active-bg, 5%));\n  background-color: darken(@dropdown-link-active-bg, 5%);\n}\n\n\n\n//\n// Navbar\n// --------------------------------------------------\n\n// Default navbar\n.navbar-default {\n  #gradient > .vertical(@start-color: lighten(@navbar-default-bg, 10%); @end-color: @navbar-default-bg);\n  .reset-filter(); // Remove gradient in IE<10 to fix bug where dropdowns don't get triggered\n  border-radius: @navbar-border-radius;\n  @shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);\n  .box-shadow(@shadow);\n\n  .navbar-nav > .active > a {\n    #gradient > .vertical(@start-color: darken(@navbar-default-bg, 5%); @end-color: darken(@navbar-default-bg, 2%));\n    .box-shadow(inset 0 3px 9px rgba(0,0,0,.075));\n  }\n}\n.navbar-brand,\n.navbar-nav > li > a {\n  text-shadow: 0 1px 0 rgba(255,255,255,.25);\n}\n\n// Inverted navbar\n.navbar-inverse {\n  #gradient > .vertical(@start-color: lighten(@navbar-inverse-bg, 10%); @end-color: @navbar-inverse-bg);\n  .reset-filter(); // Remove gradient in IE<10 to fix bug where dropdowns don't get triggered\n\n  .navbar-nav > .active > a {\n    #gradient > .vertical(@start-color: @navbar-inverse-bg; @end-color: lighten(@navbar-inverse-bg, 2.5%));\n    .box-shadow(inset 0 3px 9px rgba(0,0,0,.25));\n  }\n\n  .navbar-brand,\n  .navbar-nav > li > a {\n    text-shadow: 0 -1px 0 rgba(0,0,0,.25);\n  }\n}\n\n// Undo rounded corners in static and fixed navbars\n.navbar-static-top,\n.navbar-fixed-top,\n.navbar-fixed-bottom {\n  border-radius: 0;\n}\n\n\n\n//\n// Alerts\n// --------------------------------------------------\n\n// Common styles\n.alert {\n  text-shadow: 0 1px 0 rgba(255,255,255,.2);\n  @shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 2px rgba(0,0,0,.05);\n  .box-shadow(@shadow);\n}\n\n// Mixin for generating new styles\n.alert-styles(@color) {\n  #gradient > .vertical(@start-color: @color; @end-color: darken(@color, 7.5%));\n  border-color: darken(@color, 15%);\n}\n\n// Apply the mixin to the alerts\n.alert-success    { .alert-styles(@alert-success-bg); }\n.alert-info       { .alert-styles(@alert-info-bg); }\n.alert-warning    { .alert-styles(@alert-warning-bg); }\n.alert-danger     { .alert-styles(@alert-danger-bg); }\n\n\n\n//\n// Progress bars\n// --------------------------------------------------\n\n// Give the progress background some depth\n.progress {\n  #gradient > .vertical(@start-color: darken(@progress-bg, 4%); @end-color: @progress-bg)\n}\n\n// Mixin for generating new styles\n.progress-bar-styles(@color) {\n  #gradient > .vertical(@start-color: @color; @end-color: darken(@color, 10%));\n}\n\n// Apply the mixin to the progress bars\n.progress-bar            { .progress-bar-styles(@progress-bar-bg); }\n.progress-bar-success    { .progress-bar-styles(@progress-bar-success-bg); }\n.progress-bar-info       { .progress-bar-styles(@progress-bar-info-bg); }\n.progress-bar-warning    { .progress-bar-styles(@progress-bar-warning-bg); }\n.progress-bar-danger     { .progress-bar-styles(@progress-bar-danger-bg); }\n\n// Reset the striped class because our mixins don't do multiple gradients and\n// the above custom styles override the new `.progress-bar-striped` in v3.2.0.\n.progress-bar-striped {\n  #gradient > .striped();\n}\n\n\n//\n// List groups\n// --------------------------------------------------\n\n.list-group {\n  border-radius: @border-radius-base;\n  .box-shadow(0 1px 2px rgba(0,0,0,.075));\n}\n.list-group-item.active,\n.list-group-item.active:hover,\n.list-group-item.active:focus {\n  text-shadow: 0 -1px 0 darken(@list-group-active-bg, 10%);\n  #gradient > .vertical(@start-color: @list-group-active-bg; @end-color: darken(@list-group-active-bg, 7.5%));\n  border-color: darken(@list-group-active-border, 7.5%);\n}\n\n\n\n//\n// Panels\n// --------------------------------------------------\n\n// Common styles\n.panel {\n  .box-shadow(0 1px 2px rgba(0,0,0,.05));\n}\n\n// Mixin for generating new styles\n.panel-heading-styles(@color) {\n  #gradient > .vertical(@start-color: @color; @end-color: darken(@color, 5%));\n}\n\n// Apply the mixin to the panel headings only\n.panel-default > .panel-heading   { .panel-heading-styles(@panel-default-heading-bg); }\n.panel-primary > .panel-heading   { .panel-heading-styles(@panel-primary-heading-bg); }\n.panel-success > .panel-heading   { .panel-heading-styles(@panel-success-heading-bg); }\n.panel-info > .panel-heading      { .panel-heading-styles(@panel-info-heading-bg); }\n.panel-warning > .panel-heading   { .panel-heading-styles(@panel-warning-heading-bg); }\n.panel-danger > .panel-heading    { .panel-heading-styles(@panel-danger-heading-bg); }\n\n\n\n//\n// Wells\n// --------------------------------------------------\n\n.well {\n  #gradient > .vertical(@start-color: darken(@well-bg, 5%); @end-color: @well-bg);\n  border-color: darken(@well-bg, 10%);\n  @shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);\n  .box-shadow(@shadow);\n}\n","// Vendor Prefixes\n//\n// All vendor mixins are deprecated as of v3.2.0 due to the introduction of\n// Autoprefixer in our Gruntfile. They will be removed in v4.\n\n// - Animations\n// - Backface visibility\n// - Box shadow\n// - Box sizing\n// - Content columns\n// - Hyphens\n// - Placeholder text\n// - Transformations\n// - Transitions\n// - User Select\n\n\n// Animations\n.animation(@animation) {\n  -webkit-animation: @animation;\n       -o-animation: @animation;\n          animation: @animation;\n}\n.animation-name(@name) {\n  -webkit-animation-name: @name;\n          animation-name: @name;\n}\n.animation-duration(@duration) {\n  -webkit-animation-duration: @duration;\n          animation-duration: @duration;\n}\n.animation-timing-function(@timing-function) {\n  -webkit-animation-timing-function: @timing-function;\n          animation-timing-function: @timing-function;\n}\n.animation-delay(@delay) {\n  -webkit-animation-delay: @delay;\n          animation-delay: @delay;\n}\n.animation-iteration-count(@iteration-count) {\n  -webkit-animation-iteration-count: @iteration-count;\n          animation-iteration-count: @iteration-count;\n}\n.animation-direction(@direction) {\n  -webkit-animation-direction: @direction;\n          animation-direction: @direction;\n}\n.animation-fill-mode(@fill-mode) {\n  -webkit-animation-fill-mode: @fill-mode;\n          animation-fill-mode: @fill-mode;\n}\n\n// Backface visibility\n// Prevent browsers from flickering when using CSS 3D transforms.\n// Default value is `visible`, but can be changed to `hidden`\n\n.backface-visibility(@visibility){\n  -webkit-backface-visibility: @visibility;\n     -moz-backface-visibility: @visibility;\n          backface-visibility: @visibility;\n}\n\n// Drop shadows\n//\n// Note: Deprecated `.box-shadow()` as of v3.1.0 since all of Bootstrap's\n// supported browsers that have box shadow capabilities now support it.\n\n.box-shadow(@shadow) {\n  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1\n          box-shadow: @shadow;\n}\n\n// Box sizing\n.box-sizing(@boxmodel) {\n  -webkit-box-sizing: @boxmodel;\n     -moz-box-sizing: @boxmodel;\n          box-sizing: @boxmodel;\n}\n\n// CSS3 Content Columns\n.content-columns(@column-count; @column-gap: @grid-gutter-width) {\n  -webkit-column-count: @column-count;\n     -moz-column-count: @column-count;\n          column-count: @column-count;\n  -webkit-column-gap: @column-gap;\n     -moz-column-gap: @column-gap;\n          column-gap: @column-gap;\n}\n\n// Optional hyphenation\n.hyphens(@mode: auto) {\n  word-wrap: break-word;\n  -webkit-hyphens: @mode;\n     -moz-hyphens: @mode;\n      -ms-hyphens: @mode; // IE10+\n       -o-hyphens: @mode;\n          hyphens: @mode;\n}\n\n// Placeholder text\n.placeholder(@color: @input-color-placeholder) {\n  &::-moz-placeholder           { color: @color;   // Firefox\n                                  opacity: 1; } // See https://github.com/twbs/bootstrap/pull/11526\n  &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+\n  &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome\n}\n\n// Transformations\n.scale(@ratio) {\n  -webkit-transform: scale(@ratio);\n      -ms-transform: scale(@ratio); // IE9 only\n       -o-transform: scale(@ratio);\n          transform: scale(@ratio);\n}\n.scale(@ratioX; @ratioY) {\n  -webkit-transform: scale(@ratioX, @ratioY);\n      -ms-transform: scale(@ratioX, @ratioY); // IE9 only\n       -o-transform: scale(@ratioX, @ratioY);\n          transform: scale(@ratioX, @ratioY);\n}\n.scaleX(@ratio) {\n  -webkit-transform: scaleX(@ratio);\n      -ms-transform: scaleX(@ratio); // IE9 only\n       -o-transform: scaleX(@ratio);\n          transform: scaleX(@ratio);\n}\n.scaleY(@ratio) {\n  -webkit-transform: scaleY(@ratio);\n      -ms-transform: scaleY(@ratio); // IE9 only\n       -o-transform: scaleY(@ratio);\n          transform: scaleY(@ratio);\n}\n.skew(@x; @y) {\n  -webkit-transform: skewX(@x) skewY(@y);\n      -ms-transform: skewX(@x) skewY(@y); // See https://github.com/twbs/bootstrap/issues/4885; IE9+\n       -o-transform: skewX(@x) skewY(@y);\n          transform: skewX(@x) skewY(@y);\n}\n.translate(@x; @y) {\n  -webkit-transform: translate(@x, @y);\n      -ms-transform: translate(@x, @y); // IE9 only\n       -o-transform: translate(@x, @y);\n          transform: translate(@x, @y);\n}\n.translate3d(@x; @y; @z) {\n  -webkit-transform: translate3d(@x, @y, @z);\n          transform: translate3d(@x, @y, @z);\n}\n.rotate(@degrees) {\n  -webkit-transform: rotate(@degrees);\n      -ms-transform: rotate(@degrees); // IE9 only\n       -o-transform: rotate(@degrees);\n          transform: rotate(@degrees);\n}\n.rotateX(@degrees) {\n  -webkit-transform: rotateX(@degrees);\n      -ms-transform: rotateX(@degrees); // IE9 only\n       -o-transform: rotateX(@degrees);\n          transform: rotateX(@degrees);\n}\n.rotateY(@degrees) {\n  -webkit-transform: rotateY(@degrees);\n      -ms-transform: rotateY(@degrees); // IE9 only\n       -o-transform: rotateY(@degrees);\n          transform: rotateY(@degrees);\n}\n.perspective(@perspective) {\n  -webkit-perspective: @perspective;\n     -moz-perspective: @perspective;\n          perspective: @perspective;\n}\n.perspective-origin(@perspective) {\n  -webkit-perspective-origin: @perspective;\n     -moz-perspective-origin: @perspective;\n          perspective-origin: @perspective;\n}\n.transform-origin(@origin) {\n  -webkit-transform-origin: @origin;\n     -moz-transform-origin: @origin;\n      -ms-transform-origin: @origin; // IE9 only\n          transform-origin: @origin;\n}\n\n\n// Transitions\n\n.transition(@transition) {\n  -webkit-transition: @transition;\n       -o-transition: @transition;\n          transition: @transition;\n}\n.transition-property(@transition-property) {\n  -webkit-transition-property: @transition-property;\n          transition-property: @transition-property;\n}\n.transition-delay(@transition-delay) {\n  -webkit-transition-delay: @transition-delay;\n          transition-delay: @transition-delay;\n}\n.transition-duration(@transition-duration) {\n  -webkit-transition-duration: @transition-duration;\n          transition-duration: @transition-duration;\n}\n.transition-timing-function(@timing-function) {\n  -webkit-transition-timing-function: @timing-function;\n          transition-timing-function: @timing-function;\n}\n.transition-transform(@transition) {\n  -webkit-transition: -webkit-transform @transition;\n     -moz-transition: -moz-transform @transition;\n       -o-transition: -o-transform @transition;\n          transition: transform @transition;\n}\n\n\n// User select\n// For selecting text on the page\n\n.user-select(@select) {\n  -webkit-user-select: @select;\n     -moz-user-select: @select;\n      -ms-user-select: @select; // IE10+\n          user-select: @select;\n}\n",null,"// Gradients\n\n#gradient {\n\n  // Horizontal gradient, from left to right\n  //\n  // Creates two color stops, start and end, by specifying a color and position for each color stop.\n  // Color stops are not available in IE9 and below.\n  .horizontal(@start-color: #555; @end-color: #333; @start-percent: 0%; @end-percent: 100%) {\n    background-image: -webkit-linear-gradient(left, @start-color @start-percent, @end-color @end-percent); // Safari 5.1-6, Chrome 10+\n    background-image: -o-linear-gradient(left, @start-color @start-percent, @end-color @end-percent); // Opera 12\n    background-image: linear-gradient(to right, @start-color @start-percent, @end-color @end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+\n    background-repeat: repeat-x;\n    filter: e(%(\"progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)\",argb(@start-color),argb(@end-color))); // IE9 and down\n  }\n\n  // Vertical gradient, from top to bottom\n  //\n  // Creates two color stops, start and end, by specifying a color and position for each color stop.\n  // Color stops are not available in IE9 and below.\n  .vertical(@start-color: #555; @end-color: #333; @start-percent: 0%; @end-percent: 100%) {\n    background-image: -webkit-linear-gradient(top, @start-color @start-percent, @end-color @end-percent);  // Safari 5.1-6, Chrome 10+\n    background-image: -o-linear-gradient(top, @start-color @start-percent, @end-color @end-percent);  // Opera 12\n    background-image: linear-gradient(to bottom, @start-color @start-percent, @end-color @end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+\n    background-repeat: repeat-x;\n    filter: e(%(\"progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)\",argb(@start-color),argb(@end-color))); // IE9 and down\n  }\n\n  .directional(@start-color: #555; @end-color: #333; @deg: 45deg) {\n    background-repeat: repeat-x;\n    background-image: -webkit-linear-gradient(@deg, @start-color, @end-color); // Safari 5.1-6, Chrome 10+\n    background-image: -o-linear-gradient(@deg, @start-color, @end-color); // Opera 12\n    background-image: linear-gradient(@deg, @start-color, @end-color); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+\n  }\n  .horizontal-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {\n    background-image: -webkit-linear-gradient(left, @start-color, @mid-color @color-stop, @end-color);\n    background-image: -o-linear-gradient(left, @start-color, @mid-color @color-stop, @end-color);\n    background-image: linear-gradient(to right, @start-color, @mid-color @color-stop, @end-color);\n    background-repeat: no-repeat;\n    filter: e(%(\"progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)\",argb(@start-color),argb(@end-color))); // IE9 and down, gets no color-stop at all for proper fallback\n  }\n  .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {\n    background-image: -webkit-linear-gradient(@start-color, @mid-color @color-stop, @end-color);\n    background-image: -o-linear-gradient(@start-color, @mid-color @color-stop, @end-color);\n    background-image: linear-gradient(@start-color, @mid-color @color-stop, @end-color);\n    background-repeat: no-repeat;\n    filter: e(%(\"progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)\",argb(@start-color),argb(@end-color))); // IE9 and down, gets no color-stop at all for proper fallback\n  }\n  .radial(@inner-color: #555; @outer-color: #333) {\n    background-image: -webkit-radial-gradient(circle, @inner-color, @outer-color);\n    background-image: radial-gradient(circle, @inner-color, @outer-color);\n    background-repeat: no-repeat;\n  }\n  .striped(@color: rgba(255,255,255,.15); @angle: 45deg) {\n    background-image: -webkit-linear-gradient(@angle, @color 25%, transparent 25%, transparent 50%, @color 50%, @color 75%, transparent 75%, transparent);\n    background-image: -o-linear-gradient(@angle, @color 25%, transparent 25%, transparent 50%, @color 50%, @color 75%, transparent 75%, transparent);\n    background-image: linear-gradient(@angle, @color 25%, transparent 25%, transparent 50%, @color 50%, @color 75%, transparent 75%, transparent);\n  }\n}\n","// Reset filters for IE\n//\n// When you need to remove a gradient background, do not forget to use this to reset\n// the IE filter for IE9 and below.\n\n.reset-filter() {\n  filter: e(%(\"progid:DXImageTransform.Microsoft.gradient(enabled = false)\"));\n}\n"]}[m
+\ No newline at end of file[m
+[1mdiff --git a/mysite/static/bootstrap-theme.min.css b/mysite/static/bootstrap-theme.min.css[m
+[1mdeleted file mode 100644[m
+[1mindex 2e97597..0000000[m
+[1m--- a/mysite/static/bootstrap-theme.min.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,5 +0,0 @@[m
+[31m-/*![m
+[31m- * Bootstrap v3.2.0 (http://getbootstrap.com)[m
+[31m- * Copyright 2011-2014 Twitter, Inc.[m
+[31m- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)[m
+[31m- */.btn-default,.btn-primary,.btn-success,.btn-info,.btn-warning,.btn-danger{text-shadow:0 -1px 0 rgba(0,0,0,.2);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075)}.btn-default:active,.btn-primary:active,.btn-success:active,.btn-info:active,.btn-warning:active,.btn-danger:active,.btn-default.active,.btn-primary.active,.btn-success.active,.btn-info.active,.btn-warning.active,.btn-danger.active{-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}.btn:active,.btn.active{background-image:none}.btn-default{text-shadow:0 1px 0 #fff;background-image:-webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image:-o-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#e0e0e0));background-image:linear-gradient(to bottom,#fff 0,#e0e0e0 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);background-repeat:repeat-x;border-color:#dbdbdb;border-color:#ccc}.btn-default:hover,.btn-default:focus{background-color:#e0e0e0;background-position:0 -15px}.btn-default:active,.btn-default.active{background-color:#e0e0e0;border-color:#dbdbdb}.btn-default:disabled,.btn-default[disabled]{background-color:#e0e0e0;background-image:none}.btn-primary{background-image:-webkit-linear-gradient(top,#428bca 0,#2d6ca2 100%);background-image:-o-linear-gradient(top,#428bca 0,#2d6ca2 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#428bca),to(#2d6ca2));background-image:linear-gradient(to bottom,#428bca 0,#2d6ca2 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff2d6ca2', GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);background-repeat:repeat-x;border-color:#2b669a}.btn-primary:hover,.btn-primary:focus{background-color:#2d6ca2;background-position:0 -15px}.btn-primary:active,.btn-primary.active{background-color:#2d6ca2;border-color:#2b669a}.btn-primary:disabled,.btn-primary[disabled]{background-color:#2d6ca2;background-image:none}.btn-success{background-image:-webkit-linear-gradient(top,#5cb85c 0,#419641 100%);background-image:-o-linear-gradient(top,#5cb85c 0,#419641 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#5cb85c),to(#419641));background-image:linear-gradient(to bottom,#5cb85c 0,#419641 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);background-repeat:repeat-x;border-color:#3e8f3e}.btn-success:hover,.btn-success:focus{background-color:#419641;background-position:0 -15px}.btn-success:active,.btn-success.active{background-color:#419641;border-color:#3e8f3e}.btn-success:disabled,.btn-success[disabled]{background-color:#419641;background-image:none}.btn-info{background-image:-webkit-linear-gradient(top,#5bc0de 0,#2aabd2 100%);background-image:-o-linear-gradient(top,#5bc0de 0,#2aabd2 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#5bc0de),to(#2aabd2));background-image:linear-gradient(to bottom,#5bc0de 0,#2aabd2 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2aabd2', GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);background-repeat:repeat-x;border-color:#28a4c9}.btn-info:hover,.btn-info:focus{background-color:#2aabd2;background-position:0 -15px}.btn-info:active,.btn-info.active{background-color:#2aabd2;border-color:#28a4c9}.btn-info:disabled,.btn-info[disabled]{background-color:#2aabd2;background-image:none}.btn-warning{background-image:-webkit-linear-gradient(top,#f0ad4e 0,#eb9316 100%);background-image:-o-linear-gradient(top,#f0ad4e 0,#eb9316 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#f0ad4e),to(#eb9316));background-image:linear-gradient(to bottom,#f0ad4e 0,#eb9316 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffeb9316', GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);background-repeat:repeat-x;border-color:#e38d13}.btn-warning:hover,.btn-warning:focus{background-color:#eb9316;background-position:0 -15px}.btn-warning:active,.btn-warning.active{background-color:#eb9316;border-color:#e38d13}.btn-warning:disabled,.btn-warning[disabled]{background-color:#eb9316;background-image:none}.btn-danger{background-image:-webkit-linear-gradient(top,#d9534f 0,#c12e2a 100%);background-image:-o-linear-gradient(top,#d9534f 0,#c12e2a 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#d9534f),to(#c12e2a));background-image:linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc12e2a', GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);background-repeat:repeat-x;border-color:#b92c28}.btn-danger:hover,.btn-danger:focus{background-color:#c12e2a;background-position:0 -15px}.btn-danger:active,.btn-danger.active{background-color:#c12e2a;border-color:#b92c28}.btn-danger:disabled,.btn-danger[disabled]{background-color:#c12e2a;background-image:none}.thumbnail,.img-thumbnail{-webkit-box-shadow:0 1px 2px rgba(0,0,0,.075);box-shadow:0 1px 2px rgba(0,0,0,.075)}.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus{background-color:#e8e8e8;background-image:-webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);background-image:-o-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#e8e8e8));background-image:linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);background-repeat:repeat-x}.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus{background-color:#357ebd;background-image:-webkit-linear-gradient(top,#428bca 0,#357ebd 100%);background-image:-o-linear-gradient(top,#428bca 0,#357ebd 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#428bca),to(#357ebd));background-image:linear-gradient(to bottom,#428bca 0,#357ebd 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);background-repeat:repeat-x}.navbar-default{background-image:-webkit-linear-gradient(top,#fff 0,#f8f8f8 100%);background-image:-o-linear-gradient(top,#fff 0,#f8f8f8 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#f8f8f8));background-image:linear-gradient(to bottom,#fff 0,#f8f8f8 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);background-repeat:repeat-x;border-radius:4px;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075)}.navbar-default .navbar-nav>.active>a{background-image:-webkit-linear-gradient(top,#ebebeb 0,#f3f3f3 100%);background-image:-o-linear-gradient(top,#ebebeb 0,#f3f3f3 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#ebebeb),to(#f3f3f3));background-image:linear-gradient(to bottom,#ebebeb 0,#f3f3f3 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff3f3f3', GradientType=0);background-repeat:repeat-x;-webkit-box-shadow:inset 0 3px 9px rgba(0,0,0,.075);box-shadow:inset 0 3px 9px rgba(0,0,0,.075)}.navbar-brand,.navbar-nav>li>a{text-shadow:0 1px 0 rgba(255,255,255,.25)}.navbar-inverse{background-image:-webkit-linear-gradient(top,#3c3c3c 0,#222 100%);background-image:-o-linear-gradient(top,#3c3c3c 0,#222 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#3c3c3c),to(#222));background-image:linear-gradient(to bottom,#3c3c3c 0,#222 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);background-repeat:repeat-x}.navbar-inverse .navbar-nav>.active>a{background-image:-webkit-linear-gradient(top,#222 0,#282828 100%);background-image:-o-linear-gradient(top,#222 0,#282828 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#222),to(#282828));background-image:linear-gradient(to bottom,#222 0,#282828 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff282828', GradientType=0);background-repeat:repeat-x;-webkit-box-shadow:inset 0 3px 9px rgba(0,0,0,.25);box-shadow:inset 0 3px 9px rgba(0,0,0,.25)}.navbar-inverse .navbar-brand,.navbar-inverse .navbar-nav>li>a{text-shadow:0 -1px 0 rgba(0,0,0,.25)}.navbar-static-top,.navbar-fixed-top,.navbar-fixed-bottom{border-radius:0}.alert{text-shadow:0 1px 0 rgba(255,255,255,.2);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 1px 2px rgba(0,0,0,.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 1px 2px rgba(0,0,0,.05)}.alert-success{background-image:-webkit-linear-gradient(top,#dff0d8 0,#c8e5bc 100%);background-image:-o-linear-gradient(top,#dff0d8 0,#c8e5bc 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#dff0d8),to(#c8e5bc));background-image:linear-gradient(to bottom,#dff0d8 0,#c8e5bc 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);background-repeat:repeat-x;border-color:#b2dba1}.alert-info{background-image:-webkit-linear-gradient(top,#d9edf7 0,#b9def0 100%);background-image:-o-linear-gradient(top,#d9edf7 0,#b9def0 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#d9edf7),to(#b9def0));background-image:linear-gradient(to bottom,#d9edf7 0,#b9def0 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);background-repeat:repeat-x;border-color:#9acfea}.alert-warning{background-image:-webkit-linear-gradient(top,#fcf8e3 0,#f8efc0 100%);background-image:-o-linear-gradient(top,#fcf8e3 0,#f8efc0 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#fcf8e3),to(#f8efc0));background-image:linear-gradient(to bottom,#fcf8e3 0,#f8efc0 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fff8efc0', GradientType=0);background-repeat:repeat-x;border-color:#f5e79e}.alert-danger{background-image:-webkit-linear-gradient(top,#f2dede 0,#e7c3c3 100%);background-image:-o-linear-gradient(top,#f2dede 0,#e7c3c3 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#f2dede),to(#e7c3c3));background-image:linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);background-repeat:repeat-x;border-color:#dca7a7}.progress{background-image:-webkit-linear-gradient(top,#ebebeb 0,#f5f5f5 100%);background-image:-o-linear-gradient(top,#ebebeb 0,#f5f5f5 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#ebebeb),to(#f5f5f5));background-image:linear-gradient(to bottom,#ebebeb 0,#f5f5f5 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff5f5f5', GradientType=0);background-repeat:repeat-x}.progress-bar{background-image:-webkit-linear-gradient(top,#428bca 0,#3071a9 100%);background-image:-o-linear-gradient(top,#428bca 0,#3071a9 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#428bca),to(#3071a9));background-image:linear-gradient(to bottom,#428bca 0,#3071a9 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3071a9', GradientType=0);background-repeat:repeat-x}.progress-bar-success{background-image:-webkit-linear-gradient(top,#5cb85c 0,#449d44 100%);background-image:-o-linear-gradient(top,#5cb85c 0,#449d44 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#5cb85c),to(#449d44));background-image:linear-gradient(to bottom,#5cb85c 0,#449d44 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff449d44', GradientType=0);background-repeat:repeat-x}.progress-bar-info{background-image:-webkit-linear-gradient(top,#5bc0de 0,#31b0d5 100%);background-image:-o-linear-gradient(top,#5bc0de 0,#31b0d5 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#5bc0de),to(#31b0d5));background-image:linear-gradient(to bottom,#5bc0de 0,#31b0d5 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff31b0d5', GradientType=0);background-repeat:repeat-x}.progress-bar-warning{background-image:-webkit-linear-gradient(top,#f0ad4e 0,#ec971f 100%);background-image:-o-linear-gradient(top,#f0ad4e 0,#ec971f 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#f0ad4e),to(#ec971f));background-image:linear-gradient(to bottom,#f0ad4e 0,#ec971f 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffec971f', GradientType=0);background-repeat:repeat-x}.progress-bar-danger{background-image:-webkit-linear-gradient(top,#d9534f 0,#c9302c 100%);background-image:-o-linear-gradient(top,#d9534f 0,#c9302c 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#d9534f),to(#c9302c));background-image:linear-gradient(to bottom,#d9534f 0,#c9302c 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc9302c', GradientType=0);background-repeat:repeat-x}.progress-bar-striped{background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent)}.list-group{border-radius:4px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.075);box-shadow:0 1px 2px rgba(0,0,0,.075)}.list-group-item.active,.list-group-item.active:hover,.list-group-item.active:focus{text-shadow:0 -1px 0 #3071a9;background-image:-webkit-linear-gradient(top,#428bca 0,#3278b3 100%);background-image:-o-linear-gradient(top,#428bca 0,#3278b3 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#428bca),to(#3278b3));background-image:linear-gradient(to bottom,#428bca 0,#3278b3 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3278b3', GradientType=0);background-repeat:repeat-x;border-color:#3278b3}.panel{-webkit-box-shadow:0 1px 2px rgba(0,0,0,.05);box-shadow:0 1px 2px rgba(0,0,0,.05)}.panel-default>.panel-heading{background-image:-webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);background-image:-o-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#e8e8e8));background-image:linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);background-repeat:repeat-x}.panel-primary>.panel-heading{background-image:-webkit-linear-gradient(top,#428bca 0,#357ebd 100%);background-image:-o-linear-gradient(top,#428bca 0,#357ebd 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#428bca),to(#357ebd));background-image:linear-gradient(to bottom,#428bca 0,#357ebd 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);background-repeat:repeat-x}.panel-success>.panel-heading{background-image:-webkit-linear-gradient(top,#dff0d8 0,#d0e9c6 100%);background-image:-o-linear-gradient(top,#dff0d8 0,#d0e9c6 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#dff0d8),to(#d0e9c6));background-image:linear-gradient(to bottom,#dff0d8 0,#d0e9c6 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffd0e9c6', GradientType=0);background-repeat:repeat-x}.panel-info>.panel-heading{background-image:-webkit-linear-gradient(top,#d9edf7 0,#c4e3f3 100%);background-image:-o-linear-gradient(top,#d9edf7 0,#c4e3f3 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#d9edf7),to(#c4e3f3));background-image:linear-gradient(to bottom,#d9edf7 0,#c4e3f3 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0);background-repeat:repeat-x}.panel-warning>.panel-heading{background-image:-webkit-linear-gradient(top,#fcf8e3 0,#faf2cc 100%);background-image:-o-linear-gradient(top,#fcf8e3 0,#faf2cc 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#fcf8e3),to(#faf2cc));background-image:linear-gradient(to bottom,#fcf8e3 0,#faf2cc 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fffaf2cc', GradientType=0);background-repeat:repeat-x}.panel-danger>.panel-heading{background-image:-webkit-linear-gradient(top,#f2dede 0,#ebcccc 100%);background-image:-o-linear-gradient(top,#f2dede 0,#ebcccc 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#f2dede),to(#ebcccc));background-image:linear-gradient(to bottom,#f2dede 0,#ebcccc 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffebcccc', GradientType=0);background-repeat:repeat-x}.well{background-image:-webkit-linear-gradient(top,#e8e8e8 0,#f5f5f5 100%);background-image:-o-linear-gradient(top,#e8e8e8 0,#f5f5f5 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#e8e8e8),to(#f5f5f5));background-image:linear-gradient(to bottom,#e8e8e8 0,#f5f5f5 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0);background-repeat:repeat-x;border-color:#dcdcdc;-webkit-box-shadow:inset 0 1px 3px rgba(0,0,0,.05),0 1px 0 rgba(255,255,255,.1);box-shadow:inset 0 1px 3px rgba(0,0,0,.05),0 1px 0 rgba(255,255,255,.1)}[m
+\ No newline at end of file[m
+[1mdiff --git a/mysite/static/bootstrap.css b/mysite/static/bootstrap.css[m
+[1mdeleted file mode 100644[m
+[1mindex 73da790..0000000[m
+[1m--- a/mysite/static/bootstrap.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,6203 +0,0 @@[m
+[31m-/*![m
+[31m- * Bootstrap v3.2.0 (http://getbootstrap.com)[m
+[31m- * Copyright 2011-2014 Twitter, Inc.[m
+[31m- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)[m
+[31m- */[m
+[31m-[m
+[31m-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */[m
+[31m-html {[m
+[31m-  font-family: sans-serif;[m
+[31m-  -webkit-text-size-adjust: 100%;[m
+[31m-      -ms-text-size-adjust: 100%;[m
+[31m-}[m
+[31m-body {[m
+[31m-  margin: 0;[m
+[31m-}[m
+[31m-article,[m
+[31m-aside,[m
+[31m-details,[m
+[31m-figcaption,[m
+[31m-figure,[m
+[31m-footer,[m
+[31m-header,[m
+[31m-hgroup,[m
+[31m-main,[m
+[31m-nav,[m
+[31m-section,[m
+[31m-summary {[m
+[31m-  display: block;[m
+[31m-}[m
+[31m-audio,[m
+[31m-canvas,[m
+[31m-progress,[m
+[31m-video {[m
+[31m-  display: inline-block;[m
+[31m-  vertical-align: baseline;[m
+[31m-}[m
+[31m-audio:not([controls]) {[m
+[31m-  display: none;[m
+[31m-  height: 0;[m
+[31m-}[m
+[31m-[hidden],[m
+[31m-template {[m
+[31m-  display: none;[m
+[31m-}[m
+[31m-a {[m
+[31m-  background: transparent;[m
+[31m-}[m
+[31m-a:active,[m
+[31m-a:hover {[m
+[31m-  outline: 0;[m
+[31m-}[m
+[31m-abbr[title] {[m
+[31m-  border-bottom: 1px dotted;[m
+[31m-}[m
+[31m-b,[m
+[31m-strong {[m
+[31m-  font-weight: bold;[m
+[31m-}[m
+[31m-dfn {[m
+[31m-  font-style: italic;[m
+[31m-}[m
+[31m-h1 {[m
+[31m-  margin: .67em 0;[m
+[31m-  font-size: 2em;[m
+[31m-}[m
+[31m-mark {[m
+[31m-  color: #000;[m
+[31m-  background: #ff0;[m
+[31m-}[m
+[31m-small {[m
+[31m-  font-size: 80%;[m
+[31m-}[m
+[31m-sub,[m
+[31m-sup {[m
+[31m-  position: relative;[m
+[31m-  font-size: 75%;[m
+[31m-  line-height: 0;[m
+[31m-  vertical-align: baseline;[m
+[31m-}[m
+[31m-sup {[m
+[31m-  top: -.5em;[m
+[31m-}[m
+[31m-sub {[m
+[31m-  bottom: -.25em;[m
+[31m-}[m
+[31m-img {[m
+[31m-  border: 0;[m
+[31m-}[m
+[31m-svg:not(:root) {[m
+[31m-  overflow: hidden;[m
+[31m-}[m
+[31m-figure {[m
+[31m-  margin: 1em 40px;[m
+[31m-}[m
+[31m-hr {[m
+[31m-  height: 0;[m
+[31m-  -webkit-box-sizing: content-box;[m
+[31m-     -moz-box-sizing: content-box;[m
+[31m-          box-sizing: content-box;[m
+[31m-}[m
+[31m-pre {[m
+[31m-  overflow: auto;[m
+[31m-}[m
+[31m-code,[m
+[31m-kbd,[m
+[31m-pre,[m
+[31m-samp {[m
+[31m-  font-family: monospace, monospace;[m
+[31m-  font-size: 1em;[m
+[31m-}[m
+[31m-button,[m
+[31m-input,[m
+[31m-optgroup,[m
+[31m-select,[m
+[31m-textarea {[m
+[31m-  margin: 0;[m
+[31m-  font: inherit;[m
+[31m-  color: inherit;[m
+[31m-}[m
+[31m-button {[m
+[31m-  overflow: visible;[m
+[31m-}[m
+[31m-button,[m
+[31m-select {[m
+[31m-  text-transform: none;[m
+[31m-}[m
+[31m-button,[m
+[31m-html input[type="button"],[m
+[31m-input[type="reset"],[m
+[31m-input[type="submit"] {[m
+[31m-  -webkit-appearance: button;[m
+[31m-  cursor: pointer;[m
+[31m-}[m
+[31m-button[disabled],[m
+[31m-html input[disabled] {[m
+[31m-  cursor: default;[m
+[31m-}[m
+[31m-button::-moz-focus-inner,[m
+[31m-input::-moz-focus-inner {[m
+[31m-  padding: 0;[m
+[31m-  border: 0;[m
+[31m-}[m
+[31m-input {[m
+[31m-  line-height: normal;[m
+[31m-}[m
+[31m-input[type="checkbox"],[m
+[31m-input[type="radio"] {[m
+[31m-  -webkit-box-sizing: border-box;[m
+[31m-     -moz-box-sizing: border-box;[m
+[31m-          box-sizing: border-box;[m
+[31m-  padding: 0;[m
+[31m-}[m
+[31m-input[type="number"]::-webkit-inner-spin-button,[m
+[31m-input[type="number"]::-webkit-outer-spin-button {[m
+[31m-  height: auto;[m
+[31m-}[m
+[31m-input[type="search"] {[m
+[31m-  -webkit-box-sizing: content-box;[m
+[31m-     -moz-box-sizing: content-box;[m
+[31m-          box-sizing: content-box;[m
+[31m-  -webkit-appearance: textfield;[m
+[31m-}[m
+[31m-input[type="search"]::-webkit-search-cancel-button,[m
+[31m-input[type="search"]::-webkit-search-decoration {[m
+[31m-  -webkit-appearance: none;[m
+[31m-}[m
+[31m-fieldset {[m
+[31m-  padding: .35em .625em .75em;[m
+[31m-  margin: 0 2px;[m
+[31m-  border: 1px solid #c0c0c0;[m
+[31m-}[m
+[31m-legend {[m
+[31m-  padding: 0;[m
+[31m-  border: 0;[m
+[31m-}[m
+[31m-textarea {[m
+[31m-  overflow: auto;[m
+[31m-}[m
+[31m-optgroup {[m
+[31m-  font-weight: bold;[m
+[31m-}[m
+[31m-table {[m
+[31m-  border-spacing: 0;[m
+[31m-  border-collapse: collapse;[m
+[31m-}[m
+[31m-td,[m
+[31m-th {[m
+[31m-  padding: 0;[m
+[31m-}[m
+[31m-@media print {[m
+[31m-  * {[m
+[31m-    color: #000 !important;[m
+[31m-    text-shadow: none !important;[m
+[31m-    background: transparent !important;[m
+[31m-    -webkit-box-shadow: none !important;[m
+[31m-            box-shadow: none !important;[m
+[31m-  }[m
+[31m-  a,[m
+[31m-  a:visited {[m
+[31m-    text-decoration: underline;[m
+[31m-  }[m
+[31m-  a[href]:after {[m
+[31m-    content: " (" attr(href) ")";[m
+[31m-  }[m
+[31m-  abbr[title]:after {[m
+[31m-    content: " (" attr(title) ")";[m
+[31m-  }[m
+[31m-  a[href^="javascript:"]:after,[m
+[31m-  a[href^="#"]:after {[m
+[31m-    content: "";[m
+[31m-  }[m
+[31m-  pre,[m
+[31m-  blockquote {[m
+[31m-    border: 1px solid #999;[m
+[31m-[m
+[31m-    page-break-inside: avoid;[m
+[31m-  }[m
+[31m-  thead {[m
+[31m-    display: table-header-group;[m
+[31m-  }[m
+[31m-  tr,[m
+[31m-  img {[m
+[31m-    page-break-inside: avoid;[m
+[31m-  }[m
+[31m-  img {[m
+[31m-    max-width: 100% !important;[m
+[31m-  }[m
+[31m-  p,[m
+[31m-  h2,[m
+[31m-  h3 {[m
+[31m-    orphans: 3;[m
+[31m-    widows: 3;[m
+[31m-  }[m
+[31m-  h2,[m
+[31m-  h3 {[m
+[31m-    page-break-after: avoid;[m
+[31m-  }[m
+[31m-  select {[m
+[31m-    background: #fff !important;[m
+[31m-  }[m
+[31m-  .navbar {[m
+[31m-    display: none;[m
+[31m-  }[m
+[31m-  .table td,[m
+[31m-  .table th {[m
+[31m-    background-color: #fff !important;[m
+[31m-  }[m
+[31m-  .btn > .caret,[m
+[31m-  .dropup > .btn > .caret {[m
+[31m-    border-top-color: #000 !important;[m
+[31m-  }[m
+[31m-  .label {[m
+[31m-    border: 1px solid #000;[m
+[31m-  }[m
+[31m-  .table {[m
+[31m-    border-collapse: collapse !important;[m
+[31m-  }[m
+[31m-  .table-bordered th,[m
+[31m-  .table-bordered td {[m
+[31m-    border: 1px solid #ddd !important;[m
+[31m-  }[m
+[31m-}[m
+[31m-@font-face {[m
+[31m-  font-family: 'Glyphicons Halflings';[m
+[31m-[m
+[31m-  src: url('glyphicons-halflings-regular.eot');[m
+[31m-  src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('glyphicons-halflings-regular.woff') format('woff'), url('glyphicons-halflings-regular.ttf') format('truetype'), url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');[m
+[31m-}[m
+[31m-.glyphicon {[m
+[31m-  position: relative;[m
+[31m-  top: 1px;[m
+[31m-  display: inline-block;[m
+[31m-  font-family: 'Glyphicons Halflings';[m
+[31m-  font-style: normal;[m
+[31m-  font-weight: normal;[m
+[31m-  line-height: 1;[m
+[31m-[m
+[31m-  -webkit-font-smoothing: antialiased;[m
+[31m-  -moz-osx-font-smoothing: grayscale;[m
+[31m-}[m
+[31m-.glyphicon-asterisk:before {[m
+[31m-  content: "\2a";[m
+[31m-}[m
+[31m-.glyphicon-plus:before {[m
+[31m-  content: "\2b";[m
+[31m-}[m
+[31m-.glyphicon-euro:before {[m
+[31m-  content: "\20ac";[m
+[31m-}[m
+[31m-.glyphicon-minus:before {[m
+[31m-  content: "\2212";[m
+[31m-}[m
+[31m-.glyphicon-cloud:before {[m
+[31m-  content: "\2601";[m
+[31m-}[m
+[31m-.glyphicon-envelope:before {[m
+[31m-  content: "\2709";[m
+[31m-}[m
+[31m-.glyphicon-pencil:before {[m
+[31m-  content: "\270f";[m
+[31m-}[m
+[31m-.glyphicon-glass:before {[m
+[31m-  content: "\e001";[m
+[31m-}[m
+[31m-.glyphicon-music:before {[m
+[31m-  content: "\e002";[m
+[31m-}[m
+[31m-.glyphicon-search:before {[m
+[31m-  content: "\e003";[m
+[31m-}[m
+[31m-.glyphicon-heart:before {[m
+[31m-  content: "\e005";[m
+[31m-}[m
+[31m-.glyphicon-star:before {[m
+[31m-  content: "\e006";[m
+[31m-}[m
+[31m-.glyphicon-star-empty:before {[m
+[31m-  content: "\e007";[m
+[31m-}[m
+[31m-.glyphicon-user:before {[m
+[31m-  content: "\e008";[m
+[31m-}[m
+[31m-.glyphicon-film:before {[m
+[31m-  content: "\e009";[m
+[31m-}[m
+[31m-.glyphicon-th-large:before {[m
+[31m-  content: "\e010";[m
+[31m-}[m
+[31m-.glyphicon-th:before {[m
+[31m-  content: "\e011";[m
+[31m-}[m
+[31m-.glyphicon-th-list:before {[m
+[31m-  content: "\e012";[m
+[31m-}[m
+[31m-.glyphicon-ok:before {[m
+[31m-  content: "\e013";[m
+[31m-}[m
+[31m-.glyphicon-remove:before {[m
+[31m-  content: "\e014";[m
+[31m-}[m
+[31m-.glyphicon-zoom-in:before {[m
+[31m-  content: "\e015";[m
+[31m-}[m
+[31m-.glyphicon-zoom-out:before {[m
+[31m-  content: "\e016";[m
+[31m-}[m
+[31m-.glyphicon-off:before {[m
+[31m-  content: "\e017";[m
+[31m-}[m
+[31m-.glyphicon-signal:before {[m
+[31m-  content: "\e018";[m
+[31m-}[m
+[31m-.glyphicon-cog:before {[m
+[31m-  content: "\e019";[m
+[31m-}[m
+[31m-.glyphicon-trash:before {[m
+[31m-  content: "\e020";[m
+[31m-}[m
+[31m-.glyphicon-home:before {[m
+[31m-  content: "\e021";[m
+[31m-}[m
+[31m-.glyphicon-file:before {[m
+[31m-  content: "\e022";[m
+[31m-}[m
+[31m-.glyphicon-time:before {[m
+[31m-  content: "\e023";[m
+[

@@ -1,23 +1,17 @@
-from django.shortcuts import render , render_to_response , redirect
+from django.shortcuts import render_to_response , redirect
 from django import forms
 from forms import UserCreateForm
-from django.contrib.auth.forms import AuthenticationForm
-from django.http import HttpResponseRedirect, HttpResponse
+from django.http import  HttpResponse
 from django.template import RequestContext
-from django.contrib import auth
 from django.contrib.auth import authenticate , login , logout
 from django.contrib.auth.decorators import login_required
 from models import MyUserManager , UserProfile
 import json
-from django.core.validators import validate_email
+
 # Create your views here.
 
 def landing(request):
     return render_to_response('landing.html', context_instance = RequestContext(request))
-
-def qunit_tests(request):
-    return render_to_response('qunit.html', context_instance = RequestContext(request))
-
 
 def register(request):
     if request.user.is_authenticated():
@@ -40,21 +34,19 @@ def register(request):
         'zip_code': request.POST['zip_code']
         }
 
-        
-      
-        
         form = UserCreateForm(user_information)
         if form.is_valid():
            
             form.save()
-            return HttpResponseRedirect('/placeholder/')   
+            return redirect('/') 
         else: 
             form_errors = form.errors
             return render_to_response('register.html', {'errors': form_errors, 'form': form}, context_instance=RequestContext(request))
-    else:
+    else: #AJAX form validation
         request_copy = request.GET.copy()
-        # form = UserCreateForm(request_copy)
-        if 'username' in request_copy:
+      
+
+        if 'username' in request_copy: #Username in use?
             name = request_copy['username']
             response_data = {}
             if UserProfile.objects.filter(username__iexact=name): 
@@ -63,7 +55,7 @@ def register(request):
                 response_data['result'] = 'true'
             return HttpResponse(response_data['result'])
             # return HttpResponse(json.dumps(response_data), content_type = "application/json")
-        if 'email' in request_copy:
+        if 'email' in request_copy: #Email in use?
             entered_email = request_copy['email']
             response_data = {}
             if UserProfile.objects.filter(email__iexact=entered_email):
@@ -75,12 +67,6 @@ def register(request):
             form = UserCreateForm()
             return render_to_response("register.html", {'form': form, 'errors':form.errors}, context_instance=RequestContext(request))
     
-def placeholder(request):
-	return HttpResponse("Placeholder")
-
-def error_page(request):
-    return HttpResponse("Error Page")
-
 def user_login(request):
     context = RequestContext(request)
 
@@ -100,7 +86,7 @@ def user_login(request):
                 # If the account is valid and active, we can log the user in.
                 # We'll send the user back to the homepage.
                 login(request, user)
-                return HttpResponseRedirect('/')
+                return redirect('/')
             else:
                 # An inactive account was used - no logging in!
                 return HttpResponse("Your Rainforest account is disabled.")
@@ -120,5 +106,5 @@ def user_login(request):
 def user_logout(request):
     logout(request)
 
-    return HttpResponseRedirect('/')
+    return redirect('/')
 

@@ -8,7 +8,7 @@ class UserCreateForm(forms.ModelForm):
 	first_name = forms.CharField(label='first_name',widget=forms.TextInput(attrs={'placeholder':'First Name'}))
 	middle_initial = forms.CharField(label='middle_initial',widget=forms.TextInput(attrs={'placeholder':'Middle Initial'}))
 	last_name = forms.CharField(label='last_name',widget=forms.TextInput(attrs={'placeholder':'Last Name'}))
-	birth_date = forms.DateField(label='birth_date',widget=forms.TextInput(attrs={'placeholder':'Date of Birth'}))
+	birth_date = forms.DateField(label='birth_date',widget=forms.TextInput(attrs={'placeholder':'Birth Date(YYYY-MM-DD)'}))
 	street_address = forms.CharField(label='street_address',widget=forms.TextInput(attrs={'placeholder':'Street Address'}))
 	city = forms.CharField(label='city',widget=forms.TextInput(attrs={'placeholder':'City'}))
 	state = forms.CharField(label='state',widget=forms.TextInput(attrs={'placeholder':'State'}))

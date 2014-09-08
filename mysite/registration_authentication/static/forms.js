@@ -43,7 +43,7 @@ $(document).ready(function(){
 		last_name: "required",
 		birth_date: {
 			required: true,
-			date: true
+			dateISO: true
 		},
 		street_address:"required",
 		city: "required",

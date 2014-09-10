@@ -1,1 +1,1 @@
-web: heroku run python rainforest/manage.py runserver
+web: heroku run python mysite/manage.py runserver

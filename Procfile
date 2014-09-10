@@ -1,1 +1,1 @@
-web: gunicorn rainforest.wsgi --log-file -
+web: heroku run python hellodjango/manage.py runserver

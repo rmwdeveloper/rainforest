@@ -1,1 +1,1 @@
-web: heroku run python hellodjango/manage.py runserver
+web: heroku run python rainforest/manage.py runserver

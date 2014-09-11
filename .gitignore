@@ -7,3 +7,4 @@ include
 .DS_Store
 .pyc
 staticfiles/
+mysite/mysite/secret_settings.py

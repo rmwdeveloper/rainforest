@@ -113,7 +113,7 @@ def portfolio(request):
 		form_input_array = jsonDecoder.decode(request.GET['form_inputs'])
 
 		projects_to_show = jsonEncoder.encode(construct_projects_to_be_shown_array(form_input_array))
-		return HttpResponse(projects_to_show)
+		return HttpResponse(projects_to_show, content_type = 'text/plain')
 		# return render_to_response('portfolio.html', context_instance = RequestContext(request))
 
 	return render_to_response('portfolio.html',{'projects':projects,

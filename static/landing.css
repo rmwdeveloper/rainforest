@@ -1,1 +1,35 @@
-@media only screen and (max-width: 767px){#main{margin-top:20px}}.col-md-4>h1{font-family:'Oswald';text-align:center}.col-md-4>p{font-family:'Istok Web';font-size:20px}#landing-content h1{display:none}#landing-content p{display:none}#landing-content #landing-links{position:relative;display:none;width:100%;font-size:40px;text-align:center}
+@media only screen and (max-width: 767px) {
+  /* line 8, landing.scss */
+  #main {
+    margin-top: 20px;
+  }
+}
+
+/* line 18, landing.scss */
+.col-md-4 > h1 {
+  font-family: 'Oswald';
+  text-align: center;
+}
+
+/* line 22, landing.scss */
+.col-md-4 > p {
+  font-family: 'Istok Web';
+  font-size: 20px;
+}
+
+/* line 27, landing.scss */
+#landing-content h1 {
+  display: none;
+}
+/* line 30, landing.scss */
+#landing-content p {
+  display: none;
+}
+/* line 33, landing.scss */
+#landing-content #landing-links {
+  position: relative;
+  display: none;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+}

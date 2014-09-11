@@ -53,7 +53,7 @@ def register(request):
                 response_data['result'] = 'false'
             else:           
                 response_data['result'] = 'true'
-            return HttpResponse(response_data['result'])
+            return HttpResponse(response_data['result'] , content_type = 'text/plain')
             # return HttpResponse(json.dumps(response_data), content_type = "application/json")
         if 'email' in request_copy: #Email in use?
             entered_email = request_copy['email']
@@ -62,7 +62,7 @@ def register(request):
                 response_data['result'] = 'false'
             else:
                response_data['result'] = 'true'
-            return HttpResponse(response_data['result'])
+            return HttpResponse(response_data['result'], content_type = 'text/plain')
         else:
             form = UserCreateForm()
             return render_to_response("register.html", {'form': form, 'errors':form.errors}, context_instance=RequestContext(request))
@@ -89,11 +89,11 @@ def user_login(request):
                 return redirect('/')
             else:
                 # An inactive account was used - no logging in!
-                return HttpResponse("Your Rainforest account is disabled.")
+                return redirect('/')
         else:
             # Bad login details were provided. So we can't log the user in.
-            print "Invalid login details: {0}, {1}".format(username, password)
-            return HttpResponse("Invalid login details supplied.")
+            
+            return redirect ('/')
 
     # The request is not a HTTP POST, so display the login form.
     # This scenario would most likely be a HTTP GET.

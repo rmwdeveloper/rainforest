@@ -12,7 +12,10 @@ $(document).ready(function(){
 						return $( "#id_username" ).val();
 					}
 				},
-				dataType: 'json'
+				dataType: 'json',
+				success: function(data) {
+					console.log(data['result']);
+				}
 			}
 		},
 		email: {

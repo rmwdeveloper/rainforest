@@ -2,6 +2,7 @@
 env
 bin
 lib
+build
 include
 .DS_Store
 .pyc

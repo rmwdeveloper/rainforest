@@ -8,3 +8,4 @@ include
 .pyc
 staticfiles/
 mysite/mysite/secret_settings.py
+mysite/mysite/secret_settings.pyc

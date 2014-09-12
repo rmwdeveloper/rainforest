@@ -52,7 +52,7 @@ STATICFILE_FINDERS = (
 # SECURITY WARNING: keep the secret key used in production secret!
 try:
 	SECRET_KEY = secret_settings.SECRET_KEY
-except NameError:
+except (NameError, AttributeError) as e:
 	SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -62,7 +62,7 @@ TEMPLATE_DEBUG = False
 # ALLOWED_HOSTS = ['127.0.0.1','127.0.0.1:8000', 'localhost']
 try:
 	ALLOWED_HOSTS = secret_settings.ALLOWED_HOSTS
-except NameError:
+except (NameError, AttributeError) as e:
 	ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS']
 
 # Application definition
@@ -112,11 +112,14 @@ DATABASES = {
 	}
 }
 if secret_settings: 
-	DATABASES['default']['USER'] = secret_settings.DATABASE_USERNAME
-	DATABASES['default']['PASSWORD'] = secret_settings.DATABASE_PASSWORD
-else: 
-	DATABASES['default']['USER'] = os.environ['DATABASE_USERNAME']
-	DATABASES['default']['PASSWORD'] = os.environ['DATABSE_PASSWORD']
+	try:
+		DATABASES['default']['USER'] = secret_settings.DATABASE_USERNAME
+		DATABASES['default']['PASSWORD'] = secret_settings.DATABASE_PASSWORD
+	except AttributeError:
+		DATABASES['default']['USER'] = os.environ['DATABASE_USERNAME']
+		DATABASES['default']['PASSWORD'] = os.environ['DATABSE_PASSWORD']
+	
+
 
 if dbconfig: 
 	DATABASES['default'] = dbconfig
@@ -174,16 +177,16 @@ MANAGERS = (('robert','rmwdeveloper@gmail.com'),)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 if secret_settings:
-	EMAIL_HOST = secret_settings.EMAIL_HOST
-	EMAIL_PORT = secret_settings.EMAIL_PORT
-	EMAIL_HOST_USER = secret_settings.EMAIL_HOST_USER
-	EMAIL_HOST_PASSWORD = secret_settings.EMAIL_HOST_PASSWORD
-	
-else: 
-	EMAIL_HOST = os.environ['EMAIL_PORT']
-	EMAIL_PORT = os.environ['EMAIL_HOST']
-	EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
-	EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+	try: 
+		EMAIL_HOST = secret_settings.EMAIL_HOST
+		EMAIL_PORT = secret_settings.EMAIL_PORT
+		EMAIL_HOST_USER = secret_settings.EMAIL_HOST_USER
+		EMAIL_HOST_PASSWORD = secret_settings.EMAIL_HOST_PASSWORD
+	except AttributeError:
+		EMAIL_HOST = os.environ['EMAIL_PORT']
+		EMAIL_PORT = os.environ['EMAIL_HOST']
+		EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
+		EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
 
 DEFAULT_FROM_EMAIL = 'rmwdeveloper@gmail.com'
 LOGIN_REDIRECT_URL = '/'

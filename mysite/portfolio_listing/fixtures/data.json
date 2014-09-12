@@ -80,6 +80,14 @@
     }
   },
   {
+    "model": "portfolio_listing.Database",
+    "pk": 2,
+    "fields": {
+      "name": "Postgresql",
+      "description": "PostgreSQL, often simply 'Postgres', is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance"
+    }
+  },
+  {
     "model": "portfolio_listing.CSSPreprocessor",
     "pk": 1,
     "fields": {

@@ -1,12 +1,13 @@
 {% extends "__base.html" %}
+{% load staticfiles %}
 
 {% block stylesheets %}
-{% load staticfiles %}
+	{{block.super}}
 
 {% endblock %}
 
 {% block javascript %}
-
+	{{block.super}}
 {% endblock %}
 
 {% load forms_extras %}
@@ -15,6 +16,6 @@
 
 {% block content %}
 
-	
+
 		
 {% endblock %}

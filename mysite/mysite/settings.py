@@ -52,7 +52,7 @@ STATICFILE_FINDERS = (
 # SECURITY WARNING: keep the secret key used in production secret!
 try:
 	SECRET_KEY = secret_settings.SECRET_KEY
-except ImportError:
+except NameError:
 	SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -62,7 +62,7 @@ TEMPLATE_DEBUG = False
 # ALLOWED_HOSTS = ['127.0.0.1','127.0.0.1:8000', 'localhost']
 try:
 	ALLOWED_HOSTS = secret_settings.ALLOWED_HOSTS
-except ImportError:
+except NameError:
 	ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS']
 
 # Application definition

@@ -115,7 +115,7 @@ DATABASES = {
 try:
 	DATABASES['default']['USER'] = secret_settings.DATABASE_USERNAME
 	DATABASES['default']['PASSWORD'] = secret_settings.DATABASE_PASSWORD
-except AttributeError:
+except (NameError, AttributeError) as e:
 	DATABASES['default']['USER'] = os.environ['DATABASE_USERNAME']
 	DATABASES['default']['PASSWORD'] = os.environ['DATABSE_PASSWORD']
 	

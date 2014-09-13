@@ -111,13 +111,13 @@ DATABASES = {
 		
 	}
 }
-if secret_settings: 
-	try:
-		DATABASES['default']['USER'] = secret_settings.DATABASE_USERNAME
-		DATABASES['default']['PASSWORD'] = secret_settings.DATABASE_PASSWORD
-	except AttributeError:
-		DATABASES['default']['USER'] = os.environ['DATABASE_USERNAME']
-		DATABASES['default']['PASSWORD'] = os.environ['DATABSE_PASSWORD']
+ 
+try:
+	DATABASES['default']['USER'] = secret_settings.DATABASE_USERNAME
+	DATABASES['default']['PASSWORD'] = secret_settings.DATABASE_PASSWORD
+except AttributeError:
+	DATABASES['default']['USER'] = os.environ['DATABASE_USERNAME']
+	DATABASES['default']['PASSWORD'] = os.environ['DATABSE_PASSWORD']
 	
 
 
@@ -176,17 +176,16 @@ ACCOUNT_ACTIVATION_DAYS = 2
 MANAGERS = (('robert','rmwdeveloper@gmail.com'),)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
-if secret_settings:
-	try: 
-		EMAIL_HOST = secret_settings.EMAIL_HOST
-		EMAIL_PORT = secret_settings.EMAIL_PORT
-		EMAIL_HOST_USER = secret_settings.EMAIL_HOST_USER
-		EMAIL_HOST_PASSWORD = secret_settings.EMAIL_HOST_PASSWORD
-	except AttributeError:
-		EMAIL_HOST = os.environ['EMAIL_PORT']
-		EMAIL_PORT = os.environ['EMAIL_HOST']
-		EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
-		EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+try: 
+	EMAIL_HOST = secret_settings.EMAIL_HOST
+	EMAIL_PORT = secret_settings.EMAIL_PORT
+	EMAIL_HOST_USER = secret_settings.EMAIL_HOST_USER
+	EMAIL_HOST_PASSWORD = secret_settings.EMAIL_HOST_PASSWORD
+except (NameError, AttributeError) as e:
+	EMAIL_HOST = os.environ['EMAIL_PORT']
+	EMAIL_PORT = os.environ['EMAIL_HOST']
+	EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
+	EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
 
 DEFAULT_FROM_EMAIL = 'rmwdeveloper@gmail.com'
 LOGIN_REDIRECT_URL = '/'

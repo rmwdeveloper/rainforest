@@ -13,9 +13,9 @@ $(document).ready(function(){
 					}
 				},
 				dataType: 'json',
-				success: function(data) {
-					console.log(data['result']);
-				}
+				// success: function(data) {
+					
+				// }
 			}
 		},
 		email: {
@@ -29,7 +29,10 @@ $(document).ready(function(){
 						return $( "#id_email" ).val();
 					}
 				},
-				dataType: 'json'
+				dataType: 'json',
+				// success: function(data) {
+				// 	console.log(data['result'][0]);
+				// }
 			}	
 		},
 		password1:{

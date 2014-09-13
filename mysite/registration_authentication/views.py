@@ -49,11 +49,13 @@ def register(request):
         if 'username' in request_copy: #Username in use?
             name = request_copy['username']
             response_data = {}
+
             if UserProfile.objects.filter(username__iexact=name): 
                 response_data['result'] = 'false'
             else:           
                 response_data['result'] = 'true'
-            return HttpResponse(response_data['result'] , content_type = 'text/plain')
+            return HttpResponse(response_data['result'], content_type='text/plain')
+          
             # return HttpResponse(json.dumps(response_data), content_type = "application/json")
         if 'email' in request_copy: #Email in use?
             entered_email = request_copy['email']

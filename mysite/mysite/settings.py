@@ -173,7 +173,7 @@ AUTH_USER_MODEL = 'registration_authentication.UserProfile'
 ACCOUNT_ACTIVATION_DAYS = 2
 
 MANAGERS = (('robert','rmwdeveloper@gmail.com'),)
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = "sgbackend.SendGridBackend"
 EMAIL_USE_TLS = True
 try: 
 	EMAIL_HOST = secret_settings.EMAIL_HOST

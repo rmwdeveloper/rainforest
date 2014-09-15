@@ -20,5 +20,9 @@ psycopg2==2.5.4
 py-mysql2pgsql==0.1.5
 requirements==0.1
 selenium==2.42.1
+sendgrid==0.5.1
+sendgrid-django==1.0.3
 six==1.7.3
+smtpapi==0.1.2
 static3==0.5.1
+unittest2==0.5.1

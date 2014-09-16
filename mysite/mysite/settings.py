@@ -81,7 +81,8 @@ INSTALLED_APPS = (
 	'django_nose',
 	'ordered_model',
 	'stdimage',
-	'contact_form'
+	'contact_form',
+	'sendgrid'
 )
 
 MIDDLEWARE_CLASSES = (

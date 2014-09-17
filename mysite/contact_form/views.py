@@ -24,7 +24,7 @@ class ContactFormView(FormView):
                 self.form_valid()
         else:
             form= self.form_class(request=self.request)
-        c={'form': self.form_class, 'index':index}
+        c={'form': self.form_class, 'index':self.index}
         return render_to_response(self.template_name, c,context_instance=RequestContext(self.request))
 
     def form_valid(self, form):

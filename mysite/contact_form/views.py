@@ -16,7 +16,7 @@ class ContactFormView(FormView):
     form_class = ContactForm
     template_name = 'contact_form.html'
     request = HttpRequest()
-    def display_form(self):
+    def display_form(self, request):
         if self.request.method == 'POST':
             form = self.form_class(self.request.POST)
             if form.is_valid():

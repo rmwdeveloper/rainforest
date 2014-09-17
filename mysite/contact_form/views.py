@@ -25,11 +25,11 @@ class ContactFormView(FormView):
                 'body': request.POST['body'],
                 
                 }
-            form = self.form_class(contact_form_information, request = request.POST)
+            form = self.form_class(contact_form_information, request = request)
 
             if form.is_valid():
                 
-                form.save()
+                self.form_valid(form)
             else: 
                 form_errors = form.errors
               

@@ -21,7 +21,7 @@ class ContactFormView(FormView):
             if form.is_valid():
                 self.form_valid()
         else:
-            form= self.form_class(self.request)
+            form= self.form_class(request=self.request)
         c={'form': self.form_class}
         return render_to_response(self.template_name, c,context_instance=RequestContext(self.request))
 

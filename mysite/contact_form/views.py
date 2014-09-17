@@ -10,12 +10,13 @@ from django.template import RequestContext
 from django.http import HttpRequest
 from .forms import ContactForm
 from django.shortcuts import render_to_response
-
+from django.views.decorators.csrf import csrf_exempt
 
 class ContactFormView(FormView):
     form_class = ContactForm
     template_name = 'contact_form.html'
     request = HttpRequest()
+    @csrf_exempt
     def display_form(self, request):
         if self.request.method == 'POST':
             form = self.form_class(self.request.POST)
@@ -26,13 +27,13 @@ class ContactFormView(FormView):
         c={'form': form}
         # return HttpResponse('test')
         return render_to_response(self.template_name, c,context_instance=RequestContext(self.request))
-
+    @csrf_exempt
     def form_valid(self, form):
         
         form.save()
 
         return super(ContactFormView, self).form_valid(form)
-
+    @csrf_exempt
     def get_form_kwargs(self):
         # ContactForm instances require instantiation with an
         # HttpRequest.
@@ -41,7 +42,7 @@ class ContactFormView(FormView):
         kwargs.update({'request': self.request})
        
         return kwargs
-
+    @csrf_exempt
     def get_success_url(self):
         # This is in a method instead of the success_url attribute
         # because doing it as an attribute would involve a

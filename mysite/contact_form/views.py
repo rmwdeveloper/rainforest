@@ -19,8 +19,7 @@ class ContactFormView(FormView):
     @csrf_exempt
     def display_form(self, request):
         if request.method == 'POST':
-            form = self.form_class(request.POST)
-            return HttpResponse('self.request.method was post')
+            form = self.form_class(request = request.POST)
             if form.is_valid():
                 self.form_valid()
         else:

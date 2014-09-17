@@ -20,9 +20,11 @@ class ContactFormView(FormView):
     def display_form(self, request):
         if request.method == 'POST':
             form = self.form_class(request = request.POST)
-            return HttpResponse('req meth was post')
+
             if form.is_valid():
                 self.form_valid()
+            else: 
+                return HttpResponse('invalid_form')
         else:
             form= self.form_class(request=request)
         c={'form': form}

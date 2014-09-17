@@ -13,11 +13,11 @@ from django.views.generic import TemplateView
 
 import views
 
-ContactFormView = views.ContactFormView()
+
 
 urlpatterns = patterns('',
                        url(r'^$',
-                           ContactFormView.display_form,
+                           views.ContactFormView.display_form,
                            name='contact_form'),
                        url(r'^sent/$',
                            TemplateView.as_view(

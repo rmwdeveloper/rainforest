@@ -16,7 +16,6 @@ class ContactFormView(FormView):
     form_class = ContactForm
     template_name = 'contact_form.html'
     request = HttpRequest()
-    index = 'rmw.herokuapp.com'
     def display_form(self):
         if self.request.method == 'POST':
             form = self.form_class(self.request.POST)
@@ -24,7 +23,7 @@ class ContactFormView(FormView):
                 self.form_valid()
         else:
             form= self.form_class(request=self.request)
-        c={'form': self.form_class, 'index':self.index}
+        c={'form': self.form_class}
         return render_to_response(self.template_name, c,context_instance=RequestContext(self.request))
 
     def form_valid(self, form):

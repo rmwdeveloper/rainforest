@@ -15,19 +15,19 @@ from django.views.decorators.csrf import csrf_exempt
 class ContactFormView(FormView):
     form_class = ContactForm
     template_name = 'contact_form.html'
-    request = HttpRequest()
+    
     @csrf_exempt
     def display_form(self, request):
-        if self.request.method == 'POST':
-            form = self.form_class(self.request.POST)
+        if request.method == 'POST':
+            form = self.form_class(request.POST)
             return HttpResponse('self.request.method was post')
             if form.is_valid():
                 self.form_valid()
         else:
-            form= self.form_class(request=self.request)
+            form= self.form_class(request=request)
         c={'form': form}
-        return HttpResponse(self.request.method)
-        return render_to_response(self.template_name, c,context_instance=RequestContext(self.request))
+        return HttpResponse(request.method)
+        return render_to_response(self.template_name, c,context_instance=RequestContext(request))
     @csrf_exempt
     def form_valid(self, form):
         

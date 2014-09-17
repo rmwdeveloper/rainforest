@@ -12,7 +12,7 @@ from django.template import loader
 from django.template import RequestContext
 from django.contrib.sites.models import RequestSite
 from django.contrib.sites.models import Site
-from sendgrid.message import SendGridEmailMessage
+from django.core.mail import EmailMultiAlternatives
 
 # sg = sendgrid.SendGridClient('app29617319@heroku.com', 'pr8z8kyd')
 class ContactForm(forms.Form):
@@ -226,12 +226,11 @@ class ContactForm(forms.Form):
         Build and send the email message.
         
         """
-        email = SendGridEmailMessage(**self.get_message_dict)
-        email.send()
+        
 
         # message = sendgrid.Mail(fail_silently=fail_silently,auth_user = settings.EMAIL_HOST_USER,  **self.get_message_dict())
         # status,msg = sg.send(message)
 
 
-        # send_mail(fail_silently=fail_silently,auth_user = settings.EMAIL_HOST_USER,  **self.get_message_dict())
+        send_mail(fail_silently=fail_silently,auth_user = settings.EMAIL_HOST_USER,  **self.get_message_dict())
 

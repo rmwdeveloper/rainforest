@@ -25,6 +25,7 @@ class ContactFormView(FormView):
                 self.form_valid()
             else: 
                 form_errors = form.errors
+                return HttpRequest(form_errors)
                 return render_to_response(self.template_name, {'errors': form_errors, 'form': form}, context_instance=RequestContext(request))
 
         else:

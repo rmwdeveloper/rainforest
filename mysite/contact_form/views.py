@@ -19,17 +19,23 @@ class ContactFormView(FormView):
     @csrf_exempt
     def display_form(self, request):
         if request.method == 'POST':
-            form = self.form_class(request = request.POST)
+            contact_form_information = {
+                'name': request.POST['name'],
+                'email': request.POST['email'],
+                'body': request.POST['body'],
+                
+                }
+            form = self.form_class(request = request.POST, contact_form_information)
 
             if form.is_valid():
                 self.form_valid()
             else: 
                 form_errors = form.errors
-                return HttpResponse(form_errors)
+
                 return render_to_response(self.template_name, {'errors': form_errors, 'form': form}, context_instance=RequestContext(request))
 
         else:
-            form= self.form_class(request=request)
+            form= self.form_class(request=request.GET)
         c={'form': form}
         
         return render_to_response(self.template_name, c,context_instance=RequestContext(request))

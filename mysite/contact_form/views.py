@@ -26,7 +26,7 @@ class ContactFormView(FormView):
         else:
             form= self.form_class(request=self.request)
         c={'form': form}
-        # return HttpResponse('test')
+        return HttpResponse(self.request.method)
         return render_to_response(self.template_name, c,context_instance=RequestContext(self.request))
     @csrf_exempt
     def form_valid(self, form):

@@ -29,7 +29,7 @@ class ContactFormView(FormView):
 
             if form.is_valid():
                 
-                self.form_valid(form)
+                form.save()
             else: 
                 form_errors = form.errors
               

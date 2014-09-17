@@ -55,9 +55,9 @@ try:
 except (NameError, AttributeError) as e:
 	SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 SITE_ID = 1
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 # ALLOWED_HOSTS = ['127.0.0.1','127.0.0.1:8000', 'localhost']
 try:

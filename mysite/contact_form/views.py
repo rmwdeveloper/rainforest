@@ -14,16 +14,16 @@ from .forms import ContactForm
 class ContactFormView(FormView):
     form_class = ContactForm
     template_name = 'contact_form.html'
-    self.request = HttpRequest()
+    request = HttpRequest()
     def display_form(self):
-        if self.request.method == 'POST':
-            form = self.formclass(self.request.POST)
+        if request.method == 'POST':
+            form = self.formclass(request.POST)
             if form.is_valid():
                 self.form_valid()
         else:
-            form= self.formclass(self.request)
+            form= self.formclass(request)
         c={'form': self.formclass}
-        return render_to_response(self.template_name, c,context_instance=RequestContext(self.request))
+        return render_to_response(self.template_name, c,context_instance=RequestContext(request))
 
     def form_valid(self, form):
         

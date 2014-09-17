@@ -23,7 +23,7 @@ class ContactFormView(FormView):
                 self.form_valid()
         else:
             form= self.form_class(request=self.request)
-        c={'form': self.form_class()}
+        c={'form': form}
         # return HttpResponse('test')
         return render_to_response(self.template_name, c,context_instance=RequestContext(self.request))
 

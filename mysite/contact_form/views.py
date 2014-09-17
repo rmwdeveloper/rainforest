@@ -28,7 +28,7 @@ class ContactFormView(FormView):
             form = self.form_class(contact_form_information, request = request.POST)
 
             if form.is_valid():
-                return HttpResponse('form is valid')
+                
                 self.form_valid(form)
             else: 
                 form_errors = form.errors

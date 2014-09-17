@@ -16,7 +16,7 @@ from contact_form.views import ContactFormView
 
 urlpatterns = patterns('',
                        url(r'^$',
-                           ContactFormView.display_form(),
+                           ContactFormView.as_view(),
                            name='contact_form'),
                        url(r'^sent/$',
                            TemplateView.as_view(

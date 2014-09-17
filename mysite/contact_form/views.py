@@ -6,23 +6,13 @@ View which can render and send email from a contact form.
 from django.core.urlresolvers import reverse
 from django.views.generic.edit import FormView
 from django.http import HttpResponse
-from django.template import RequestContext
+
 from .forms import ContactForm
 
 
 class ContactFormView(FormView):
     form_class = ContactForm
     template_name = 'contact_form.html'
-
-    def display_form(self,form):
-        if request.method == 'POST':
-            form = form(request.POST)
-            if form.is_valid():
-                self.form_valid()
-        else:
-            form= form(request)
-        c={'form': form}
-        return render_to_response('contact_form.html', c,context_instance=RequestContext(request))
 
     def form_valid(self, form):
         

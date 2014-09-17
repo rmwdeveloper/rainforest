@@ -98,7 +98,7 @@ MIDDLEWARE_CLASSES = (
 )
 HTML_MINIFY = True
 
-ROOT_URLCONF = 'mysite.urls'
+
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 

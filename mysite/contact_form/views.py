@@ -7,13 +7,14 @@ from django.core.urlresolvers import reverse
 from django.views.generic.edit import FormView
 from django.http import HttpResponse
 from django.template import RequestContext
+from django.http import HttpRequest
 from .forms import ContactForm
 
 
 class ContactFormView(FormView):
     form_class = ContactForm
     template_name = 'contact_form.html'
-    self.request = request
+    self.request = HttpRequest.REQUEST
     def display_form(self):
         if self.request.method == 'POST':
             form = self.formclass(self.request.POST)

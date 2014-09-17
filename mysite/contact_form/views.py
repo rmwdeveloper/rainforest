@@ -20,12 +20,13 @@ class ContactFormView(FormView):
     def display_form(self, request):
         if request.method == 'POST':
             form = self.form_class(request = request.POST)
+
             if form.is_valid():
                 self.form_valid()
         else:
             form= self.form_class(request=request)
         c={'form': form}
-        return HttpResponse(request.method)
+        
         return render_to_response(self.template_name, c,context_instance=RequestContext(request))
     @csrf_exempt
     def form_valid(self, form):

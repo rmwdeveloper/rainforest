@@ -11,8 +11,9 @@ from django.conf.urls import patterns
 from django.conf.urls import url
 from django.views.generic import TemplateView
 
-from contact_form.views import ContactFormView
+import views
 
+ContactFormView = views.ContactFormView()
 
 urlpatterns = patterns('',
                        url(r'^$',

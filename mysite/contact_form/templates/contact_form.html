@@ -20,6 +20,7 @@
 		</div>
 		<div class='col-md-6'>
 			<form action='' method='POST' role='form'>
+			{{form.errors}}
 			{{ form.non_field_errors }}
 				{% csrf_token %}
 				{{form.non_field_errors}}

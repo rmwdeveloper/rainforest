@@ -12,7 +12,7 @@ from django.template import loader
 from django.template import RequestContext
 from django.contrib.sites.models import RequestSite
 from django.contrib.sites.models import Site
-import sendgrid.message import SendGridEmailMessage
+from sendgrid.message import SendGridEmailMessage
 
 # sg = sendgrid.SendGridClient('app29617319@heroku.com', 'pr8z8kyd')
 class ContactForm(forms.Form):

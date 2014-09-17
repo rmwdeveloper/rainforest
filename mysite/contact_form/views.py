@@ -13,9 +13,8 @@ from .forms import ContactForm
 class ContactFormView(FormView):
     form_class = ContactForm
     template_name = 'contact_form.html'
-
+    self.request = request
     def display_form(self):
-        return HttpResponse(str(self))
         if self.request.method == 'POST':
             form = self.formclass(self.request.POST)
             if form.is_valid():

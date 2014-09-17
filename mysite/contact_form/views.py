@@ -9,6 +9,7 @@ from django.http import HttpResponse
 from django.template import RequestContext
 from django.http import HttpRequest
 from .forms import ContactForm
+from django.shortcuts import render_to_response
 
 
 class ContactFormView(FormView):

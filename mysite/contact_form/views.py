@@ -17,12 +17,12 @@ class ContactFormView(FormView):
     request = HttpRequest()
     def display_form(self):
         if self.request.method == 'POST':
-            form = self.formclass(self.request.POST)
+            form = self.form_class(self.request.POST)
             if form.is_valid():
                 self.form_valid()
         else:
-            form= self.formclass(self.request)
-        c={'form': self.formclass}
+            form= self.form_class(self.request)
+        c={'form': self.form_class}
         return render_to_response(self.template_name, c,context_instance=RequestContext(self.request))
 
     def form_valid(self, form):

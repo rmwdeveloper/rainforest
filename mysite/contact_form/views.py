@@ -30,6 +30,7 @@ class ContactFormView(FormView):
             if form.is_valid():
                 
                 self.form_valid(form)
+                return redirect('/')
             else: 
                 form_errors = form.errors
               

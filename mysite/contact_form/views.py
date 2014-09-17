@@ -9,7 +9,7 @@ from django.http import HttpResponse
 from django.template import RequestContext
 from django.http import HttpRequest
 from .forms import ContactForm
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response , redirect
 from django.views.decorators.csrf import csrf_exempt
 
 class ContactFormView(FormView):
@@ -44,7 +44,7 @@ class ContactFormView(FormView):
     def form_valid(self, form):
         
         form.save()
-
+        return redirect('/')
         return super(ContactFormView, self).form_valid(form)
     @csrf_exempt
     def get_form_kwargs(self):
